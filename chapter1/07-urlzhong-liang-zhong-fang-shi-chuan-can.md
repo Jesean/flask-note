@@ -34,7 +34,6 @@ def detail(url_path,id):
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 ![](/assets/07博客.png)
@@ -49,8 +48,11 @@ if __name__ == '__main__':
 2. 第二种:使用查询字符串的方式，就是通过"?key=value"的形式传递的
 
 ```
-
+@app.route('/d/')
+def d():
+    wd = request.args.get("wd")
+    return "查询字符串参数:%s" % wd
 ```
 
-
+![](/assets/07接收用户参数.png)
 
