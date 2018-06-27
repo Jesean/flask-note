@@ -31,3 +31,5 @@ def login():
 
 ![](/assets/08-url-for-2.png)
 
+\#\#\# 在使用url的时候，使用'url\_for'来反转url
+
