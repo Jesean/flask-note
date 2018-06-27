@@ -12,21 +12,15 @@
 
 1.在'app.run\(\)'中传递一个参数'debug=True'就可以开启'DEBUG'模式
 
-1.1.app.run\(debug=True\) 
-
-
+1.1.app.run\(debug=True\)
 
 2.给'app.debug=True'也可以开启'debug'模式
 
-2.1.app.debug = True    
-
-
+2.1.app.debug = True
 
 3.通过配置参数的形式设置DEBUG模式,'app.config.update\(DEBUG=True\)'
 
-3.1.app.config.update\(DEBUG=True\)   
-
-
+3.1.app.config.update\(DEBUG=True\)
 
 4.通过配置文件的形式设置DEBUG模式:'app.config.from\_object\(config\)'
 
@@ -36,7 +30,29 @@
 
 如果想要在网页上调试代码，name应该输入'PIN'码
 
+---
 
+```
+from flask import Flask, config
+
+app = Flask(__name__)
+# app.debug = True
+# 设置配置参数的形式
+# DEBUG必须要大写，不能小写
+
+# app.config.from_object(config)
+app.config.update(DEBUG=True)
+# print(isinstance(app.config.dict))
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+
+if __name__ == '__main__':
+    app.run()
+
+```
 
 
 
