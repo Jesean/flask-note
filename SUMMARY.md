@@ -15,4 +15,11 @@
   * 11 重定向详解
   * 12 重定向详解
   * 13 视图函数Response返回值详解
+* [2.Jinja2模板](2jinja2mo-ban.md)
+  * 14 Jinja2模板介绍
+  * 15 模板传参及其技巧
+  * 16 模板中使用url\_for
+  * [17 过滤器基本使用](chapter1/17-guo-lv-qi-ji-ben-shi-yong.md)
+  * [18 default过滤器详解](chapter1/18-defaultguo-lv-qi-xiang-jie.md)
+  * 19 常用过滤器讲解
 
