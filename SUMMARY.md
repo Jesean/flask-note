@@ -28,4 +28,5 @@
   * [23 for循环语句详解](chapter1/23-forxun-huan-yu-ju-xiang-jie.md)
   * 24 九九乘法表
   * [25 宏的概念和基本使用](chapter1/25-hong-de-gai-nian-he-ji-ben-shi-yong.md)
+  * 26 宏的导入和注意事项
 
