@@ -105,3 +105,5 @@ if __name__ == '__main__':
 
 ![](/assets/09-4.png)
 
+![](/assets/09-6.png)
+
