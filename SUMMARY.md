@@ -33,7 +33,7 @@
   * 28 set和with语句以及模板中定义变量
   * 29 加载静态文件
   * [30 模板继承详解](chapter1/30-mo-ban-ji-cheng-xiang-jie.md)
-  * 31-33 豆瓣微信小程序案例
+  * 31-36 豆瓣微信小程序案例
 * [3.Flask视图高级](3flaskshi-tu-gao-ji.md)
   * 37 add\_url\_rule和app.route原理剖析
   * 38 标准类视图及其使用场景
