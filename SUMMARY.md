@@ -29,4 +29,7 @@
   * 24 九九乘法表
   * [25 宏的概念和基本使用](chapter1/25-hong-de-gai-nian-he-ji-ben-shi-yong.md)
   * 26 宏的导入和注意事项
+  * 27 include标签使用详解
+  * 28 set和with语句以及模板中定义变量
+  * 29 加载静态文件
 
