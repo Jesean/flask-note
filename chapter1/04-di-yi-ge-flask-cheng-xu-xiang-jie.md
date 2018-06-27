@@ -29,6 +29,8 @@ def hello_world():
 if __name__ == '__main__':
 # app.run() flask中的一个测试应用服务器
     app.run()
+    # 改变启动端口
+    # app.run(port=port)
 ```
 
 
