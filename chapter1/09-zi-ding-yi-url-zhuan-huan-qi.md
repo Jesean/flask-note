@@ -41,5 +41,64 @@ if __name__ == '__main__':
 
 #### 'to\_url'的作用:这个方法的返回值，将会在调用url\_for函数的时候生成符合要求的URL形式
 
+---
 
+```
+@app.route('/')
+def hello_world():
+    print(url_for('posts',bords=['a','b']))
+    return 'Hello World!'
+```
+
+![](/assets/09-3.png)
+
+```
+from flask import Flask, url_for
+from werkzeug.routing import BaseConverter
+
+app = Flask(__name__)
+
+class TelephoneConveter(BaseConverter):
+    regex = r"1[85734]\d{9}"
+
+# 用户访问/post/a+b/
+class ListConverter(BaseConverter):
+    def to_python(self,value):
+        # return "hello"
+        return value.split('+')
+
+    def to_url(self,value):
+        print(value)
+        return "+".join(value)
+        # return 'hello'
+
+app.url_map.converters["te1"] = TelephoneConveter
+app.url_map.converters['list'] = ListConverter
+
+# @app.route('/telephone/<te1:my_tel>/')
+# def my_tel(my_tel):
+#     return "手机号:%s" % my_tel
+#
+# @app.route('/')
+# def hello_world():
+#     print(url_for('posts',bords=['a','b']))
+#     return 'Hello World!'
+
+@app.route('/user/<int:user_id>/')
+def user_profile(user_id):
+    print("用户id：%s" % user_id)
+    return "用户id：%s" % user_id
+
+@app.route('/posts/<list:bords>/')
+def posts(bords):
+    # bords = bords.split('+')
+    print(bords)
+    return "提交的版块:%s" % bords
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+```
+
+![](/assets/09-4.png)
 
