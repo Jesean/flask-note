@@ -24,7 +24,8 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!'
 
-
+# 如果这个文件作为一个主文件运行，那么就执行app.run()方法
+# 也就是启动这个网站
 if __name__ == '__main__':
     app.run()
 ```
