@@ -43,12 +43,11 @@ if __name__ == '__main__':
 
 ---
 
-```
-@app.route('/')
-def hello_world():
-    print(url_for('posts',bords=['a','b']))
-    return 'Hello World!'
-```
+url\_for\(函数,bords=\['a','a1'\]\)
+
+bords参数:能够将参数传到to\_url中，然后返回
+
+
 
 ![](/assets/09-3.png)
 
@@ -97,7 +96,6 @@ def posts(bords):
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 ![](/assets/09-4.png)
