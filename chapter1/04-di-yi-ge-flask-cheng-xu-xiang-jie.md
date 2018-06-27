@@ -16,6 +16,9 @@ from flask import Flask
 # 具体的错误位置
 app = Flask(__name__)
 
+# @app.route 是一个装饰器
+# @app.route('/')就是将url中的/映射hello_world这个视图函数上面，以后访问网站的/目录的时候，会执行
+# hello_world这个函数，然后将这个函数的返回值返回给浏览器
 
 @app.route('/')
 def hello_world():
@@ -24,7 +27,6 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run()
-
 ```
 
 
