@@ -7,7 +7,7 @@
   * [03 web服务器和应用](chapter1/03-webfu-wu-qi-he-ying-yong.md)
   * [04 第一个flask程序详解](chapter1/04-di-yi-ge-flask-cheng-xu-xiang-jie.md)
   * [05 debug模式详解](chapter1/05-debugmo-shi-xiang-jie.md)
-  * 06 配置文件两种方式详解
+  * [06 配置文件两种方式详解](chapter1/06-pei-zhi-wen-jian-liang-zhong-fang-shi-xiang-jie.md)
   * 07 URL中两种方式传参
   * 08 url\_for使用详解
   * 09 自定义URL转换器
