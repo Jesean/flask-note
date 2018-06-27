@@ -16,6 +16,17 @@ path:和string的类似，但是接受斜杠
 
 uuid:只接受uuid字符串\(唯一,长度过长\)。'uuid'只能接受符合'uuid'的字符擦混,'uuid'是一个唯一的字符串，用于做表的主键
 
+```
+import uuid
+print(uuid.uuid4())
+
+@app.route('/u/<uuid:user_id>/')
+def user_detail(user_id):
+    return "用户个人中心页面:%s" % user_id
+```
+
+
+
 any:可以指定多种路径。'any'数据类型可以在一个"url"中的指定多个路径
 
 通过一个例子来进行说明
@@ -55,4 +66,14 @@ def d():
 ```
 
 ![](/assets/07接收用户参数.png)
+
+3.如果页面要做"SEO"优化,推荐使用"path"形式
+
+如果不在搜索引擎优化，就是用查询字符串
+
+---
+
+
+
+
 
