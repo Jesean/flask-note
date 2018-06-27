@@ -33,7 +33,6 @@ def my_tel(my_tel):
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 ![](/assets/09-1.png)
