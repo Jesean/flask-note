@@ -15,15 +15,17 @@
   * [11 重定向详解](chapter1/11-zhong-ding-xiang-xiang-jie.md)
   * [12 重定向详解](chapter1/12-zhong-ding-xiang-xiang-jie.md)
   * [13 视图函数Response返回值详解](chapter1/13-shi-tu-hanshu-response-fan-hui-zhi-xiang-jie.md)
-  * [2.Jinja2模板](2jinja2mo-ban.md)
-    * 14 Jinja2模板介绍
-    * 15 模板传参及其技巧
-    * 16 模板中使用url\_for
-    * [17 过滤器基本使用](chapter1/17-guo-lv-qi-ji-ben-shi-yong.md)
-    * [18 default过滤器详解](chapter1/18-defaultguo-lv-qi-xiang-jie.md)
-    * 19 常用过滤器讲解
-    * 20 自定义过滤器
-    * 21 自定义时间处理过滤器案例
-    * 22 if
-    * [23 for循环语句详解](chapter1/23-forxun-huan-yu-ju-xiang-jie.md)
+* [2.Jinja2模板](2jinja2mo-ban.md)
+  * 14 Jinja2模板介绍
+  * 15 模板传参及其技巧
+  * 16 模板中使用url\_for
+  * [17 过滤器基本使用](chapter1/17-guo-lv-qi-ji-ben-shi-yong.md)
+  * [18 default过滤器详解](chapter1/18-defaultguo-lv-qi-xiang-jie.md)
+  * 19 常用过滤器讲解
+  * 20 自定义过滤器
+  * 21 自定义时间处理过滤器案例
+  * 22 if
+  * [23 for循环语句详解](chapter1/23-forxun-huan-yu-ju-xiang-jie.md)
+  * 24 九九乘法表
+  * [25 宏的概念和基本使用](chapter1/25-hong-de-gai-nian-he-ji-ben-shi-yong.md)
 
