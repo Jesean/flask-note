@@ -11,45 +11,35 @@ pip intall flask
 
 ---
 
-## 
+## 创建虚拟环境
 
-## \# 创建虚拟环境
+mkvirtualenv my\_env
 
-## mkvirtualenv my\_env
+## 切换到某个虚拟环境
 
-## 
+worken my\_env
 
-## \# 切换到某个虚拟环境
+## 退出当前虚拟环境
 
-## worken my\_env
+deactivate
 
-## 
+## 列出虚拟环境
 
-## \# 退出当前虚拟环境
+lsvirtualenv
 
-## deactivate
+## 进入到虚拟环境所在的目录
 
-## 
+cdvirtualenv
 
-## \# 列出虚拟环境
+## 修改mkvirtualenv的默认路径
 
-## lsvirtualenv
+mkvirtualenv --python=python-path my\_env
 
-## 
+---
 
-## \# 进入到虚拟环境所在的目录
+## 检查flask版本
 
-## cdvirtualenv
-
-## 
-
-## \# 修改mkvirtualenv的默认路径
-
-## mkvirtualenv --python=python-path my\_env
-
-## 
-
-## flask.\_\_version\_\_ \#版本
+flask.\_\_version\_\_ 
 
 
 
