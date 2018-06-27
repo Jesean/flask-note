@@ -6,3 +6,37 @@
 
 2.如果开启了debug模式，那么以后在python代码中修改了任何代码，只要按"ctrl+s"，'flask'就会自动的重新记载整个网站，不需要手动点击重新运行。
 
+---
+
+### 配置debug模型的四种方式
+
+1.在'app.run\(\)'中传递一个参数'debug=True'就可以开启'DEBUG'模式
+
+1.1.app.run\(debug=True\) 
+
+
+
+2.给'app.debug=True'也可以开启'debug'模式
+
+2.1.app.debug = True    
+
+
+
+3.通过配置参数的形式设置DEBUG模式,'app.config.update\(DEBUG=True\)'
+
+3.1.app.config.update\(DEBUG=True\)   
+
+
+
+4.通过配置文件的形式设置DEBUG模式:'app.config.from\_object\(config\)'
+
+---
+
+### PING码
+
+如果想要在网页上调试代码，name应该输入'PIN'码
+
+
+
+
+
