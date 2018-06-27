@@ -73,5 +73,65 @@ def d():
 
 ---
 
+```
+from flask import Flask,request
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+@app.route('/list/')
+def article_list():
+    return 'article_list'
+
+# @app.route('/article/<article_id>/')
+# def article_detail(article_id):
+#     return 'successful，位置%s' % article_id
+
+# @app.route('/p/<int:article_id>')
+@app.route('/p/<float:article_id>')
+def article_detail(article_id):
+    return 'successful，位置%s' % article_id
+
+# @app.route('/article/test/')
+# @app.route('/article/<string:test>/')
+@app.route('/article/<path:test>/')
+def test_article(test):
+    return 'test_article %s' % test
+
+@app.route('/u/<uuid:user_id>/')
+def user_detail(user_id):
+    return '用户个人中心页面:%s' % user_id
+
+# /blog/<id>/
+# /user/<id>/
+@app.route('/<any(blog,user):url_path>/<id>/')
+def detail(url_path,id):
+    if url_path == 'blog':
+        return '博客详情：%s' % id
+    else:
+        return '用户详情:%s' % id
+
+# 通过问好的形式传递参数
+@app.route('/d/')
+def d():
+    wd = request.args.get('wd')
+    ie = request.args.get('ie')
+    print(wd,id,end='')
+    return '查询字符串参数:%s %s' % (wd,ie)
+
+# import uuid
+# print(uuid.uuid4())
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+```
+
 
 
