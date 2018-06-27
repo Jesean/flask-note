@@ -25,7 +25,7 @@ def user_detail(user_id):
     return "用户个人中心页面:%s" % user_id
 ```
 
-
+![](/assets/07uuid.png)
 
 any:可以指定多种路径。'any'数据类型可以在一个"url"中的指定多个路径
 
@@ -72,8 +72,6 @@ def d():
 如果不在搜索引擎优化，就是用查询字符串
 
 ---
-
-
 
 
 
