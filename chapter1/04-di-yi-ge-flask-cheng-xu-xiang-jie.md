@@ -1,0 +1,31 @@
+## flask入门
+
+从flask这个包中导入flask这个类
+
+flask这个类是项目的核心，以后很多操作都是基于这个类的对象
+
+注册url，注册蓝图都是基于这个类的对象
+
+```
+from flask import Flask
+
+# 创建一个flask对象，传递__name__参数进去
+# __name__参数的作用
+# 1.可以规定规模和静态文件的查找路径
+# 2.以后一些flask插件，比如Flask-migrate,Flask-SQLAlchemy如果报错，那么flask可以通过这个参数找到
+# 具体的错误位置
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+
+if __name__ == '__main__':
+    app.run()
+
+```
+
+
+
