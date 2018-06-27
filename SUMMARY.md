@@ -32,4 +32,5 @@
   * 27 include标签使用详解
   * 28 set和with语句以及模板中定义变量
   * 29 加载静态文件
+  * [30 模板继承详解](chapter1/30-mo-ban-ji-cheng-xiang-jie.md)
 
