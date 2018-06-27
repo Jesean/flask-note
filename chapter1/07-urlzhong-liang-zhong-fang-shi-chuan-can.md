@@ -18,9 +18,39 @@ uuid:只接受uuid字符串\(唯一,长度过长\)。'uuid'只能接受符合'uu
 
 any:可以指定多种路径。'any'数据类型可以在一个"url"中的指定多个路径
 
+通过一个例子来进行说明
+
+```
+from flask import Flask, config
+
+app = Flask(__name__)
+
+@app.route('/<any(blog,user):url_path>/<id>')
+def detail(url_path,id):
+    if url_path == "blog":
+        return "博客详情:%s" % id
+    else:
+        return "用户详情:%s" % id
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+```
+
+![](/assets/07博客.png)
+
+![](/assets/07用户.png)
+
 ---
 
-### 通过一个例子来进行说明
+## 接收用户传递的参数
+
+1. 第一种:使用path的形式\(将参数嵌入到路径中\)
+2. 第二种:使用查询字符串的方式，就是通过"?key=value"的形式传递的
+
+```
+
+```
 
 
 
