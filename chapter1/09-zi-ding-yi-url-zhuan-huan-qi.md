@@ -47,7 +47,12 @@ url\_for\(函数,bords=\['a','a1'\]\)
 
 bords参数:能够将参数传到to\_url中，然后返回
 
-
+```
+@app.route('/')
+def hello_world():
+    print(url_for('posts',bords=['a','b']))
+    return 'Hello World!'
+```
 
 ![](/assets/09-3.png)
 
