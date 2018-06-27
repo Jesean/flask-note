@@ -5,7 +5,7 @@
   * [01 笔记](chapter1/01bi-ji.md)
   * [02 url 详解](chapter1/02-url-xiang-jie.md)
   * [03 web服务器和应用](chapter1/03-webfu-wu-qi-he-ying-yong.md)
-  * 04 第一个flask程序详解
+  * [04 第一个flask程序详解](chapter1/04-di-yi-ge-flask-cheng-xu-xiang-jie.md)
   * 05 debug模式详解
   * 06 配置文件两种方式详解
   * 07 URL中两种方式传参
