@@ -49,8 +49,6 @@ Jinja2中内置了许多过滤器，在这里可以看到所有的过滤器，�
 
 * wordcount\(s\):计算一个长字符串中单词的个数
 
-
-
 ```
 from datetime import datetime
 from flask import Flask, render_template, url_for
@@ -120,8 +118,7 @@ def handle_time(time):
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
-
+![](file:///C:\Users\miku\AppData\Roaming\Tencent\Users\1479852727\QQ\WinTemp\RichOle\}833I}0W8I`]%29H[SS0T8CU4.png)
 
