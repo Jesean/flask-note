@@ -1,4 +1,4 @@
-## Jinja2模板过滤器
+Jinja2模板过滤器
 
 _网址：http://jinja.pocoo.org/docs/2.10/_
 
@@ -20,7 +20,7 @@ Jinja2中内置了许多过滤器，在这里可以看到所有的过滤器，�
 
 * format\(value,\*args,\*\*kwargs\):格式化字符串。例如以下代码:
 
-{{"%s" - "%s"\|format\('hello?','foo!'\)}} 将输出:hello? - foo!
+{{"%s" - "%s"\|format\('hello?','foo!'\)}} 将输出:hello? - foo!
 
 * last\(value\):返回一个序列的最后一个元素。示例:names\|last。
 
