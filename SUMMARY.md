@@ -15,7 +15,7 @@
   * [11-12 重定向详解](chapter1/11-zhong-ding-xiang-xiang-jie.md)
   * [13 视图函数Response返回值详解](chapter1/13-shi-tu-hanshu-response-fan-hui-zhi-xiang-jie.md)
 * [2.Jinja2模板](2jinja2mo-ban.md)
-  * 14 Jinja2模板介绍
+  * [14 Jinja2模板介绍](chapter1/14-jinja2mo-ban-jie-shao.md)
   * 15 模板传参及其技巧
   * 16 模板中使用url\_for
   * [17 过滤器基本使用](chapter1/17-guo-lv-qi-ji-ben-shi-yong.md)
