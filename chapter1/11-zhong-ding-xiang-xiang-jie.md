@@ -35,5 +35,5 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-
+![](/assets/11-redirect-1.png)
 
