@@ -122,3 +122,51 @@ if __name__ == '__main__':
 
 ![](file:///C:\Users\miku\AppData\Roaming\Tencent\Users\1479852727\QQ\WinTemp\RichOle\}833I}0W8I`]%29H[SS0T8CU4.png)
 
+```
+index.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>miku</title>
+</head>
+<body>
+{#     <p>position:{{ position }}</p>#}
+{#     <p>个数:{{ position|wordcount }}</p>#}
+     <p>----------------------------</p>
+     <p>signature:{{ signature|default("Angle","boolean") }}</p>
+     <p>signature:{{ signature|default("Angle",boolean=True) }}</p>
+     <p>{{ signature }}</p>
+     <p>{{ signature or 'angle' }}</p>
+     <p>----------------</p>
+     <p>{{ article|my_cut }}</p>
+     <p>{{ article }}</p>
+     <p>-----------------</p>
+     <div>
+       {% autoescape off %}
+         <!--禁止转义-->
+            <p>个性签名:{{ signature|escape}}</p>
+            <!--转义-->
+            <p>个性签名:{{ signature|safe}}</p>
+       {% endautoescape %}
+         <p>---------------</p>
+         {{ "%s"|format(signature) }}
+         {{ persons|length }}
+         <p>----------</p>
+         {% if age|int == 18 %}
+            <p>成年</p>
+         {% else %}
+            <p>未成年</p>
+         {% endif %}
+     # 去掉HTML元素标签
+     <p>{{ signature|striptags }}</p>
+     </div>
+     <p>发表时间:{{ create_time|handle_time }}</p>
+</body>
+</html>
+```
+
+
+
