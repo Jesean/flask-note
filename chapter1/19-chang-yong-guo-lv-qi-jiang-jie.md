@@ -137,8 +137,8 @@
 
     """Jinja2
     {% autoescape off/on%}
-    	{{xxx|safe}}
-    	{{XXX|escape}}
+        {{xxx|safe}}
+        {{XXX|escape}}
     {% endautoescape%}
     """
 
