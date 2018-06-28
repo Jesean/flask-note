@@ -4,7 +4,6 @@ _网址：http://jinja.pocoo.org/docs/2.10/_
 
 _http://jinja.pocoo.org/docs/2.10/templates/\#builtin-filters_
 
-__
 
 过滤器是通过管道符号\(\|\)进行使用的，例如:\(\(name\|length\)\),将返回name的长度。过滤器相当于是一个函数，把当前的变量传入到过滤器中，然后过滤器根据自己的功能，再返回响应的值，之后再将结果渲染到页面中。
 
