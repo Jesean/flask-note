@@ -21,7 +21,40 @@ def login(id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+```
 
+```
+inde.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{#    <a href="/acounts/login/">登录</a>#}
+{#  {{ 用来存放变量 }}#}
+{# {% 用来执行函数或者逻辑代码 %} #}
+<p><a href="{{ url_for('login',ref='/',id=1)}}">登录</a></p>
+</body>
+</html>
+```
+
+```
+login.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+登录页面
+</body>
+</html>
 ```
 
 
