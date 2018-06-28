@@ -34,5 +34,64 @@
 3. 指定'app.response\_class'为自定义的'Response'对象
 4. 如果视图返回的数据，不是字符串，也不是元组，也不是Response，那么就会将返回值传给'force\_type',然后'force\_type'的返回值返回给前端
 
+```
+from flask import Flask, Response, jsonify
+
+# from werkzeug.wrappers import Response
+# flask = werkzeug + sqlalchemy + jinja2
+
+app = Flask(__name__)
+
+# 将视图函数中返回的字典，转换成json对象，然后返回
+class JSONResponse(Response):
+
+    @classmethod
+    def force_type(cls, response, environ=None):
+        """
+        这个方法只有视图函数返回非字符，非元组，非Response对象才会调用
+        :param response:
+        :param environ:
+        :return:
+        response，视图函数的返回值
+        """
+        print(response)
+        if isinstance(response,dict):
+            # 转换
+            response = jsonify(response)
+        return super(JSONResponse,cls).force_type(response,environ)
+
+# 添加response类，一定要添加
+app.response_class = JSONResponse
+
+@app.route('/')
+def hello_world():
+    # return 'Hello World!'
+    return Response('Hello World',status=200,mimetype='text/html')
+
+# 设置cookie
+@app.route('/list1/')
+def list1():
+    # return {"username":"miku"}
+    # return ['a','b']
+    # 以上数据不接回调，会报错
+    resp = Response("list1")
+    resp.set_cookie("miku","angle")
+    return resp
+
+# 添加响应头
+@app.route('/list2/')
+def list2():
+    return "list2",200,{"X-NAME":"MIKU","Server":"windows2003"}
+
+# json，非字符，非元组
+@app.route('/list3/')
+def list3():
+    return {"username":"miku","age":16}
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+```
+
 
 
