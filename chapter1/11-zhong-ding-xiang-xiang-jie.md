@@ -16,7 +16,6 @@ _暂时性重定向_:http的状态码是302，表示页面的暂时性跳转。�
 
 ```
 from flask import Flask, url_for, request, redirect
-from werkzeug.routing import BaseConverter
 
 app = Flask(__name__)
 
@@ -34,7 +33,6 @@ def profile():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 
