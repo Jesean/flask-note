@@ -23,3 +23,32 @@
 
 ![](file:///C:\Users\miku\AppData\Roaming\Tencent\Users\1479852727\QQ\WinTemp\RichOle\3MD6G{BO5O~QID%29[OAKE_X7.png)
 
+```
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIKU</title>
+</head>
+<body>
+    这是从模板中渲染的数据
+{#    <p>{{ context.username }}</p>#}
+{#    <p>{{ context.age }}</p>#}
+{#    <p>{{ context.contry }}</p>#}
+
+    <p>{{ username }}</p>
+    <p>{{ age }}</p>
+    <p>{{ contry }}</p>
+    <p>{{ childrens }}</p>
+    <p>{{ childrens.name }}</p>
+    <p>{{ childrens['name'] }}</p>
+</body>
+</html>
+```
+
+
+
+
+
