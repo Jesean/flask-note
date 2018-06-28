@@ -17,5 +17,24 @@
 * 必须实现类方法force\_type\(cls,rv,environ=None\)
 * 必须制定app.response\_clss为自定义的Response
 
+---
+
+## Reponse
+
+### 视图函数中可以返回那些值
+
+1. 可以返回字符串:返回的字符串其实是底层将这个字符串包装成了一个'Response'对象
+2. 可以返回元组:元组的形式是\(响应体，状态码，头部信息，返回的元组在底层包装成了一个'Response'对象\)
+3. 可以返回'Reponse'及其子类
+
+
+
+### 实现一个自定义的Reponse对象:
+
+1. 继承'Response'类
+2. 实现方法'force\_type\(cls,rv,envison=None\)'
+3. 指定'app.response\_class'为自定义的'Response'对象
+4. 如果视图返回的数据，不是字符串，也不是元组，也不是Response，那么就会将返回值传给'force_type',然后'force_type'的返回值返回给前端
+
 
 
