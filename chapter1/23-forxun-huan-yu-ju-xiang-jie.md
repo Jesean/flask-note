@@ -123,6 +123,51 @@ index.html
 ```
 
 ```
+from flask import Flask,render_template
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def index():
+
+    context = {
+        'users':['miku1','miku2','miku3'],
+        # 'users':[],
+        'person':{
+            'username':'miku',
+            'age':15,
+            'flower':'1',
+        },
+        'books':[
+            {
+                'name':'miku1',
+                'author':'angle1',
+                'price':111,
+            },
+            {
+                'name': 'miku2',
+                'author': 'angle2',
+                'price': 112,
+            },
+            {
+                'name': 'miku3',
+                'author': 'angle3',
+                'price': 113,
+            },
+            {
+                'name': 'miku4',
+                'author': 'angle4',
+                'price': 114,
+            },
+        ]
+    }
+    # keys(),values(),items() --> iter
+    return render_template("index.html",**context)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 ```
 
