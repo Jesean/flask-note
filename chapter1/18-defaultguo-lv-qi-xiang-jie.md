@@ -1,4 +1,4 @@
-###  常用过滤器：
+### 常用过滤器：
 
 ##### 'default'过滤器:
 
@@ -7,5 +7,5 @@
 可以使用'or' 来替代 'default\('默认值',boolean=True\)'  
 例如:''.
 
-其余见上一节
+[其余见上一节](/chapter1/17-guo-lv-qi-ji-ben-shi-yong.md)
 
