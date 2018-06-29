@@ -23,7 +23,51 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
+```
 
+
+
+```
+index.html
+
+
+{% import "macros/macros.html" as macros %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宏</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>用户名:</td>
+                <td>{{ macros.input("username") }}</td>
+            </tr>
+            <tr>
+                <td>密码:</td>
+                <td>{{ macros.input(name="password",type="password") }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>{{ macros.input(value="提交",type="submit") }}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+
+
+```
+macors.html
+
+{% macro input(name="",value="",type="text") %}
+    <input type="{{ type }}" name="{{ name }}" value="{{ value }}"/>
+{% endmacro %}
 ```
 
 
