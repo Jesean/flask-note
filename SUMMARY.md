@@ -29,7 +29,7 @@
   * [25 宏的概念和基本使用](chapter1/25-hong-de-gai-nian-he-ji-ben-shi-yong.md)
   * [26 宏的导入和注意事项](chapter1/26-hong-de-dao-ru-he-zhu-yi-shi-xiang.md)
   * [27 include标签使用详解](chapter1/27-includebiao-qian-shi-yong-xiang-jie.md)
-  * 28 set和with语句以及模板中定义变量
+  * [28 set和with语句以及模板中定义变量](chapter1/28-sethe-with-yu-ju-yi-ji-mo-ban-zhong-ding-yi-bian-liang.md)
   * 29 加载静态文件
   * [30 模板继承详解](chapter1/30-mo-ban-ji-cheng-xiang-jie.md)
   * 31-36 豆瓣微信小程序案例
