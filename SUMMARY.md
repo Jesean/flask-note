@@ -28,7 +28,7 @@
   * [24 九九乘法表](chapter1/24-jiu-jiu-cheng-fa-biao.md)
   * [25 宏的概念和基本使用](chapter1/25-hong-de-gai-nian-he-ji-ben-shi-yong.md)
   * [26 宏的导入和注意事项](chapter1/26-hong-de-dao-ru-he-zhu-yi-shi-xiang.md)
-  * 27 include标签使用详解
+  * [27 include标签使用详解](chapter1/27-includebiao-qian-shi-yong-xiang-jie.md)
   * 28 set和with语句以及模板中定义变量
   * 29 加载静态文件
   * [30 模板继承详解](chapter1/30-mo-ban-ji-cheng-xiang-jie.md)

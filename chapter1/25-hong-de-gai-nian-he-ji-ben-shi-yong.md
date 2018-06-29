@@ -25,8 +25,6 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-
-
 ```
 index.html
 
@@ -60,8 +58,6 @@ index.html
 </html>
 ```
 
-
-
 ```
 macors.html
 
@@ -70,5 +66,5 @@ macors.html
 {% endmacro %}
 ```
 
-
+![](/assets/2.5宏的概念-1.png)
 
