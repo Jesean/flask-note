@@ -67,7 +67,17 @@
 {% block title %}
     miku
 {% endblock %}
+
+{% block body_block %}
+{{super()}}
+{{self.title()}}
+<p style="background:pink;">我是子模版中的代码</p>
 ```
+
+### 其他注意事项
+
+1. 子模板中的代码，第一行，应该是"extends"
+2. 子模板中，如果要实现自己的代码，应该放到block中。如果放到其他地方，则不会被渲染
 
 
 
