@@ -68,5 +68,13 @@ common/course_detail.html
 </html>
 ```
 
+```
+footer.html
+
+<footer>
+    这是底部的
+</footer>
+```
+
 
 
