@@ -79,5 +79,79 @@
 1. 子模板中的代码，第一行，应该是"extends"
 2. 子模板中，如果要实现自己的代码，应该放到block中。如果放到其他地方，则不会被渲染
 
+```
+app.py
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+app.config.update({
+    "TEMPLATES_AUTO_RELOAD":True,
+    "DENUG":True,
+})
+
+@app.route("/")
+def hello_word():
+    return render_template("index.html")
+
+@app.route("/list/")
+def my_list():
+    return render_template("course_detail.html")
+
+if __name__ == '__main__':
+    # app.run(debug=True)
+    app.run(host="0.0.0.0")
+```
+
+
+
+```
+base.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        .nav ul{
+            overflow: hidden;
+        }
+        .nav ul li{
+            float: left;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li>首页</li>
+            <li>课程详情</li>
+            <li>视频教程</li>
+            <li>关于我们</li>
+            <li>{{ username }}</li>
+        </ul>
+    </nav>
+    {% block body_block %}
+        <p style="background:red;">这是父模板的代码</p>
+    {% endblock %}
+    <footer>
+        这是底部
+    </footer>
+</body>
+</html>
+```
+
+```
+course_detail.html
+
+{% extends 'base.html' %}
+
+{% block body_block %}
+    课程详情代码
+{% endblock %}
+```
+
 
 
