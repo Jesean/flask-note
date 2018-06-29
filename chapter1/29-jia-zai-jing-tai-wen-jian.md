@@ -31,3 +31,38 @@ if __name__ == '__main__':
 
 
 
+```
+static/css/index.css
+
+
+body{
+    background-color:pink;
+}
+```
+
+```
+static/js/index.js
+
+alert("hello world")
+```
+
+```
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+</head>
+<body>
+    <p></p>
+
+</body>
+</html>
+```
+
+
+
