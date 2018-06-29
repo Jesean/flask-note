@@ -39,15 +39,11 @@
 {% block body_block %}
 
 
-<
-p style="background-color:red;"
->
+<p style="background-color:red;">
 
 这是父模板的代码
 
-<
-/p
->
+</p>
 
 {% endblock %}
 
@@ -56,13 +52,9 @@ p style="background-color:red;"
 {% block body_block %}
 {{super()}}
 
-<
-p style="background:pink;"
->
+<p style="background:pink;">
 我是子模板中的代码
-<
-/p
->
+</p>
 
 {% endblock %}
 ```
