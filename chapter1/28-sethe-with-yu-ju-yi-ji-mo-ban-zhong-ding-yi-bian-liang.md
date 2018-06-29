@@ -9,7 +9,6 @@
 ```
 
 ```
-
 """html
 
 <!--定义变量-->
@@ -33,10 +32,28 @@
 'with'语句也不一定要跟一个变量，可以定义一个空的'with'语句，以后在'with'块中通过'set'定义的变，就只能在这个'with'块中使用了:
 """html
 {% with %}
-	{% set classroom = "1班" %}
-	<p>班级:{{classroom}}</p>
+    {% set classroom = "1班" %}
+    <p>班级:{{classroom}}</p>
 {% endwith %}
 """
+```
+
+```
+app.py
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+app.config["TEMPLATES_ATUO_RELOAD"] = True
+
+@app.route('/')
+def hello_world():
+    return render_template("index.html")
+
+
+if __name__ == '__main__':
+    # app.run(debug=True)
+    app.run(host="0.0.0.0")
 ```
 
 
