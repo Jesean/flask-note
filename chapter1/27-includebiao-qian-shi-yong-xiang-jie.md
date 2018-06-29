@@ -76,5 +76,28 @@ footer.html
 </footer>
 ```
 
+```
+header.html
+
+<style type="text/css">
+    .nav ul{
+        overflow:hidden;
+    }
+    .nav ul li{
+        float: left;
+        margin: 0 20px;
+    }
+</style>
+
+<nav class="nav">
+    <ul>
+        <li>首页</li>
+        <li>课程详情</li>
+        <li>视频教程</li>
+        <li>关于我们</li>
+    </ul>
+</nav>
+```
+
 
 
