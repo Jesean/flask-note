@@ -37,15 +37,17 @@
 
 ```
 {% block body_block %}
-    
-<
-p style="background-color:red;"
->
-这是父模板的代码
-<
-/p
->
 
+<p style="background-color:red;">
+这是父模板的代码
+</p>
+{% endblock %}
+
+
+{% extends "base.html"%}
+{% block body_block %}
+{{super()}}
+<p style="background:pink;"></p>
 {% endblock %}
 ```
 
