@@ -27,7 +27,7 @@
   * [23 for循环语句详解](chapter1/23-forxun-huan-yu-ju-xiang-jie.md)
   * [24 九九乘法表](chapter1/24-jiu-jiu-cheng-fa-biao.md)
   * [25 宏的概念和基本使用](chapter1/25-hong-de-gai-nian-he-ji-ben-shi-yong.md)
-  * 26 宏的导入和注意事项
+  * [26 宏的导入和注意事项](chapter1/26-hong-de-dao-ru-he-zhu-yi-shi-xiang.md)
   * 27 include标签使用详解
   * 28 set和with语句以及模板中定义变量
   * 29 加载静态文件
