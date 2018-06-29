@@ -28,7 +28,6 @@ def detail():
 
 if __name__ == '__main__':
     app.run()
-
 ```
 
 ```
@@ -48,6 +47,23 @@ index.html
             </div>
         {% include "common/footer.html" %}
     </div>
+</body>
+</html>
+```
+
+```
+common/course_detail.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% include "common/header.html" %}
+    详情页
+    {% include "common/footer.html" %}
 </body>
 </html>
 ```
