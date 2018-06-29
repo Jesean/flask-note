@@ -16,8 +16,6 @@
 {% from 'macros/macros.html' import input with context %}
 ```
 
-with context --&gt;
-
 ![](/assets/2.6-hong.png)
 
 ![](/assets/26.-hong.png)
