@@ -56,5 +56,29 @@ if __name__ == '__main__':
     app.run(host="0.0.0.0")
 ```
 
+```
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--定义变量-->
+    {% set username="angle" %}
+    <p>用户名:{{ username }}</p>
+
+    <div>
+        {% with classroom="angle" %}
+            <p>名字:{{ classroom }}</p>
+        {% endwith %}
+    {{ classroom }}
+    </div>
+</body>
+</html>
+```
+
 
 
