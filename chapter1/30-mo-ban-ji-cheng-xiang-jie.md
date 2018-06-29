@@ -47,7 +47,7 @@
 {% extends "base.html"%}
 {% block body_block %}
 {{super()}}
-<p style="background:pink;"></p>
+<p style="background:pink;">我是子模板中的代码</p>
 {% endblock %}
 ```
 
