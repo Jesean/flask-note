@@ -103,8 +103,6 @@ if __name__ == '__main__':
     app.run(host="0.0.0.0")
 ```
 
-
-
 ```
 base.html
 
@@ -150,6 +148,22 @@ course_detail.html
 
 {% block body_block %}
     课程详情代码
+{% endblock %}
+```
+
+```
+index.html
+
+{% extends 'base.html' %}
+
+{% block title %}
+miku
+{% endblock %}
+
+{% block body_block %}
+    {{ super() }}
+    {{ self.title() }}
+    <p style="background:pink;">我是子模板中的代码</p>
 {% endblock %}
 ```
 
