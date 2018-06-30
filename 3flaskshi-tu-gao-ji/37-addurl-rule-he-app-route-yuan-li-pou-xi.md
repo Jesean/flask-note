@@ -6,5 +6,44 @@
 
 ### app.route\(rule,\*\*oprions\)装饰器
 
-这个装饰器，其实也是使用"add_url_rule"来实现url与视图函数映射的
+这个装饰器，其实也是使用"add\_url\_rule"来实现url与视图函数映射的
+
+```
+app.py
+
+from flask import Flask, url_for
+
+app = Flask(__name__)
+
+# endpoint='index' == > **options
+@app.route('/',endpoint="index") # ==> decorator
+# @decorator
+def hello_world():
+    # print(url_for("my_list"))
+    print(url_for("miku"))
+    return 'Hello World!'
+# decorator(hello_world)
+
+def my_list():
+    return "列表页"
+
+# view_func:视图函数
+# rule:路由
+# endpoint:可以配合url_for使用
+# endpoint:为url去一个名字
+
+# app.add_url_rule(rule="/list/",view_func=my_list)
+app.add_url_rule(rule="/list/",endpoint="miku",view_func=my_list)
+
+with app.test_request_context():
+    print(url_for("index"))
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+```
+
+
+
+
 
