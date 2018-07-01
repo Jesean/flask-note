@@ -33,5 +33,5 @@ with engine.connect() as conn:
     print(rs.fetchone())
 ```
 
-首先从sqlalchemy中导入create_engine,用这个函数来创建引擎，然后用engine.coonect\(\)来连接数据库。其中一个比较重要的一点是，通过create_e
+首先从sqlalchemy中导入create\_engine,用这个函数来创建引擎，然后用engine.coonect\(\)来连接数据库。其中一个比较重要的一点是，通过create\_engine函数的时候，需要传递一个满足某种格式的字符串，对这个字符串的格式来进行解释
 
