@@ -100,3 +100,80 @@ app.add_url_rule('/list/',endpoint='list',view_func=ListView.as_view('list'))
 
 ![](/assets/38.img1.png)
 
+
+
+```
+# 有几个url需要返回json数据，“需要用jsonify”
+class JSONView(views.View):
+    def get_data(self):
+        raise NotImplementedError
+
+    def dispatch_request(self):
+        return jsonify(self.get_data())
+
+# #将视图函数中返回的字典，转换成json对象，然后返回
+# class JSONResponse(Response):
+#
+#     @classmethod
+#     def force_type(cls, response, environ=None):
+#         """
+#         这个方法只有视图函数返回非字符，非元组，非Response对象才会调用
+#         :param response:
+#         :param environ:
+#         :return:
+#         response，视图函数的返回值
+#         """
+#         print(response)
+#         if isinstance(response,dict):
+#         # 转换
+#             response = jsonify(response)
+#         return super(JSONResponse,cls).force_type(response,environ)
+
+# 添加response类，一定要添加
+# app.response_class = JSONResponse
+
+# 必须继承自views
+class ListView(JSONView):
+    def get_data(self):
+        return {"username":"angle"}
+
+```
+
+![](/assets/38.img2.png)
+
+```
+class LoginView(views.View):
+    def dispatch_request(self):
+        return render_template('login.html',ads='广告')
+
+class RegistView(views.View):
+    def dispatch_request(self):
+        return render_template('regist.html',ads='广告')
+
+app.add_url_rule(rule='/login/',view_func=LoginView.as_view('login'))
+app.add_url_rule(rule='/regist/',view_func=RegistView.as_view('regist'))
+
+
+
+
+class ADSView(views.View):
+    def __init__(self):
+        super(ADSView,self).__init__()
+        self.context = {
+            'ads':"广告"
+        }
+
+class LoginView(ADSView):
+    def dispatch_request(self):
+        return render_template('login.html',**self.context)
+
+class RegistView(views.View):
+    def dispatch_request(self):
+        return render_template('regist.html',**self.context)
+
+```
+
+
+
+
+
