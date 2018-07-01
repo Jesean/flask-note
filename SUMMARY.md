@@ -39,7 +39,7 @@
   * [39 基于调度方法的类视图](3flaskshi-tu-gao-ji/39-ji-yu-diao-du-fang-fa-de-lei-shi-tu.md)
   * [40 类视图中使用装饰器](3flaskshi-tu-gao-ji/40-lei-shi-tu-zhong-shi-yong-zhuang-shi-qi.md)
   * [41 蓝图的基本使用](3flaskshi-tu-gao-ji/41-lan-tu-de-ji-ben-shi-yong.md)
-  * 42 蓝图中模版文件寻找规则
+  * [42 蓝图中模版文件寻找规则](3flaskshi-tu-gao-ji/42-lan-tu-zhong-mo-ban-wen-jian-xun-zhao-gui-ze.md)
   * 43 蓝图中静态文件寻找规则
   * 44 url\_for反转蓝图注意事项
   * 45 子域名实现详解
