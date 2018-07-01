@@ -12,6 +12,11 @@ def hello_world():
     # url_for('指定蓝图名字.视图函数名字')
     print(url_for('news.news_list'))
     return render_template('index.html')
+    
+
+index.html
+
+<a href="{{ url_for('news.news_list') }}">点击</a>
 ```
 
 ![](/assets/44-1.png)
