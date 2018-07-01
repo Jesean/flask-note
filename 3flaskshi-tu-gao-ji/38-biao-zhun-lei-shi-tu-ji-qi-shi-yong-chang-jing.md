@@ -100,8 +100,6 @@ app.add_url_rule('/list/',endpoint='list',view_func=ListView.as_view('list'))
 
 ![](/assets/38.img1.png)
 
-
-
 ```
 # 有几个url需要返回json数据，“需要用jsonify”
 class JSONView(views.View):
@@ -136,26 +134,11 @@ class JSONView(views.View):
 class ListView(JSONView):
     def get_data(self):
         return {"username":"angle"}
-
 ```
 
 ![](/assets/38.img2.png)
 
 ```
-class LoginView(views.View):
-    def dispatch_request(self):
-        return render_template('login.html',ads='广告')
-
-class RegistView(views.View):
-    def dispatch_request(self):
-        return render_template('regist.html',ads='广告')
-
-app.add_url_rule(rule='/login/',view_func=LoginView.as_view('login'))
-app.add_url_rule(rule='/regist/',view_func=RegistView.as_view('regist'))
-
-
-
-
 class ADSView(views.View):
     def __init__(self):
         super(ADSView,self).__init__()
@@ -165,15 +148,15 @@ class ADSView(views.View):
 
 class LoginView(ADSView):
     def dispatch_request(self):
+        self.context.update({
+            'username':'login',
+        })
         return render_template('login.html',**self.context)
 
-class RegistView(views.View):
+class RegistView(ADSView):
     def dispatch_request(self):
         return render_template('regist.html',**self.context)
-
 ```
 
-
-
-
+![](/assets/38.login.png)
 
