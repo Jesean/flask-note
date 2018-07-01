@@ -18,6 +18,16 @@ app.add_url_rule(rule='/login/',view_func=LoginView.as_view('login'))
 
 ```
 class LoginView(views.MethodView):
+
+"""
+    def __render(self,error=None):
+        return render_template('login.html', error=error)
+
+    # get请求执行这个代码
+    def get(self):
+        return self.__render()
+"""
+
     # get请求执行这个代码
     def get(self,error=None):
         return render_template('login.html',error=error)
