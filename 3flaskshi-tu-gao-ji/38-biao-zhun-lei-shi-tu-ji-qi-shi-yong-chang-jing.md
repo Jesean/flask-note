@@ -85,5 +85,17 @@ class UserAPI(views.MethodView):
     ....
 ```
 
+---
 
+```
+# 必须继承自views
+class ListView(views.View):
+    def dispatch_request(self):
+        return "list view"
+
+# 类.as_view(name) 返回一个函数,name:视图名
+app.add_url_rule('/list/',endpoint='list',view_func=ListView.as_view('list'))
+```
+
+![](/assets/38.img1.png)
 
