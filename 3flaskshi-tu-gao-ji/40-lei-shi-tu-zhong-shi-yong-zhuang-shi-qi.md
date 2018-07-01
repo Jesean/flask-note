@@ -1,3 +1,7 @@
+### 类视图中的装饰器
+
+1. 如果
+
 ```
 from flask import Flask,request
 from functools import wraps
@@ -42,7 +46,6 @@ class ProfileView(views.View):
         return "个人中心界面"
 
 app.add_url_rule(rule='/profile/',view_func=ProfileView.as_view('profile'))
-
 ```
 
 
