@@ -68,6 +68,7 @@ def detail():
 * 蓝图的作用就是让flask项目更加模块化，结构更加清晰，可以将相同模块的视图函数放在同一个蓝图下，同一个文件中，方便管理
 
 * 基本语法:
+
 * 在蓝图文件中导入Blueprint：
 
 ```
@@ -87,7 +88,11 @@ from blueprints.user import user_bp
 app.regist_blueprint(user_bp)
 ```
 
+* 如果想要某个蓝图下的所有url都有一个url前缀，那么可以定义蓝图的时候，指定url\_prefix参数:
 
+```
+user_bp = Blueprint('user',__name__,url_prefix='/user/')
+```
 
 
 
