@@ -87,6 +87,14 @@ class UserAPI(views.MethodView):
 
 ---
 
+### 标准类视图
+
+1. 标准类视图，必须继承来自"flask.views.View"
+2. 必须实现"dipatch\_request"方法，以后请求过来后，都会执行这个方法，这个方法的返回值就相当于是之前的函数视图一样，也必须返回"Response"或者子类的对象，或者是字符串，或者是元组
+3. 必须通过"app.add_url_rule"
+
+
+
 ```
 # 必须继承自views
 class ListView(views.View):
