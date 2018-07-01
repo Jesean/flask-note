@@ -4,10 +4,16 @@
 2. 在创建蓝图对象的时候，需要传递一个"subdomain"参数,来指定这个子域名的前缀，例如
 
 ```
+from flask import Blueprint
 
+cms_bp = Blueprint('cms',__name__,subdomain='cms')
+
+@cms_bp.route('/')
+def index():
+    return "cms index page"
 ```
 
-3. 需要在主app文件中，需要配置app.config的SERVER\_NAME参数，例如:
+3.需要在主app文件中，需要配置app.config的SERVER\_NAME参数，例如:
 
 ```
 from flask import Flask,Blueprint,url_for,render_template
@@ -43,7 +49,6 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 
