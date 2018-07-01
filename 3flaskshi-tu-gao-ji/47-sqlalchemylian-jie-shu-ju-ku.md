@@ -5,7 +5,7 @@
 在讲解Flask中的数据库操作之前，先确保已经安装了以下软件:
 
 * msyql:如果是在windows上，到官网下载。如果是Ubuntu，通过命令下载 sudo apt-get install mysql-server libmysqlclient-dev -yq进行下载安装。
-* MySQLdb:MySQLdb是用python来操作mysql的包，因此通过pip来安装，命令如下:pip install mysql-python
+* MySQLdb:MySQLdb是用python来操作mysql的包，因此通过pip来安装，命令如下:pip install mysql-python。python3上使用pip install pymysql代替
 * SQLAlchemy:SQLAlchemy是一个数据库的ORM框架，安装命令:pip install SQLAlchemy
 
 
