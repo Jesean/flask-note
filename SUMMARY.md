@@ -72,6 +72,8 @@
   * [71 Flask-SQLAlchemy下alembic的配置](3flaskshi-tu-gao-ji/71-flask-sqlalchemyxia-alembic-de-pei-zhi.md)
   * [72 Flask-Script详细讲解](3flaskshi-tu-gao-ji/72-flask-scriptxiang-xi-jiang-jie.md)
   * 73 项目结构重构
+  * 74 Flask-Migrate详细讲解
+  * 75 Flask-Migrate注意事项
 * 5.Flask知识点补充
 * 6.memcached缓存系统
 * 7.Redis键值对数据库
