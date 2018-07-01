@@ -37,7 +37,7 @@
   * [37 add\_url\_rule和app.route原理剖析](3flaskshi-tu-gao-ji/37-addurl-rule-he-app-route-yuan-li-pou-xi.md)
   * [38 标准类视图及其使用场景](3flaskshi-tu-gao-ji/38-biao-zhun-lei-shi-tu-ji-qi-shi-yong-chang-jing.md)
   * [39 基于调度方法的类视图](3flaskshi-tu-gao-ji/39-ji-yu-diao-du-fang-fa-de-lei-shi-tu.md)
-  * 40 类视图中使用装饰器
+  * [40 类视图中使用装饰器](3flaskshi-tu-gao-ji/40-lei-shi-tu-zhong-shi-yong-zhuang-shi-qi.md)
   * 41 蓝图的基本使用
   * 42 蓝图中模版文件寻找规则
   * 43 蓝图中静态文件寻找规则
