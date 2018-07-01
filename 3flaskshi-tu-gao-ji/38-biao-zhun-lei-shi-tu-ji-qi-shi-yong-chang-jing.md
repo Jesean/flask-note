@@ -146,6 +146,7 @@ class ADSView(views.View):
             'ads':"广告"
         }
 
+# 提取共同变量
 class LoginView(ADSView):
     def dispatch_request(self):
         self.context.update({
