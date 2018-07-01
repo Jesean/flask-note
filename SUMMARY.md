@@ -67,6 +67,7 @@
   * 66 join实现复杂查询
   * 67 subquery实现复杂查询
   * 68 Flask-SQLAlchemy的使用详解
+  * 69 alembic数据库迁移工具基本使用
 * 5.Flask知识点补充
 * 6.memcached缓存系统
 * 7.Redis键值对数据库
