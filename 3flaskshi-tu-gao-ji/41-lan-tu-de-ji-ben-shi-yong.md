@@ -75,6 +75,7 @@ from flask import Blueprint
 
 model = Blueprint("文件.py",__name__)
 # user_bp = Blueprint('user',__name__,url_prefix='/user')
+# http://127.0.0.1:5000/user/profile/
 ```
 
 1. 
