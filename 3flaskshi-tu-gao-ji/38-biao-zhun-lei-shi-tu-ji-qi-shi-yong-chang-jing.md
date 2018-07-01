@@ -158,5 +158,5 @@ class RegistView(ADSView):
         return render_template('regist.html',**self.context)
 ```
 
-![](/assets/38.login.png)
+![](/assets/38login.png)
 
