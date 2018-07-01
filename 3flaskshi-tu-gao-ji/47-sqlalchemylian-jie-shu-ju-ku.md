@@ -8,5 +8,30 @@
 * MySQLdb:MySQLdb是用python来操作mysql的包，因此通过pip来安装，命令如下:pip install mysql-python。python3上使用pip install pymysql代替
 * SQLAlchemy:SQLAlchemy是一个数据库的ORM框架，安装命令:pip install SQLAlchemy
 
+## 通过SQLAlchemy连接数据库
 
+代码示例:
+
+```
+from sqlalchemy import create_engine
+
+# 数据库配置变量
+HOSTNAME = "127.0.0.1"
+POST = "3306"
+DATABASE = "xt_flask"
+USERNAME = "root"
+PASSWORD = "123456"
+# 地址
+DB_URI = "mysql+pymysql://{}:{}@{}:{}/{}".format(USERNAME,PASSWORD,HOSTNAME,POST,DATABASE)
+
+# 创建数据库引擎
+engine = create_engine(DB_URI)
+
+# 创建连接
+with engine.connect() as conn:
+    rs = conn.execute("select 1")
+    print(rs.fetchone())
+```
+
+首先从sqlalchemy中导入create_engine,用这个函数来创建引擎，然后用engine.coonect\(\)来连接数据库。其中一个比较重要的一点是，通过create_e
 
