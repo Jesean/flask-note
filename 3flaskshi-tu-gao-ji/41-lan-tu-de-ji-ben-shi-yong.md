@@ -67,22 +67,22 @@ def detail():
 
 1. 蓝图的作用就是让flask项目更加模块化，结构更加清晰，可以将相同模块的视图函数放在同一个蓝图下，同一个文件中，方便管理
 2. 基本语法:
-   1. 在蓝图文件中导入Blueprint：
 
-   ```
-   'from flask import Blueprint'
-   ```
-
-   1. 在主app文件中注册蓝图:
+* 在蓝图文件中导入Blueprint：
 
 ```
-from flask import Blueprint
-
-model = Blueprint("文件.py",__name__)
+'from flask import Blueprint'
 # user_bp = Blueprint('user',__name__,url_prefix='/user')
 # http://127.0.0.1:5000/user/profile/
 ```
 
-1. 
+* 在主app文件中注册蓝图:
+
+```
+from blueprints.user import user_bp
+
+app.regist_blueprint(user_bp)
+```
+
 
 
