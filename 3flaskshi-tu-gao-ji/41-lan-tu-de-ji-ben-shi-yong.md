@@ -2,8 +2,6 @@
 
 ![](/assets/41.img1.png)
 
-
-
 ```
 blueprint_demo.py
 
@@ -30,7 +28,6 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 ```
@@ -66,7 +63,9 @@ def detail():
     return '新闻详情页面'
 ```
 
+## 蓝图
 
+1. 蓝图的作用就是让flask项目更加模块化，结构更加清晰，可以将相同模块的视图函数放在同一个蓝图下，同一个文件中，方便管理
 
 
 
