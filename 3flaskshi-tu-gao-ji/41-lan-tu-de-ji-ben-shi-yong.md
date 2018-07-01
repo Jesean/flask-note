@@ -73,12 +73,12 @@ def detail():
 
 ```
 'from flask import Blueprint'
-```
-
-```
+# 注意url_prefix参数的斜杠
 user_bp = Blueprint('user',__name__,url_prefix='/user')
 # http://127.0.0.1:5000/user/profile/
 ```
+
+
 
 * 在主app文件中注册蓝图:
 
