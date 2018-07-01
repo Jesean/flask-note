@@ -57,12 +57,12 @@ _tips:_
 1. _注意ip地址不能有子域名_
 2. _localhost也不能有子域名_
 
-* 在"C:\Windows\System32\drivers\etc"文件中，打开hosts文件，然后添加域名与本机的映射，例如
+3. 在"C:\Windows\System32\drivers\etc"文件中，打开hosts文件，然后添加域名与本机的映射，例如
 
 ```
 127.0.0.1 jd.com
 127.0.0.1 cms.jd.com
 ```
 
-
+_tips:域名与子域名都需要做配置_
 
