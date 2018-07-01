@@ -1,3 +1,9 @@
+
+
+
+
+
+
 ```
 class LoginView(views.MethodView):
     def get(self):
@@ -11,10 +17,8 @@ class LoginView(views.MethodView):
         else:
             return "失败"
 
-app.add_url_rule(rule='/login/',view_func=LoginView.as_view('login'))
+app.add_url_rule(rule='/login/',view_func=LoginView.as_view('login')) 
 ```
-
-![](/assets/39.1.png)
 
 ```
 class LoginView(views.MethodView):
