@@ -4,6 +4,8 @@
 * 如果在加载静态文件的时候，指定的蓝图的名字，比如:'news.static',那么就会到这个蓝图指定的static\_forder下查找静态文件
 
 ```
+news.html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +17,12 @@
     <p style="background-color: pink;">这是从模板中渲染的代码</p>
 </body>
 </html>
+
+
+news.py
+
+news_bp = Blueprint('news',__name__,url_prefix='/news',
+                    template_folder='miku',static_folder='miku_static')
 ```
 
 
