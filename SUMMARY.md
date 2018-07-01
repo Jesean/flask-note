@@ -43,7 +43,30 @@
   * [43 蓝图中静态文件寻找规则](3flaskshi-tu-gao-ji/43-lan-tu-zhong-jing-tai-wen-jian-xun-zhao-gui-ze.md)
   * [44 url\_for反转蓝图注意事项](3flaskshi-tu-gao-ji/44-urlfor-fan-zhuan-lan-tu-zhu-yi-shi-xiang.md)
   * [45 子域名实现详解](3flaskshi-tu-gao-ji/45-zi-yu-ming-shi-xian-xiang-jie.md)
-* 4.Flask数据库
+* [4.Flask数据库](4flaskshu-ju-ku.md)
+  * 46 安装MySQL以及注意事项
+  * 47 SQLAlchemy连接数据库
+  * 49 定义ORM模型并将其映射到数据库中
+  * [48 ORM介绍](3flaskshi-tu-gao-ji/48-ormjie-shao.md)
+  * 50 SQLAlchemy对数据的增删改查操作
+  * 51 SQLAlchemy属性常用数据类型详解
+  * 52 Column常用参数
+  * 53 query函数可查询的数据
+  * 54 filter方法常用过滤条件
+  * 55 外键及其四种约束讲解
+  * 56 ORM层外键和一对多关系
+  * [57 一对一关系实现](57-yi-dui-yi-guan-xi-shi-xian.md)
+  * 58 多对多关系实现
+  * 59 ORM层面删除数据注意事项
+  * 60 relationship方法中的cascade参数详解（1）
+  * [61 relationship方法中的cascade参数详解（2）](3flaskshi-tu-gao-ji/61-relationshipfang-fa-zhong-de-cascade-can-shu-xiang-jie-ff08-2.md)
+  * 62 三种排序方式详解
+  * 63 limit、offset以及切片操作
+  * 64 数据查询懒加载技术
+  * 65 group\_by和having子句
+  * 66 join实现复杂查询
+  * 67 subquery实现复杂查询
+  * 68 Flask-SQLAlchemy的使用详解
 * 5.Flask知识点补充
 * 6.memcached缓存系统
 * 7.Redis键值对数据库
