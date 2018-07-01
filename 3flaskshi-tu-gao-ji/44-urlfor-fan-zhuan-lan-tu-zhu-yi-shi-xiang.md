@@ -12,7 +12,8 @@ def hello_world():
     # url_for('指定蓝图名字.视图函数名字')
     print(url_for('news.news_list'))
     return render_template('index.html')
-    
+
+------------------------------------------------
 
 index.html
 
