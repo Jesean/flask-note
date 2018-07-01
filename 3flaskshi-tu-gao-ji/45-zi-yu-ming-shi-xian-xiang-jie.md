@@ -14,7 +14,7 @@ def index():
     return "cms index page"
 ```
 
-1. 需要在主app文件中，需要配置app.config的SERVER\_NAME参数，例如:
+* 需要在主app文件中，需要配置app.config的SERVER\_NAME参数，例如:
 
 ```
 from flask import Flask,Blueprint,url_for,render_template
