@@ -65,13 +65,16 @@ def detail():
 
 ## 蓝图
 
-1. 蓝图的作用就是让flask项目更加模块化，结构更加清晰，可以将相同模块的视图函数放在同一个蓝图下，同一个文件中，方便管理
-2. 基本语法:
+* 蓝图的作用就是让flask项目更加模块化，结构更加清晰，可以将相同模块的视图函数放在同一个蓝图下，同一个文件中，方便管理
 
-3. 在蓝图文件中导入Blueprint：
+* 基本语法:
+* 在蓝图文件中导入Blueprint：
 
 ```
 'from flask import Blueprint'
+```
+
+```
 user_bp = Blueprint('user',__name__,url_prefix='/user')
 # http://127.0.0.1:5000/user/profile/
 ```
@@ -83,6 +86,8 @@ from blueprints.user import user_bp
 
 app.regist_blueprint(user_bp)
 ```
+
+
 
 
 
