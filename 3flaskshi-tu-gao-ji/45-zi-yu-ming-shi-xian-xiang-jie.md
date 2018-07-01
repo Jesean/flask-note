@@ -1,7 +1,8 @@
 ## 蓝图实现子域名
 
-1. 使用蓝图技术
-2. 在创建蓝图对象的时候，需要传递一个"subdomain"参数,来指定这个子域名的前缀，例如
+* 使用蓝图技术
+
+* 在创建蓝图对象的时候，需要传递一个"subdomain"参数,来指定这个子域名的前缀，例如
 
 ```
 from flask import Blueprint
@@ -13,7 +14,7 @@ def index():
     return "cms index page"
 ```
 
-3. 需要在主app文件中，需要配置app.config的SERVER\_NAME参数，例如:
+1. 需要在主app文件中，需要配置app.config的SERVER\_NAME参数，例如:
 
 ```
 from flask import Flask,Blueprint,url_for,render_template
