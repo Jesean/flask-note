@@ -45,7 +45,7 @@
   * [45 子域名实现详解](3flaskshi-tu-gao-ji/45-zi-yu-ming-shi-xian-xiang-jie.md)
 * [4.Flask数据库](4flaskshu-ju-ku.md)
   * [46 安装MySQL以及注意事项](3flaskshi-tu-gao-ji/46-an-zhuang-mysql-yi-ji-zhu-yi-shi-xiang.md)
-  * 47 SQLAlchemy连接数据库
+  * [47 SQLAlchemy连接数据库](3flaskshi-tu-gao-ji/47-sqlalchemylian-jie-shu-ju-ku.md)
   * 49 定义ORM模型并将其映射到数据库中
   * [48 ORM介绍](3flaskshi-tu-gao-ji/48-ormjie-shao.md)
   * 50 SQLAlchemy对数据的增删改查操作
