@@ -94,6 +94,7 @@ class ListView(views.View):
         return "list view"
 
 # 类.as_view(name) 返回一个函数,name:视图名
+# endpoint没指定，就是用view_func名
 app.add_url_rule('/list/',endpoint='list',view_func=ListView.as_view('list'))
 ```
 
