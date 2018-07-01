@@ -70,6 +70,7 @@
   * 69 alembic数据库迁移工具基本使用
   * 70 alembic常用命令和经典错误解决办法
   * [71 Flask-SQLAlchemy下alembic的配置](3flaskshi-tu-gao-ji/71-flask-sqlalchemyxia-alembic-de-pei-zhi.md)
+  * [72 Flask-Script详细讲解](3flaskshi-tu-gao-ji/72-flask-scriptxiang-xi-jiang-jie.md)
 * 5.Flask知识点补充
 * 6.memcached缓存系统
 * 7.Redis键值对数据库
