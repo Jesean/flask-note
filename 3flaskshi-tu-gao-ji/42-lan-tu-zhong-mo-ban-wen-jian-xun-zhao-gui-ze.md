@@ -1,3 +1,7 @@
+
+
+### 指定模板文件
+
 ```
 from flask import Blueprint,render_template
 
@@ -12,7 +16,7 @@ def detail():
     return '新闻详情页面'
 ```
 
-### 模板文件![](/assets/42-templates.png)
+### ![](/assets/42-templates.png)
 
 
 
