@@ -11,21 +11,21 @@ class BaseView(views.View):
     # 自定义方法，用来获取模板路径
     def get_template_name(self):
         raise NotImplementedError()
-    
+
     # 必须实现的方法，用来处理请求的
     def dispatch_request(self):
         if request.method != 'GET':
             return 'method error'
-            
+
         # 这想从self.get_data()中获取函数，子类应该实现这个方法
         context = {'data':self.get_data()}
         return render_template(self.get_template_name(),**context)
-        
+
 class UserView(BaseView):
     # 实现从父类继承的获取模板路径的方法
     def get_template_name(self):
         return 'user.html'
-        
+
     # 重写获取函数的方法
     def get_data(self):
         return [{
@@ -36,8 +36,6 @@ class UserView(BaseView):
 # 类视图通过add_url_rule方法和url做映射
 app.add_url_rule('/users/',view_func=UserView.as_view('userview'))
 ```
-
-
 
 ### 基于调度方法的视图:
 
@@ -51,11 +49,11 @@ class UserAPI(views.MethodView):
         'username':'angle',
         'avator':'http://www.baidu.com',
     })
-    
+
     # 当客户端通过post方法进行访问的时候执行的函数
     def post(self):
         return 'UNSUPPORTED'
-    
+
 
 # 通过add_url_rule添加类视图和url的映射，并且在as_view方法中指定该url的名称，方便url_for函数调用
 app.add_url_rule('/myuser/',view_func=UserAPI.as_view('userapiview'))
@@ -71,8 +69,6 @@ def user_required(f)
         return f(*args,**kwargs)
     return decorator
 ```
-
-
 
 如果要在类视图上进行装饰，只能在as\_view函数上进行装饰了，使用方式:
 
