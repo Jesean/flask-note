@@ -1,6 +1,6 @@
 ### 基于方法的类视图
 
-
+1. 基于方法
 
 ```
 class LoginView(views.MethodView):
@@ -18,7 +18,7 @@ class LoginView(views.MethodView):
 app.add_url_rule(rule='/login/',view_func=LoginView.as_view('login'))
 ```
 
-
+![](/assets/39.1.png)
 
 ```
 class LoginView(views.MethodView):
