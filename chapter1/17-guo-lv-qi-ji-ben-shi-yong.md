@@ -120,8 +120,6 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-![](file:///C:\Users\miku\AppData\Roaming\Tencent\Users\1479852727\QQ\WinTemp\RichOle\}833I}0W8I`]%29H[SS0T8CU4.png)
-
 ```
 index.html
 
