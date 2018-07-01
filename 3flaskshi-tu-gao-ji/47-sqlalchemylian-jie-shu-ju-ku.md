@@ -41,3 +41,5 @@ with engine.connect() as conn:
 
 dialect是数据库的实现，比如MySQL、postgresql，sqlite，并且转换成小写，driver是python对应的驱动，如果不指定，会选择默认的驱动，比如mysql的默认驱动是MySQLdb。username是连接数据库的用户名，password是连接数据库的密码，host是连接数据库的域名，post是数据库监听的端口号，database是连接哪个数据库的名字
 
+上例例子输出1，就说明连接成功
+
