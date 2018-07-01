@@ -41,6 +41,6 @@
   * [41 蓝图的基本使用](3flaskshi-tu-gao-ji/41-lan-tu-de-ji-ben-shi-yong.md)
   * [42 蓝图中模版文件寻找规则](3flaskshi-tu-gao-ji/42-lan-tu-zhong-mo-ban-wen-jian-xun-zhao-gui-ze.md)
   * [43 蓝图中静态文件寻找规则](3flaskshi-tu-gao-ji/43-lan-tu-zhong-jing-tai-wen-jian-xun-zhao-gui-ze.md)
-  * 44 url\_for反转蓝图注意事项
+  * [44 url\_for反转蓝图注意事项](3flaskshi-tu-gao-ji/44-urlfor-fan-zhuan-lan-tu-zhu-yi-shi-xiang.md)
   * 45 子域名实现详解
 
