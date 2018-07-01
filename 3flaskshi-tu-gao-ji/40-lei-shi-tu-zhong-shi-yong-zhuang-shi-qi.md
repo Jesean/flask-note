@@ -28,8 +28,22 @@ def settings():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 ![](/assets/40.login_required.png)![](/assets/40.login.png)
+
+```
+class ProfileView(views.View):
+
+    # 装饰器
+    decorators = [login_required]
+
+    def dispatch_request(self):
+        return "个人中心界面"
+
+app.add_url_rule(rule='/profile/',view_func=ProfileView.as_view('profile'))
+
+```
+
+
 
