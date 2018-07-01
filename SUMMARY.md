@@ -43,7 +43,6 @@
   * [43 蓝图中静态文件寻找规则](3flaskshi-tu-gao-ji/43-lan-tu-zhong-jing-tai-wen-jian-xun-zhao-gui-ze.md)
   * [44 url\_for反转蓝图注意事项](3flaskshi-tu-gao-ji/44-urlfor-fan-zhuan-lan-tu-zhu-yi-shi-xiang.md)
   * [45 子域名实现详解](3flaskshi-tu-gao-ji/45-zi-yu-ming-shi-xian-xiang-jie.md)
-  * 71 Flask-SQLAlchemy下alembic的配置
 * [4.Flask数据库](4flaskshu-ju-ku.md)
   * 46 安装MySQL以及注意事项
   * 47 SQLAlchemy连接数据库
@@ -70,6 +69,7 @@
   * 68 Flask-SQLAlchemy的使用详解
   * 69 alembic数据库迁移工具基本使用
   * 70 alembic常用命令和经典错误解决办法
+  * [71 Flask-SQLAlchemy下alembic的配置](3flaskshi-tu-gao-ji/71-flask-sqlalchemyxia-alembic-de-pei-zhi.md)
 * 5.Flask知识点补充
 * 6.memcached缓存系统
 * 7.Redis键值对数据库
