@@ -12,7 +12,7 @@
 * Integer:整型
 * Float:浮点类型
 * Boolean:传递True/False进去
-* DECIMAL:定点类型
+* DECIMAL:定点类型，是专门为了解决浮点精度丢失的问题的，在存储相关的字段的时候建议都是要这个数据字段，并且这个类型使用的时候需要传递两个参数，第一个参数使用来标记字段能够存储多少个数字，第二个参数是表示小数点的位数
 * enum:枚举类型
 * Date:传递datetime.date\(\)进去
 * DateTime:传递datetime.datetime\(\)进去
