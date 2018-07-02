@@ -17,7 +17,17 @@ session = sessionmaker(engine)()
 
 ```
 p = Person(name="angle",age=16,country="china")
+```
+
+* 将对象添加到'session'会话对象中
+
+```
 session.add(p)
+```
+
+* 将session中的对象做commit操作\(提交\)
+
+```
 session.commit()
 ```
 
