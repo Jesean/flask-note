@@ -48,7 +48,7 @@
   * [47 SQLAlchemy连接数据库](3flaskshi-tu-gao-ji/47-sqlalchemylian-jie-shu-ju-ku.md)
   * [49 定义ORM模型并将其映射到数据库中](3flaskshi-tu-gao-ji/49-ding-yi-orm-mo-xing-bing-jiang-qi-ying-she-dao-shu-ju-ku-zhong.md)
   * [48 ORM介绍](3flaskshi-tu-gao-ji/48-ormjie-shao.md)
-  * 50 SQLAlchemy对数据的增删改查操作
+  * [50 SQLAlchemy对数据的增删改查操作](3flaskshi-tu-gao-ji/50-sqlalchemydui-shu-ju-de-zeng-shan-gai-cha-cao-zuo.md)
   * 51 SQLAlchemy属性常用数据类型详解
   * 52 Column常用参数
   * 53 query函数可查询的数据
