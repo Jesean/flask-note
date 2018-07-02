@@ -11,7 +11,5 @@ from sqlalchemy.orm import sessionmaker
 session = sessionmaker(engine)()
 ```
 
-
-
-
+2.添加对象
 
