@@ -53,6 +53,9 @@ all_person = session.query(Person).filter(Person.name.contains('angle'))
 
 #使用get方法查找数据，get方法是根据id来查询的，只会返回一条数据或者None
 person = session.query(Person).get(1)
+
+#使用first方法获取结果集中的第一条数据
+person = session.query(Person).first()
 ```
 
 4.修改对象
