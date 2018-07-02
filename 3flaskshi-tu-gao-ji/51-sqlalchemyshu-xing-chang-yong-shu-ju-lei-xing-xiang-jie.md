@@ -72,7 +72,7 @@ article = Article(create_time=time(hour=11,minute=11,second=11,microsecond=11))
 ```
 
 * String:字符类型，使用时需要指定长度，区别于Text类型
-* Text:文本类型
+* Text:文本类型.存储长字符串，一般可以存储6w多个字符。如果超出了这个范围，可以使用LONGTEXT类型，映射到数据库中就是text类型
 * LONGTEXT:长文本类型
 
 
