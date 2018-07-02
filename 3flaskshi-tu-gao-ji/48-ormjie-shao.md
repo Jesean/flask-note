@@ -31,6 +31,7 @@ class Person(Base):
 ```
 
 * 使用"Base.metadata.create\_all\(\)"来创建表，将模型映射到数据库中
+* 一旦使用"Base.metadata.create\_all\(\)"将模型映射到数据库中后，即使改变了模型的字段，也不会重新映射了
 
 
 
