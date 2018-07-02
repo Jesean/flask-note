@@ -9,6 +9,8 @@
    * func.min:求最小值
    * func.sum:求和
 
+* 'func'上，其实没有任何聚合函数，但是因为底层做了一些魔术，只要mysql中有聚合函数，都可以通过func调用
+
 ```
 实例:session.query(func.avg(Arictle.title)).first()
 ```
