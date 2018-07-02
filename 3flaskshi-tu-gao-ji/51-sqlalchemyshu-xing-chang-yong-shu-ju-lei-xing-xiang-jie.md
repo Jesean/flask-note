@@ -35,6 +35,17 @@ article = Article(tag=TagEnum.python)
 ```
 
 * Date:传递datetime.date\(\)进去。存储时间，只能存储年月日。映射到数据库中是date类型。在python中，可以使用datetime.date来指定
+
+```
+class Article(Base):
+    __tablename__ = "article"
+    id = Column(Integer,primary_key=True,autoincrement=True)
+    create_time = Column(Date)
+    
+from datetime import date
+article = Article(create_time=date(year=2017,month=10,day=8))
+```
+
 * DateTime:传递datetime.datetime\(\)进去。
 * Time:传递datetime.time\(\)进去
 * String:字符类型，使用时需要指定长度，区别于Text类型
