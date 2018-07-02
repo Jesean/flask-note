@@ -41,6 +41,17 @@ session.add_all([p1,p2])
 
 3.查改对象
 
+```
+#查找某个模型对应的那个表中所有的数据:
+all_person = session.query(Person).all()
+
+# 使用filter_by来做条件查询
+all_person = session.query(Person).filter_by(name='angle1').all()
+
+# 使用filter来做条件查询
+all_person = session.query(Person).filter(Person.name.contains('angle'))
+```
+
 4.修改对象
 
 5.删除对象
