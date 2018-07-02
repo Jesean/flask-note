@@ -58,7 +58,13 @@ person = session.query(Person).get(primary_key)
 person = session.query(Person).first()
 ```
 
-4.修改对象
+4.修改对象,首先在数据库查找数据，然后将数据进行修改，最后做commit操作
+
+```
+person = session.query(Person).first()
+person.name = 'angle_update'
+session.commit()
+```
 
 5.删除对象
 
