@@ -13,3 +13,9 @@ session = sessionmaker(engine)()
 
 2.添加对象
 
+3.查改对象
+
+4.修改对象
+
+5.删除对象
+
