@@ -15,7 +15,6 @@ Base = declarative_base(engine)
 ```
 class Person(Base):
     __tablename__ = "person"
-    ...
 ```
 
 * 创建需要在表中映射的字段，所有需要映射到表中的属性都应为Column类型
