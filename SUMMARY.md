@@ -50,7 +50,7 @@
   * [48 ORM介绍](3flaskshi-tu-gao-ji/48-ormjie-shao.md)
   * [50 SQLAlchemy对数据的增删改查操作](3flaskshi-tu-gao-ji/50-sqlalchemydui-shu-ju-de-zeng-shan-gai-cha-cao-zuo.md)
   * [51 SQLAlchemy属性常用数据类型详解](3flaskshi-tu-gao-ji/51-sqlalchemyshu-xing-chang-yong-shu-ju-lei-xing-xiang-jie.md)
-  * 52 Column常用参数
+  * [52 Column常用参数](3flaskshi-tu-gao-ji/52-columnchang-yong-can-shu.md)
   * 53 query函数可查询的数据
   * 54 filter方法常用过滤条件
   * 55 外键及其四种约束讲解
