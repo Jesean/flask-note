@@ -30,5 +30,7 @@ class Person(Base):
     age = Column(Integer)
 ```
 
+* 使用"Base.metadata.create\_all\(\)"来创建表，将模型映射到数据库中
+
 
 
