@@ -10,7 +10,7 @@ engine = create_engine(DB_URI)
 Base = declarative_base(engine)
 ```
 
-* 用这个"Base"类作为基类来写自己的ORM类。要定义"_tablename_"
+* 用这个"Base"类作为基类来写自己的ORM类。要定义"\_\__tablename\_\__"
 
 
 
