@@ -10,7 +10,7 @@ engine = create_engine(DB_URI)
 Base = declarative_base(engine)
 ```
 
-* 用这个
+* 用这个"Base"
 
 
 
