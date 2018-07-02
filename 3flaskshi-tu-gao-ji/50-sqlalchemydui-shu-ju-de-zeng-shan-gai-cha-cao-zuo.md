@@ -50,6 +50,9 @@ all_person = session.query(Person).filter_by(name='angle1').all()
 
 # 使用filter来做条件查询
 all_person = session.query(Person).filter(Person.name.contains('angle'))
+
+#使用get方法查找数据，get方法是根据id来查询的，只会返回一条数据或者None
+person = session.query(Person).get(1)
 ```
 
 4.修改对象
