@@ -58,7 +58,19 @@ from datetime import datetime
 article = Article(create_time=datetime(year=2017,month=11,day=11,hour=11,minute=11,second=11,microsecond=11))
 ```
 
-* Time:传递datetime.time\(\)进去
+* Time:传递datetime.time\(\)进去。存储时间，可以存储时分秒，映射到数据库中也是time类型。在python代码中，可以使用"datetime.time"来指定，示例\]
+
+```
+class Article(Base):
+    __tablename__ = "article"
+    id = Column(Integer,primary_key=True,autoincrement=True)
+    create_time = Column(Time)
+
+from datetime import time
+article = Article(create_time=time(hour=11,minute=11,second=11,microsecond=11))
+# article = Article(create_time=datetime.now())
+```
+
 * String:字符类型，使用时需要指定长度，区别于Text类型
 * Text:文本类型
 * LONGTEXT:长文本类型
