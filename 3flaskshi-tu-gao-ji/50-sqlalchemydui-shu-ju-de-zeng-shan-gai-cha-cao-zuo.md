@@ -13,6 +13,14 @@ session = sessionmaker(engine)()
 
 2.添加对象
 
+* 创建对象，也即创建一条数据
+
+```
+p = Person(name="angle",age=16,country="china")
+session.add(p)
+session.commit()
+```
+
 3.查改对象
 
 4.修改对象
