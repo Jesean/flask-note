@@ -41,12 +41,23 @@ class Article(Base):
     __tablename__ = "article"
     id = Column(Integer,primary_key=True,autoincrement=True)
     create_time = Column(Date)
-    
+
 from datetime import date
 article = Article(create_time=date(year=2017,month=10,day=8))
 ```
 
-* DateTime:传递datetime.datetime\(\)进去。
+* DateTime:传递datetime.datetime\(\)进去。存储时间，可以存储年月日时分秒毫秒等。映射到数据库中也是datetime类型。在python代码中，可以使用"datetime.datetime"来指定，示例
+
+```
+class Article(Base):
+    __tablename__ = "article"
+    id = Column(Integer,primary_key=True,autoincrement=True)
+    create_time = Column(DateTime)
+
+from datetime import datetime
+article = Article(create_time=datetime(year=2017,month=11,day=11,hour=11,minute=11,second=11,microsecond=11))
+```
+
 * Time:传递datetime.time\(\)进去
 * String:字符类型，使用时需要指定长度，区别于Text类型
 * Text:文本类型
