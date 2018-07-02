@@ -37,9 +37,6 @@ session.commit()
 p1 = Person(name="angle1",age=16,country="china")
 p2 = Person(name='angle2',age=20,country='china')
 session.add_all([p1,p2])
-
-
-add_data()
 ```
 
 3.查改对象
