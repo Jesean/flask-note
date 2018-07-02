@@ -34,9 +34,9 @@ session.commit()
 * 一次性添加多条数据
 
 ```
-    p1 = Person(name="angle1",age=16,country="china")
-    p2 = Person(name='angle2',age=20,country='china')
-    session.add_all([p1,p2])
+p1 = Person(name="angle1",age=16,country="china")
+p2 = Person(name='angle2',age=20,country='china')
+session.add_all([p1,p2])
 ```
 
 3.查改对象
