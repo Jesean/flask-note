@@ -52,7 +52,7 @@
   * [51 SQLAlchemy属性常用数据类型详解](3flaskshi-tu-gao-ji/51-sqlalchemyshu-xing-chang-yong-shu-ju-lei-xing-xiang-jie.md)
   * [52 Column常用参数](3flaskshi-tu-gao-ji/52-columnchang-yong-can-shu.md)
   * [53 query函数可查询的数据](3flaskshi-tu-gao-ji/53-queryhan-shu-ke-cha-xun-de-shu-ju.md)
-  * 54 filter方法常用过滤条件
+  * [54 filter方法常用过滤条件](3flaskshi-tu-gao-ji/54-filterfang-fa-chang-yong-guo-lv-tiao-jian.md)
   * 55 外键及其四种约束讲解
   * 56 ORM层外键和一对多关系
   * [57 一对一关系实现](57-yi-dui-yi-guan-xi-shi-xian.md)
