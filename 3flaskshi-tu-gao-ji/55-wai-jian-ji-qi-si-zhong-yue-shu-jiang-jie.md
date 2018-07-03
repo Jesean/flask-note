@@ -29,7 +29,7 @@ Base.metadata.create_all()
 1. RESTRICT\(restrict\):父表数据被删除，会阻止删除
 2. NO ACTION:在MySQL中，同RESTRICT
 3. CASCADE:级联删除
-4. SET NULL:父类数据被删除，子表数据会跟着删除
+4. SET NULL:父类数据被删除，子表数据设置为NULL
 
 ```
 from sqlalchemy import create_engine, Column, Integer, Text, String, DateTime, String, Float, func,and_,or_,ForeignKey
