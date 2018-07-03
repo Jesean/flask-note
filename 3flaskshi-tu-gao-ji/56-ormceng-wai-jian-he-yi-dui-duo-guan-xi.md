@@ -41,7 +41,7 @@ user = session.query(User).first()
 print(user.articles)
 ```
 
-另外，可以通过"backref"来指定反向访问的属性名称
+另外，可以通过"backref"来指定反向访问的属性名称。articles是有多个，它们之间的关系是一对多
 
 ```
 class Article(Base):
