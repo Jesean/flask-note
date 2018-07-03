@@ -58,7 +58,7 @@
   * [57 一对一关系实现](57-yi-dui-yi-guan-xi-shi-xian.md)
   * 58 多对多关系实现
   * 59 ORM层面删除数据注意事项
-  * 60 relationship方法中的cascade参数详解（1）
+  * [60 relationship方法中的cascade参数详解（1）](3flaskshi-tu-gao-ji/60-relationshipfang-fa-zhong-de-cascade-can-shu-xiang-jie-ff08-1.md)
   * [61 relationship方法中的cascade参数详解（2）](3flaskshi-tu-gao-ji/61-relationshipfang-fa-zhong-de-cascade-can-shu-xiang-jie-ff08-2.md)
   * 62 三种排序方式详解
   * 63 limit、offset以及切片操作
