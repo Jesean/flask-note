@@ -3,7 +3,8 @@
 在MySQL中，外键可以让表之间的关系更加紧密，而SQLAlchemy同样支持外键。通过FpreignKey类来实现，并且可以指定表的外键约束。相关示例代码如下:
 
 ```
-from sqlalchemy import create_engine, Column, Integer, Text, String, DateTime, String, Float, func,and_,or_,ForeignKey
+from sqlalchemy import create_engine, Column, Integer, Text, String, 
+DateTime, String, Float, func,and_,or_,ForeignKey
 
 class User(Base):
     __tablename__ = 'user'
