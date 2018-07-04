@@ -88,5 +88,15 @@ session.add(article2)
 session.commit()
 ```
 
+##### 查询
+
+```
+article = session.query(Article).first()
+# print(article.id,article.title)
+print(article.tags)
+tag = session.query(Tag).first()
+print(tag.articles)
+```
+
 
 
