@@ -2,7 +2,7 @@
 
 如果将数据库得到外键设置为RESTRICT，那么在ORM层面，删除了父表中的数据，那么从表中的数据将会NULL。如果不想要这种情况发生，那么应该将这个值的nullable=False。
 
-在SQLAlchemy，只要将一个数据添加到session中，和它相关联的数据都可以一起存入到数据库中了。这些是怎么设置的呢?其实是通过relationship的时候  ，有一个关键字参数cascade可以设置这些属性:  
+在SQLAlchemy，只要将一个数据添加到session中，和它相关联的数据都可以一起存入到数据库中了。这些是怎么设置的呢?其实是通过relationship的时候  ，有一个关键字参数cascade可以设置这些属性:
 
 1. save-update:默认选项。在添加一条数据的时候，会把其他和它相关联的数据都添加到数据库中。这种行为就是save-update属性影响的。
 2. delete:表示当删除某一个模型中的数据的时候，是否也删除掉使用relationship和它关联的数据。
@@ -90,7 +90,6 @@ def operation():
 if __name__ == "__main__":
     # my_init_db()
     operation()
-
 ```
 
 
