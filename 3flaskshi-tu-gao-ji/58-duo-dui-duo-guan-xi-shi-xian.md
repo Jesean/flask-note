@@ -61,7 +61,7 @@
         Column("tag_id",Integer,ForeignKey("tag.id"),primary_key=True)
     )
 
-创建表/表与表的关系
+#### 创建表
 
 ```
 # 1. 先把两个需要多对多的模型定义出来
