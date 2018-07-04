@@ -98,6 +98,7 @@ extend1 = UserExtend(school="miku1")
 user.extend = extend1
 session.add(user)
 
+# 一对多，添加多个
 # extend2 = UserExtend(school='miku2')
 # user.extend.append(extend1)
 # user.extend.append(extend2)
@@ -111,8 +112,6 @@ session.commit()
 # from sqlalchemy.orm.collections import InstrumentedList
 #
 # print(type(user.articles))
-
-
 ```
 
 
