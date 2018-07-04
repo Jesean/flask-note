@@ -61,5 +61,32 @@
         Column("tag_id",Integer,ForeignKey("tag.id"),primary_key=True)
     )
 
+创建表/表与表的关系
+
+```
+# 1. 先把两个需要多对多的模型定义出来
+# 2. 使用Table定义定义一个中间表，中间表一般就是包含两个模型的外键字段就可以了，并且让它们两个来作为一个"复合主键"
+# 3.在两个需要做多对多的模型中随便选择一个模型，定义一个relationship属性，来绑定三者之间的关系，在使用relationship的时候，需要传入一个secondary=中间表
+
+Base.metadata.drop_all()
+Base.metadata.create_all()
+
+article1 = Article(title="angle1")
+article2 = Article(title="angle2")
+
+tag1 = Tag(name="tag1")
+tag2 = Tag(name="tag2")
+
+article1.tags.append(tag1)
+article1.tags.append(tag2)
+
+article2.tags.append(tag1)
+article2.tags.append(tag2)
+
+session.add(article1)
+session.add(article2)
+session.commit()
+```
+
 
 
