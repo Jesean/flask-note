@@ -19,8 +19,29 @@ class UserExtend(Base):
     id = Column(Integer,primary_key=True,autoincrement=True)
     school = Column(String(50))
     uid = Column(Integer,ForeignKey('user.id'))
-    
+
     user = relationship('User',backref='extend')
+```
+
+当然，也可以借助"sqlchemy.orm.backref"来简化代码:
+
+```
+class User(Base):
+    __tablename__ = 'user'
+    id = Column(Integer,primary_key=True,autoincrement=True)
+    username = Column(String(50))
+
+    def __repr__(self):
+        return "<User(username:%s)>" % self.username
+
+class UserExtend(Base):
+    __tablename__ = "user_extend"
+    id = Column(Integer,primary_key=True,autoincrement=True)
+    school = Column(String(50))
+    uid = Column(Integer,ForeignKey('user.id'))
+
+    user = relationship('User',backref=backref('extend',uselist=False))
+
 ```
 
 
