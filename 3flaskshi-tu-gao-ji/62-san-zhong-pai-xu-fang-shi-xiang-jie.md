@@ -1,28 +1,23 @@
 ### 排序
 
-1. order\_by:可以指定根据这个表中的某个字段进行排序，如果在前面添加了一个。，代表的是降序排序  
-   1. \`\`\`
+1. order\_by:可以指定根据这个表中的某个字段进行排序，如果在前面添加了一个。，代表的是降序排序
 
-   # 默认正序排序
-
-   # 降序排序
-
-   # articles = session.query\(Article\).order\_by\(Article.create\_time.desc\(\)\).all\(\)
-
-   # 降序，在字段前面加个符号代表降序
-
-   # articles = session.query\(Article\).order\_by\("-create\_time"\).all\(\)
-
-   articles = session.query\(Article\).all\(\)  
-      for article in articles:  
-          print\(article\)  
-      \`\`\`
+   1. ```
+      默认正序排序
+      降序排序
+      articles = session.query(Article).order_by(Article.create_time.desc()).all()
+      降序，在字段前面加个符号代表降序
+      articles = session.query(Article).order_by("-create_time").all()
+      articles = session.query(Article).all()
+         for article in articles:
+             print(article)
+      ```
 
 2. 在模型定义的时候指定默认排序:有些时候，不想每次在查询的时候都指定排序的方式，可以在定义模型的时候就指定排序的方式。有以下两种方式:  
    1. relationship的order\_by参数:在指定relationship的时候，传递order\_by参数来指定排序的字段  
    2. 在模型定义中，添加以下代码:  
-    `__mapper_args__ = {        
-          'order_by':title,        
+    `__mapper_args__ = {          
+          'order_by':title,          
       }`
 
    即可让文章用标题来进行排序
