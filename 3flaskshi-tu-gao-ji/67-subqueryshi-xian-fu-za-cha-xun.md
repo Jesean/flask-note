@@ -52,7 +52,6 @@ from sqlalchemy.orm.query import Query
 # result = session.query(User.age,func.count(User.id)).group_by(User.age).all()
 result = session.query(User.age,func.count(User.id)).group_by(User.age).having(User.age < 18).all()
 print(result)
-
 ```
 
 
