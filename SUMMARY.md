@@ -65,7 +65,7 @@
   * [64 数据查询懒加载技术](3flaskshi-tu-gao-ji/64-shu-ju-cha-xun-lan-jia-zai-ji-zhu.md)
   * [65 group\_by和having子句](3flaskshi-tu-gao-ji/65-groupby-he-having-zi-ju.md)
   * [66 join实现复杂查询](3flaskshi-tu-gao-ji/66-joinshi-xian-fu-za-cha-xun.md)
-  * 67 subquery实现复杂查询
+  * [67 subquery实现复杂查询](3flaskshi-tu-gao-ji/67-subqueryshi-xian-fu-za-cha-xun.md)
   * 68 Flask-SQLAlchemy的使用详解
   * 69 alembic数据库迁移工具基本使用
   * 70 alembic常用命令和经典错误解决办法
