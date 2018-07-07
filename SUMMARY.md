@@ -63,7 +63,7 @@
   * [62 三种排序方式详解](3flaskshi-tu-gao-ji/62-san-zhong-pai-xu-fang-shi-xiang-jie.md)
   * [63 limit、offset以及切片操作](3flaskshi-tu-gao-ji/63-limitoffsetyi-ji-qie-pian-cao-zuo.md)
   * [64 数据查询懒加载技术](3flaskshi-tu-gao-ji/64-shu-ju-cha-xun-lan-jia-zai-ji-zhu.md)
-  * 65 group\_by和having子句
+  * [65 group\_by和having子句](3flaskshi-tu-gao-ji/65-groupby-he-having-zi-ju.md)
   * 66 join实现复杂查询
   * 67 subquery实现复杂查询
   * 68 Flask-SQLAlchemy的使用详解
