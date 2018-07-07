@@ -8,7 +8,7 @@ for u,a in session.query(User,Address).filter(User.id == Address.user_id).all()
     print a
 ```
 
-join方法配合filter过滤方法一起使用
+tips:join方法配合filter过滤方法一起使用
 
 ---
 
