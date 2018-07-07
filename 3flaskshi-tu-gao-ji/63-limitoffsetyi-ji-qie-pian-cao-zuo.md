@@ -70,8 +70,6 @@ class Article(Base):
 # 切片
 articles = session.query(Article).order_by(Article.id.desc())[0:10]
 print(articles)
-
-
 ```
 
 
