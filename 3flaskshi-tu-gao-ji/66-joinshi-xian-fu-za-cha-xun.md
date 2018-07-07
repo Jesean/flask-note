@@ -102,7 +102,6 @@ class Article(Base):
 # # # outerjoin
 # result = session.query(Article).outerjoin(User).group_by(User.id).order_by(func.count(Article.id).desc()).all()
 # print(result)
-
 ```
 
 
