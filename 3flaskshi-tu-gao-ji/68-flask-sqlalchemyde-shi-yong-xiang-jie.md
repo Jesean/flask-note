@@ -50,7 +50,7 @@ class UserModel(db.Model)
 ```
 如果查找数据只是查找一个模型上的数据，就可以通过"模型.query"的方式进行查找。"query"就跟之前的sqlalchemy中的query方法是一样的。
 '''
-
+user = User.query.filter(User.id == 1).all()
 '''
 ```
 
