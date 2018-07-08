@@ -62,5 +62,13 @@ class User(Base):
 alembic revision --autogenerate -m "第一次提交"
 ```
 
+![](/assets/alembic02.png)
+
 5.更新数据库:使用alembic upgrade head 将刚刚生成的迁移文件，真正映射到数据库中。同理，如果要降级，那么使用
+
+```
+alembic upgrade head
+```
+
+
 
