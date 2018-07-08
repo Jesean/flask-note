@@ -4,6 +4,10 @@ alembic是sqlalchemy的作者开发的。用来做ORM模型与数据的迁移与
 
 1.初始化alembic仓库:在终端中，cd到项目目录中，然后执行alembic init alembic，创建一个名叫alembic的仓库。
 
+```
+alembic init learn_alembic
+```
+
 2.创建模型类:创建一个models.py模块，然后在里面定义模型类，示例代码:
 
 ```
