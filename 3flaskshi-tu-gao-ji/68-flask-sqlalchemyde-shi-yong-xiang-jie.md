@@ -137,8 +137,6 @@ if __name__ == '__main__':
     # init_data()
     query()
     # app.run()
-
-
 ```
 
 
