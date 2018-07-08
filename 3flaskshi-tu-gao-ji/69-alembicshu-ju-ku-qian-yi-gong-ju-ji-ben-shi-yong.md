@@ -37,7 +37,9 @@ class User(Base):
   ```
 * 为了使用模型类更新数据库，需要在env.py文件中设置target\_metadata，默认为target\_metadata=None。使用sys模块把当前项目的路径导入到path中:
 * ```
-
+  import os
+  import sys
+  sys.path.append(os.path.dirname(os.path.abspath(__file__)))
   ```
 
 
