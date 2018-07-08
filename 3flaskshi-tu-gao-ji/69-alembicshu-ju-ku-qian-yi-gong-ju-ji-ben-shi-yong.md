@@ -40,6 +40,10 @@ class User(Base):
   import os
   import sys
   sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/.../" )
+  from models import Base
+  ...# 省略代码
+  target_metadata = Base.metadata # 设置创建模型的元类
+  ...# 省略代码
   ```
 
 
