@@ -70,5 +70,5 @@ alembic revision --autogenerate -m "第一次提交"
 alembic upgrade head
 ```
 
-
+6.修改代码后，重复4~5步骤
 
