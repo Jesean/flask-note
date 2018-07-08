@@ -33,9 +33,26 @@ class UserModel(db.Model)
 
 ### 将ORM模型映射到数据库
 
+```
+1.db.drop_all()
+2.db.create_all()
+```
+
 ### 使用session
 
+```
+以后session也不需要使用"sessionmaker"来创建了，直接使用"db.session"就可以了。操作这个session的时候就跟之前的"sqlalchemy"的
+"session"是一样的。
+```
+
 ### 查询数据
+
+```
+如果查找数据只是查找一个模型上的数据，就可以通过"模型.query"的方式进行查找。"query"就跟之前的sqlalchemy中的query方法是一样的。
+'''
+
+'''
+```
 
 
 
