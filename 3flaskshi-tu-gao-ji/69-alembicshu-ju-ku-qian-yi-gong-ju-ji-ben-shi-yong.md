@@ -35,7 +35,7 @@ class User(Base):
 * ```
   sqlalchemy.url = mysql+pymysql://root:123456@localhost/alembic_demo?charset=utf8
   ```
-* 为了使用模型类更新数据库，需要在env.py文件中设置target_metadata，默认为target_
+* 为了使用模型类更新数据库，需要在env.py文件中设置targetmetadata，默认为target
 
 
 
