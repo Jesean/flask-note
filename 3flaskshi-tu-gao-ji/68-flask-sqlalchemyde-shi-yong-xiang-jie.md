@@ -54,5 +54,92 @@ user = User.query.filter(User.id == 1).all()
 '''
 ```
 
+---
+
+### 完整代码
+
+```
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+
+HOSTNAME = "127.0.0.1"
+PORT = "3306"
+DATABASE = "first_flask"
+USERNAME = "root"
+PASSWORD = "123456"
+# dialect+dricer://username:password@host:port/database
+DB_URI = "mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8".format(USERNAME,PASSWORD,HOSTNAME,PORT,DATABASE)
+
+# 配置
+app.config["SQLALCHEMY_DATABASE_URI"] = DB_URI
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
+# 数据库
+# db == > app
+# 通过db访问app
+db = SQLAlchemy(app)
+
+# 定义orm模型
+# 继承自db.Model
+# UserModel == > user_model
+class User(db.Model):
+    __tablename__ = "user"
+    id = db.Column(db.Integer,primary_key=True,autoincrement=True)
+    username = db.Column(db.String(50),nullable=False)
+
+    def __repr__(self):
+        return "<Article(username:%s)>" % self.username
+
+class Article(db.Model):
+    __tablename__ = "article"
+    id = db.Column(db.Integer,primary_key=True,autoincrement=True)
+    title = db.Column(db.String(50),nullable=False)
+    uid = db.Column(db.Integer,db.ForeignKey("user.id"))
+
+    author = db.relationship("User",backref=db.backref("articles"))
+
+    def __repr__(self):
+        return "<Article(title:%s)>" % self.title
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+def init_data():
+    db.drop_all()
+    db.create_all()
+    user = User(username="angle")
+    article = Article(title="title one")
+    article.author = user
+    # user.articles.append(article)
+    db.session.add(article)
+    db.session.commit()
+
+def query():
+    # db.session.query(User)与下面效果一样
+    # order_by
+    # filter
+    # filter_by
+    # group_by
+    # join
+    # subquery
+    # user = User.query.filter(User.id == 1).all()
+    # users = User.query.order_by(User.id.desc()).all()
+    # print(users)
+    # 过滤、删除
+    user = User.query.filter(User.username == "angle3").first()
+    db.session.delete(user)
+    db.session.commit()
+
+if __name__ == '__main__':
+    # init_data()
+    query()
+    # app.run()
+
+
+```
+
 
 
