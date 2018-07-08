@@ -33,7 +33,7 @@ class User(Base):
     username = Column(String(50),nullable=False)
 ```
 
-3.修改配置文件:
+3.修改配置文件,指定连接的数据库:
 
 * 在alembic.ini中设置数据库的连接，sqlalchemy.url = driver://user:pass@localhost/dbname，比较以mysql数据库为例，则配置后的代码为:
 * ```
