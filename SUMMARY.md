@@ -67,7 +67,7 @@
   * [66 join实现复杂查询](3flaskshi-tu-gao-ji/66-joinshi-xian-fu-za-cha-xun.md)
   * [67 subquery实现复杂查询](3flaskshi-tu-gao-ji/67-subqueryshi-xian-fu-za-cha-xun.md)
   * [68 Flask-SQLAlchemy的使用详解](3flaskshi-tu-gao-ji/68-flask-sqlalchemyde-shi-yong-xiang-jie.md)
-  * 69 alembic数据库迁移工具基本使用
+  * [69 alembic数据库迁移工具基本使用](3flaskshi-tu-gao-ji/69-alembicshu-ju-ku-qian-yi-gong-ju-ji-ben-shi-yong.md)
   * 70 alembic常用命令和经典错误解决办法
   * [71 Flask-SQLAlchemy下alembic的配置](3flaskshi-tu-gao-ji/71-flask-sqlalchemyxia-alembic-de-pei-zhi.md)
   * [72 Flask-Script详细讲解](3flaskshi-tu-gao-ji/72-flask-scriptxiang-xi-jiang-jie.md)
