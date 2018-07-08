@@ -41,10 +41,14 @@ class User(Base):
   ```
 * 为了使用模型类更新数据库，需要在env.py文件中设置target\_metadata，默认为target\_metadata=None。使用sys模块把当前项目的路径导入到path中:
 * ```
-  import os
-  import sys
-  sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/.../" )
-  from models import Base
+  import sys,os
+  # 1.__file__：当前文档（env.py）
+  #2.os.path.dirname(__file__)：获取当前文档的目录
+  #3.os.path.dirname(os.path.dirname(__file__))：获取当前文档目录的上一级目录
+  #4.sys.path: python寻找导入的包的所有路径
+  sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+  import models
+
   ...# 省略代码
   target_metadata = Base.metadata # 设置创建模型的元类
   ...# 省略代码
