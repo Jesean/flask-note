@@ -28,6 +28,8 @@
 
 ```
 alembic upgrade Revision ID
+
+把数据映射到数据库中
 alembic upgrade head
 ```
 
