@@ -48,5 +48,17 @@ python manage.py db upgrade
 python manage.py db downgrade version(上一个版本的版本号)
 ```
 
+---
+
+```
+python manage.py db init
+
+python manage.py db migrate
+
+python manage.py db upgrade
+
+
+```
+
 
 
