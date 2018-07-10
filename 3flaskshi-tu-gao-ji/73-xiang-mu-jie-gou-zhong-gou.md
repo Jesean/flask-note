@@ -15,19 +15,18 @@ class User(db.Model):
     __tablename__ = 'user'
     id = db.Column(db.Integer,primary_key=True,autoincrement=True)
     username = db.Column(db.String(50),nullable=False)
-
 ```
 
 #### config.py
 
 ```
-HOSTNAME = "127.0.0.1"
-PORT = "3306"
-DATABASE = "alembic_demo"
-USERNAME = "root"
-PASSWORD = "123456"
-# dialect+dricer://username:password@host:port/database
-DB_URI = "mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8".format(USERNAME,PASSWORD,HOSTNAME,PORT,DATABASE)
+DB_USERNAME = 'root'
+DB_PASSWORD = '123456'
+DB_HOST = '127.0.0.1'
+DB_PORT = '3306'
+DB_NAME = 'flask_migrate_demo'
+
+DB_URI = 'mysql+pymysql://%s:%s@%s:%s/%s?charset=utf8' % (DB_USERNAME,DB_PASSWORD,DB_HOST,DB_PORT,DB_NAME)
 
 SQLALCHEMY_DATABASE_URI = DB_URI
 ```
