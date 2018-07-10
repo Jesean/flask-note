@@ -44,15 +44,24 @@ manager = Manager(app)
 
 @manager.option("-u","--username",dest="username")
 @manager.option("-a","--age",dest="age")
-def add_user(username,age):
+def add_user1(username,age):
      print("用户名:{},年龄:{}".format(username,age))
+     
+@manager.option("-u","--username",dest="username")
+@manager.option("-e","--email",dest="email")
+def add_user2(username,email):
+    user = BackendUser(username=username,email=email)
+    db.session.add(user)
+    db.session.commit()
+
+
 
 
 if __name__ == '__main__':
     manager.run()
 ```
 
-命令: python manage.py add\_user  -u angle -a 18
+命令: python manage.py add\_user1  -u angle -a 18
 
 tips:可以有多个@option选项参数，命令即可使用-u，又可使用--username，dest指定用户输入命令时将值作为参数传给了函数中的username。
 
@@ -114,48 +123,13 @@ manager = Manager(app)
 # python manage.py db init
 manager.add_command("db",db_manager)
 
-@manager.option("-u","--username",dest="username")
-@manager.option("-e","--email",dest="email")
-def add_user(username,email):
-    user = BackendUser(username=username,email=email)
-    db.session.add(user)
-    db.session.commit()
-    
 if __name__ == '__main__':
     manager.run()
 ```
 
-myapp.py
+命令:python manage.py db init
 
-```
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-import config
+tips:执行db\_script.py下init函数
 
-app = Flask(__name__)
-app.config.from_object(config)
-
-db = SQLAlchemy(app)
-
-class BackendUser(db.Model):
-    __tablename__ = "backend_user"
-    id = db.Column(db.Integer,primary_key=True,autoincrement=True)
-    username = db.Column(db.String(50),nullable=False)
-    email = db.Column(db.String(50),nullable=False)
-
-# 可以使用alembic
-db.drop_all()
-db.create_all()
-
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
-
-if __name__ == '__main__':
-    app.run()
-
-```
-
-
+add\_command\(\)添加子类，将db\_manager映射为db
 
