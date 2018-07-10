@@ -29,5 +29,11 @@ manager.add_command("db",MigrateCommand)
 python manage.py db init
 ```
 
+#### 使用migrate命令创建迁移脚本
+
+```
+python manage.py db migrate -m "初始化迁移脚本"
+```
+
 
 
