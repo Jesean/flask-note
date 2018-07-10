@@ -35,14 +35,13 @@ SQLALCHEMY_DATABASE_URI = DB_URI
 
 ```
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 import config
 from exts import db
 
 app = Flask(__name__)
 app.config.from_object(config)
-# 获取app
 db.init_app(app)
+
 
 @app.route('/')
 def hello_world():
@@ -52,8 +51,10 @@ def hello_world():
 def profile():
     pass
 
+
 if __name__ == '__main__':
     app.run()
+
 ```
 
 
