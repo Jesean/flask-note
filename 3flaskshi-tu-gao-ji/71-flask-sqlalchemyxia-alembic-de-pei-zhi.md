@@ -27,7 +27,33 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
+```
 
+### config.py
+
+```
+HOSTNAME = "127.0.0.1"
+PORT = "3306"
+DATABASE = "alembic_demo"
+USERNAME = "root"
+PASSWORD = "123456"
+# dialect+dricer://username:password@host:port/database
+DB_URI = "mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8".format(USERNAME,PASSWORD,HOSTNAME,PORT,DATABASE)
+
+SQLALCHEMY_DATABASE_URI = DB_URI
+```
+
+### env.py
+
+```
+....
+import sys,os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+import myapp
+....
+
+target_metadata = myapp.db.Model.metadata
+....
 ```
 
 
