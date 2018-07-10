@@ -37,6 +37,11 @@ alembic heads
 
 # 查看当前版本号
 alembic current
+
+# 更新字段/添加字段
+alembic revision --autogenerate -m "add country column"
+# 执行
+alembic upgrade head
 ```
 
 
