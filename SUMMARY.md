@@ -71,7 +71,7 @@
   * [70 alembic常用命令和经典错误解决办法](3flaskshi-tu-gao-ji/70-alembicchang-yong-ming-ling-he-jing-dian-cuo-wu-jie-jue-ban-fa.md)
   * [71 Flask-SQLAlchemy下alembic的配置](3flaskshi-tu-gao-ji/71-flask-sqlalchemyxia-alembic-de-pei-zhi.md)
   * [72 Flask-Script详细讲解](3flaskshi-tu-gao-ji/72-flask-scriptxiang-xi-jiang-jie.md)
-  * 73 项目结构重构
+  * [73 项目结构重构](3flaskshi-tu-gao-ji/73-xiang-mu-jie-gou-zhong-gou.md)
   * 74 Flask-Migrate详细讲解
   * 75 Flask-Migrate注意事项
 * 5.Flask知识点补充
