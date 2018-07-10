@@ -58,6 +58,11 @@ python manage.py db migrate
 python manage.py db upgrade
 
 # 添加新字段后重复2~3步骤
+
+# 回滚操作
+python manage.py db downgrade version
+# python manage.py db downgrade 289402d590c2
+
 ```
 
 ---
