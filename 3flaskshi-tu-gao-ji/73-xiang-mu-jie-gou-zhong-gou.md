@@ -12,9 +12,9 @@ db = SQLAlchemy()
 from exts import db
 
 class User(db.Model):
-    __tablename__ = "user"
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    username = db.Column(db.String(50), nullable=False)
+    __tablename__ = 'user'
+    id = db.Column(db.Integer,primary_key=True,autoincrement=True)
+    username = db.Column(db.String(50),nullable=False)
 
 ```
 
@@ -55,7 +55,6 @@ def profile():
 
 if __name__ == '__main__':
     app.run()
-
 ```
 
 
