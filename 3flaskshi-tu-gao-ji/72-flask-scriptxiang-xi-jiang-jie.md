@@ -62,26 +62,98 @@ tips:可以有多个@option选项参数，命令即可使用-u，又可使用--u
 from flask_script import Manager  ，Server
 from flask_script import Command  
 from debug import app  
-  
+
 manager = Manager(app)  
 
-
 class Hello(Command):
-    'hello world'
     def run(self):
-        print('hello world')
+        print('测试')
 
-#自定义命令一：
+#自定义命令一/将类Hello()映射为hello
 manager.add_command('hello', Hello())
-# 自定义命令二：
+
+#自定义命令二/启动命令
 manager.add_command("runserver", Server()) #命令是runserver
-if __name__ == '__main__':  
-    manager.run()  
+if __name__ == '__main__':
+    manager.run()
 ```
 
+#### 子类
 
+db\_script.py
 
 ```
+from flask_script import  Manager
+
+db_manager = Manager()
+
+@db_manager.command
+def init():
+    print('迁移仓库创建完毕')
+
+@db_manager.command
+def revision():
+    print("迁移脚本生成成功")
+
+@db_manager.command
+def upgrade():
+    print("脚本映射到数据库成功")
+```
+
+manage.py
+
+```
+from flask_script import Manager
+from myapp import app,BackendUser,db
+from db_script import db_manager
+
+# 使用Manager创建一个对象
+manager = Manager(app)
+
+# 添加子命令
+# python manage.py db init
+manager.add_command("db",db_manager)
+
+@manager.option("-u","--username",dest="username")
+@manager.option("-e","--email",dest="email")
+def add_user(username,email):
+    user = BackendUser(username=username,email=email)
+    db.session.add(user)
+    db.session.commit()
+    
+if __name__ == '__main__':
+    manager.run()
+```
+
+myapp.py
+
+```
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+import config
+
+app = Flask(__name__)
+app.config.from_object(config)
+
+db = SQLAlchemy(app)
+
+class BackendUser(db.Model):
+    __tablename__ = "backend_user"
+    id = db.Column(db.Integer,primary_key=True,autoincrement=True)
+    username = db.Column(db.String(50),nullable=False)
+    email = db.Column(db.String(50),nullable=False)
+
+# 可以使用alembic
+db.drop_all()
+db.create_all()
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+
+if __name__ == '__main__':
+    app.run()
 
 ```
 
