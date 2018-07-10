@@ -29,10 +29,23 @@ manager.add_command("db",MigrateCommand)
 python manage.py db init
 ```
 
-#### 使用migrate命令创建迁移脚本
+#### 使用migrate命令将模型映射到文件中
 
 ```
-python manage.py db migrate -m "初始化迁移脚本"
+python manage.py db migrate
+# python manage.py db migrate -m "initial migratetion"
+```
+
+#### 使用upgrade命令将文件数据映射到数据库中
+
+```
+python manage.py db upgrade
+```
+
+#### 使用downgrade命令回滚迁移中的数据库改动、
+
+```
+python manage.py db downgrade 上一个版本的版本号
 ```
 
 
