@@ -40,6 +40,7 @@ from exts import db
 
 app = Flask(__name__)
 app.config.from_object(config)
+# 获取app
 db.init_app(app)
 
 
@@ -54,7 +55,6 @@ def profile():
 
 if __name__ == '__main__':
     app.run()
-
 ```
 
 
