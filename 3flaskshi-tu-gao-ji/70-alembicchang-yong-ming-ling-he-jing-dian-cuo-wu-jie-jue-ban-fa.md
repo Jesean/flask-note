@@ -54,7 +54,10 @@ alembic upgrade head
 alembic history
 
 # 降级
-alembic downgrade head
+将数据库降级到最初版本
+alembic downgrade base
+将数据库降级到执行版本，使用alembic downgrade+版本号，不包含注释部分
+alembic downgrade <version>
 ```
 
 
