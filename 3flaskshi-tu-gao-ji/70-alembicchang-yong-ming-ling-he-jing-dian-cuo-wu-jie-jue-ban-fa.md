@@ -54,7 +54,7 @@ alembic upgrade head
 alembic history
 
 # 降级
-alembic downgrade xxx
+alembic downgrade head
 ```
 
 
