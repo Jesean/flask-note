@@ -56,6 +56,8 @@ python manage.py db init
 python manage.py db migrate
 
 python manage.py db upgrade
+
+# 添加新字段后重复2~3步骤
 ```
 
 ---
@@ -70,7 +72,6 @@ class User(db.Model):
     id = db.Column(db.Integer,primary_key=True,autoincrement=True)
     username = db.Column(db.String(50),nullable=False)
     age = db.Column(db.Integer)
-
 ```
 
 
