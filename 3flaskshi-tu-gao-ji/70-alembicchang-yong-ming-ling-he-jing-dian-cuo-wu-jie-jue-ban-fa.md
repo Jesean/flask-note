@@ -27,6 +27,9 @@
 ---
 
 ```
+# head
+代表最新版本的迁移脚本的版本号
+
 alembic upgrade Revision ID
 
 把数据映射到数据库中
@@ -42,6 +45,11 @@ alembic current
 alembic revision --autogenerate -m "add country column"
 # 执行
 alembic upgrade head
+
+# 查看所有历史消息
+alembic history
+
+
 ```
 
 
