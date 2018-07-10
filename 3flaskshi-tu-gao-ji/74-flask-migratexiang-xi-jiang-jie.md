@@ -46,10 +46,16 @@ python manage.py db migrate
 python manage.py db upgrade
 ```
 
-#### 使用downgrade命令回滚迁移中的数据库改动、
+#### 使用downgrade命令回滚迁移中的数据库改动
 
 ```
 python manage.py db downgrade version(上一个版本的版本号)
+```
+
+#### 更多命令
+
+```
+python manage.py db --help
 ```
 
 ---
