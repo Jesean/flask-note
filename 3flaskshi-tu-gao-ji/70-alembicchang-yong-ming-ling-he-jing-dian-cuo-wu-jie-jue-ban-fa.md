@@ -46,10 +46,12 @@ alembic revision --autogenerate -m "add country column"
 # 执行
 alembic upgrade head
 
+# 删除字段
+alembic revision --autogenerate -m "delete contry column"
+alembic upgrade head
+
 # 查看所有历史消息
 alembic history
-
-
 ```
 
 
