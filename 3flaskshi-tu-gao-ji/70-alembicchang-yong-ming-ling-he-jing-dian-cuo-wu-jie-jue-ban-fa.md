@@ -34,6 +34,9 @@ alembic upgrade head
 
 # 查看Revision ID
 alembic heads
+
+# 查看当前版本号
+alembic current
 ```
 
 
