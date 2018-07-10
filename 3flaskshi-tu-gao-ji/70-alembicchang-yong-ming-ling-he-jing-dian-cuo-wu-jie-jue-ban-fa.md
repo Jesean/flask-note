@@ -24,5 +24,12 @@
 | FAILED:Target databases is not up to date | 主要是heads和current不相同。current落后于heads的版本 | 将current移动到head上。alembic upgrade head |
 | FAILED:can't locate revision identified by 'xxxxx' | 数据库中存的版本号不在迁移脚本文档中 | 删除数据的alembic\_version表中的数据，重新执行alembic upgrade head |
 
+---
+
+```
+alembic upgrade Revision ID
+alembic upgrade head
+```
+
 
 
