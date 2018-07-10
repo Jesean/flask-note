@@ -19,7 +19,11 @@ from flask_migrate import Migrate,MigrateCommand
 from exts import db
 
 manager = Manager(app)
+
+# 用来绑定app和flask_migrate的
 Migrate(app,db)
+
+# 添加Nigrate的所有子命令到db下
 manager.add_command("db",MigrateCommand)
 ```
 
@@ -62,7 +66,6 @@ python manage.py db upgrade
 # 回滚操作
 python manage.py db downgrade version
 # python manage.py db downgrade 289402d590c2
-
 ```
 
 ---
