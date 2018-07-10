@@ -52,6 +52,9 @@ alembic upgrade head
 
 # 查看所有历史消息
 alembic history
+
+# 降级
+alembic downgrade xxx
 ```
 
 
