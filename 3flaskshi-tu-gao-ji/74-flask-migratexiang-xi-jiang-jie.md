@@ -23,7 +23,7 @@ manager = Manager(app)
 # 用来绑定app和flask_migrate的
 Migrate(app,db)
 
-# 添加Nigrate的所有子命令到db下
+# 添加Migrate的所有子命令到db下
 manager.add_command("db",MigrateCommand)
 ```
 
