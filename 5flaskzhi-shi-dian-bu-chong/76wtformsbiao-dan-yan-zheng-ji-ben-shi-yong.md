@@ -8,5 +8,9 @@ Flask-WTF是简化了WTForms操作的一个第三方库，WTForms表单的两个
 pip install flask-wtf
 ```
 
+#### 表单验证
+
+
+
 
 
