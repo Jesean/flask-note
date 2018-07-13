@@ -8,7 +8,44 @@
 
 ```
 form = UploadFrom(CombinedMultiDict([request.form,request.files]))
-request.form.update(request.files)
+```
+
+---
+
+```
+upload.py
+
+@app.route("/upload/",methods=["GET","POST"])
+def upload():
+    if request.method == "GET":
+        return render_template("upload.html")
+    else:
+        form = UploadFrom(CombinedMultiDict([request.form,request.files]))
+        if form.validate():
+        # 通过form.字段名.data来获取数据
+            desc = form.desc.data
+            avatar = form.avatar.data
+            filename = secure_filename(avatar.filename)
+            avatar.save(os.path.join(UPLOAD_PATH,filename))
+            print(os.path.join("\\".join(UPLOAD_PATH.split('/')),filename))
+            return "文件上传成功"
+        else:
+            print(form.errors)
+            return "fail"
+```
+
+```
+forms.py
+
+from wtforms import Form,FileField,StringField
+from wtforms.validators import  InputRequired
+# flask_wtf
+from flask_wtf.file import FileAllowed,FileRequired
+
+class UploadFrom(Form):
+    # 使用Flask - WTF提供的FileRequired、FileAllowed验证函数
+    avatar = FileField(validators=[FileRequired(),FileAllowed(['jpg','png','gif'])])
+    desc = StringField(validators=[InputRequired()])
 ```
 
 
