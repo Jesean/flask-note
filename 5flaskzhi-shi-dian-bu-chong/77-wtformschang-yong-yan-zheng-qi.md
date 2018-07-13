@@ -86,7 +86,74 @@ class LoginForm(Form):
     # home_page = StringField(validators=[URL()])
     # uuid值验证
     uuid = StringField(validators=[UUID()])
+```
 
+#### login.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录表</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <table>
+            <tbody>
+                <tr>
+                    <td>邮箱:</td>
+                    <td><input type="text" name="email"/></td>
+                </tr>
+                <tr>
+                    <td>用户民:</td>
+                    <td><input type="text" name="username"/></td>
+                </tr>
+                <tr>
+                    <td>年龄:</td>
+                    <td><input type="text" name="age"/></td>
+                </tr>
+                <tr>
+                    <td>手机号:</td>
+                    <td><input type="text" name="phone"/></td>
+                </tr>
+                <tr>
+                    <td>个人主页:</td>
+                    <td><input type="text" name="home_page"/></td>
+                </tr>
+                <tr>
+                    <td>UUID:</td>
+                    <td><input type="text" name="uuid"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="立即注册"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
+```
+
+myapp.py
+
+```
+@app.route("/login/",methods=["GET","POST"])
+def login():
+    if request.method == "GET":
+        return render_template("login.html")
+    else:
+        # 将表单数据传递给LoginForm进行验证
+        form = LoginForm(request.form)
+        if form.validate():
+            return "successful"
+        else:
+            return "fail"
+
+#uuid值:fab3e92a-13b0-4938-bae8-5e58066ae11d
+# from uuid import uuid4
+# print(uuid4())
 ```
 
 
