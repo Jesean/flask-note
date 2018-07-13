@@ -92,6 +92,16 @@ WTForms库有两个作用:第一个就是做表单验证，把用户提交上来
 
 1.自定义一个表单类，继承自wtforms.Form类
 
+```
+继承Form
+class RegistForm(Form):
+# message指定错误信息
+username = StringField(validators=[Length(min=3,max=10,message="用户名长度必须在3到10位之间")])
+password = StringField(validators=[Length(min=6,max=10)])
+# EqualTo指定与之保持相同值的字段
+password_repeat = StringField(validators=[Length(min=6,max=10),EqualTo("password")])
+```
+
 2.定义需要验证的字段，字段的名字必须和模板中那些需要验证的input标签的那么属性值保持一致
 
 3.在需要验证的字段上，需要指定好具体的数据类型
