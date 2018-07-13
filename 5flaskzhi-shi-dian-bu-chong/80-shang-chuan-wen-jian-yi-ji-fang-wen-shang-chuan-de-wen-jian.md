@@ -25,3 +25,11 @@
 
 2.在后台获取上传文件，应该使用"request.files.get\("文件字段名"\)"
 
+```
+# 获取文件
+avatar = request.files.get("avatar")
+
+```
+
+
+
