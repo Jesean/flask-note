@@ -110,5 +110,16 @@ class RegistForm(Form):
 
 5.把表单数据\\(request.form\\)传递给RegistForm表单类，如果调用form.validate\\(\\)方法，如果返回True，那么代表用户输入的数据都是合法的，否则代表用户输入的数据是有问题的。如果验证失败了，那么可以通过form.error来获取具体的错误信息。
 
-6.
+```
+        form = RegistForm(request.form)
+        if form.validate():
+            return "success"
+        else:
+            # 打印失败原因
+            print(form.errors)
+            return "fail"
+
+```
+
+
 
