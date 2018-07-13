@@ -48,6 +48,11 @@ home_page = StringField(validators=[URL()])
 
 * UUID:验证UUID
 
+```
+# uuid值验证
+uuid = StringField(validators=[UUID()])
+```
+
 ---
 
 
