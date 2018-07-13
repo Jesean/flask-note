@@ -25,6 +25,10 @@ username = StringField(validators=[input_required()])
 
 * Length:长度限制，有min和max两个值进行限制
 
+```
+  username = StringField(validators=[Length(min=3,max=10,message="用户名长度必须在3到10位之间")])
+```
+
 * NumberRange:数字的区间，有min和max两个值限制，如果处在两个数字之间则满足
 
 ```
