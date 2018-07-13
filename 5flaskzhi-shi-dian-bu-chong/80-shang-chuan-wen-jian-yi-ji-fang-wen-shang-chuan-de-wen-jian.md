@@ -30,7 +30,14 @@
 avatar = request.files.get("avatar")
 ```
 
-3.获取到上传文件后，使用"avatar.save\(路径\)"来保存文件
+3.考虑安全性，在保存文件前，先使用"werkzeug.utils.secure\_filename"来对上传的文件名来进行过滤
+
+```
+# 将文件名，包装一下，避免发生安全隐患
+filename = secure_filename(avatar.filename)
+```
+
+4.获取到上传文件后，使用"avatar.save\(路径\)"来保存文件
 
 ```
 UPLOAD_PATH = os.path.join(os.path.dirname(__file__),"upload")
