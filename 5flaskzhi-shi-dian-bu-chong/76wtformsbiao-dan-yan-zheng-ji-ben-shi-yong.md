@@ -90,19 +90,7 @@ WTForms库有两个作用:第一个就是做表单验证，把用户提交上来
 
 ### 表单验证
 
-1. 自定义一个表单类，继承自wtforms.Form类
-
-   1. ```
-      # 继承Form
-      class RegistForm(Form):
-          # message指定错误信息
-          username = StringField(validators=[Length(min=3,max=10,message="用户名长度必须在3到10位之间")])
-          password = StringField(validators=[Length(min=6,max=10)])
-          # EqualTo指定与之保持相同值的字段
-          password_repeat = StringField(validators=[Length(min=6,max=10),EqualTo("password")])
-
-
-      ```
+1.自定义一个表单类，继承自wtforms.Form类
 
 2. 定义需要验证的字段，字段的名字必须和模板中那些需要验证的input标签的那么属性值保持一致
 
@@ -110,18 +98,11 @@ WTForms库有两个作用:第一个就是做表单验证，把用户提交上来
 
 4. 在相关的字段上，指定验证器
 
-5. 把表单数据\(request.form\)传递给RegistForm表单类，如果调用form.validate\(\)方法，如果返回True，那么代表用户输入的数据都是合法的，否则代表用户输入的数据是有问题的。如果验证失败了，那么可以通过form.error来获取具体的错误信息。
+5. 把表单数据\\(request.form\\)传递给RegistForm表单类，如果调用form.validate\\(\\)方法，如果返回True，那么代表用户输入的数据都是合法的，否则代表用户输入的数据是有问题的。如果验证失败了，那么可以通过form.error来获取具体的错误信息。
 
-6. ```
-   form = RegistForm(request.form)
-       if form.validate():
-           return "success"
-      else:           
-      # 打印失败原因
-           print(form.errors)
-           return "fail"
 
-   ```
+
+6.
 
 
 
