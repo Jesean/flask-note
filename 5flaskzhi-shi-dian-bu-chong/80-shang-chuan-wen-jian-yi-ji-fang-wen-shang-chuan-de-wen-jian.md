@@ -28,7 +28,14 @@
 ```
 # 获取文件
 avatar = request.files.get("avatar")
+```
 
+3.获取到上传文件后，使用"avatar.save\(路径\)"来保存文件
+
+```
+UPLOAD_PATH = os.path.join(os.path.dirname(__file__),"upload")
+
+avatar.save(os.path.join(UPLOAD_PATH,filename))
 ```
 
 
