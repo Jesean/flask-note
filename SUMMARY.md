@@ -76,7 +76,7 @@
   * [75 Flask-Migrate注意事项](3flaskshi-tu-gao-ji/75-flask-migratezhu-yi-shi-xiang.md)
 * [5.Flask知识点补充](5flaskzhi-shi-dian-bu-chong.md)
   * [76 WTForms表单验证基本使用](5flaskzhi-shi-dian-bu-chong/76wtformsbiao-dan-yan-zheng-ji-ben-shi-yong.md)
-  * 77 WTForms常用验证器
+  * [77 WTForms常用验证器](5flaskzhi-shi-dian-bu-chong/77-wtformschang-yong-yan-zheng-qi.md)
   * [78 自定义表单验证器](78-zi-ding-yi-biao-dan-yan-zheng-qi.md)
   * 79 使用WTForms渲染模版
   * 80 上传文件以及访问上传的文件
