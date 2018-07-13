@@ -45,7 +45,7 @@ UPLOAD_PATH = os.path.join(os.path.dirname(__file__),"upload")
 avatar.save(os.path.join(UPLOAD_PATH,filename))
 ```
 
-5.如何从服务器上读取一个文件，应该定义一个url，来获取指定的文件，在这个视图函数中，使用"send_from_directory\(文件的目录,文件名\)"来获取
+5.如何从服务器上读取一个文件，应该定义一个url，来获取指定的文件，在这个视图函数中，使用"send\_from\_directory\(文件的目录,文件名\)"来获取
 
 ```
 @app.route("/images/<filename>/")
@@ -53,6 +53,8 @@ def get_images(filename):
     # send_from_directory(path,文件名)
     return send_from_directory(UPLOAD_PATH,filename)
 ```
+
+---
 
 
 
