@@ -47,7 +47,43 @@ def regist():
 
 if __name__ == '__main__':
     app.run(debug=True)
+```
 
+#### regist.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册表</title>
+</head>
+<body>
+    <form method="POST">
+        <table>
+            <tbody>
+                <tr>
+                    <td>用户名:</td>
+                    <td><input type="text" name="username"/></td>
+                </tr>
+                <tr>
+                    <td>密  码:</td>
+                    <td><input type="text" name="password"/></td>
+                </tr>
+                 <tr>
+                    <td>确认密码:</td>
+                    <td><input type="text" name="password_repeat"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="立即注册"/></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+</body>
+</html>
 ```
 
 
