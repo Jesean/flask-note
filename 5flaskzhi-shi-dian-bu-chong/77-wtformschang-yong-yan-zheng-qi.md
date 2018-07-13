@@ -25,8 +25,6 @@ username = StringField(validators=[input_required()])
 
 * Length:长度限制，有min和max两个值进行限制
 
-
-
 * NumberRange:数字的区间，有min和max两个值限制，如果处在两个数字之间则满足
 
 ```
@@ -42,6 +40,12 @@ phone = StringField(validators=[Regexp(r'1[34578]\d{9}')])
 ```
 
 * URL:必须要是URL的形式
+
+```
+# url验证
+home_page = StringField(validators=[URL()])
+```
+
 * UUID:验证UUID
 
 ---
