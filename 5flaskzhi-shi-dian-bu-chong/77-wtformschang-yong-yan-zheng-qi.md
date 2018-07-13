@@ -59,5 +59,35 @@ uuid = StringField(validators=[UUID()])
 
 ---
 
+#### forms.py
+
+```
+from wtforms import Form,StringField,IntegerField
+from wtforms.validators import Length,EqualTo,Email,Regexp,input_required,NumberRange,URL,UUID
+
+# 继承Form
+class RegistForm(Form):
+    # message指定错误信息
+    username = StringField(validators=[Length(min=3,max=10,message="用户名长度必须在3到10位之间")])
+    password = StringField(validators=[Length(min=6,max=10)])
+    # EqualTo指定与之保持相同值的字段
+    password_repeat = StringField(validators=[Length(min=6,max=10),EqualTo("password")])
+
+class LoginForm(Form):
+    # # 验证邮箱
+    # email = StringField(validators=[Email()])
+    # # 验证用户是否输入
+    # username = StringField(validators=[input_required()])
+    # # 验证范围
+    # age = IntegerField(validators=[NumberRange(12,18)])
+    # # 正则表达式
+    # phone = StringField(validators=[Regexp(r'1[34578]\d{9}')])
+    # # url验证
+    # home_page = StringField(validators=[URL()])
+    # uuid值验证
+    uuid = StringField(validators=[UUID()])
+
+```
+
 
 
