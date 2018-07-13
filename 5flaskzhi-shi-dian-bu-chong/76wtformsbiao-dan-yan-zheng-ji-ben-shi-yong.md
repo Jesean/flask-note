@@ -8,7 +8,7 @@ Flask-WTF是简化了WTForms操作的一个第三方库，WTForms表单的两个
 pip install flask-wtf
 ```
 
-## 表单验证
+#### 源码
 
 #### myapp.py
 
@@ -85,6 +85,8 @@ if __name__ == '__main__':
 </body>
 </html>
 ```
+
+WTForms库有两个作用:第一个就是做表单验证，把用户提交上来的数据进行验证是否合法。第二个就是做模板渲染
 
 
 
