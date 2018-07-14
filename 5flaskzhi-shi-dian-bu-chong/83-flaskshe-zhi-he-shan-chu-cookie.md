@@ -72,7 +72,7 @@ resp.delete_cookie("name")
     #            samesite=None)
     ```
 
-* 设置cookie的有效域名
+* 设置cookie的有效域名:cookie只能在主域名下使用。如果想要在子域名下使用，那么应该给"set\_cookie"传递一个"domain='.ty.com'"来指定其他子域名才能访问到这个cookie信息。
 
 1.定义蓝图
 
@@ -101,5 +101,5 @@ def index():
 127.0.0.1 cms.ty.com
 ```
 
-
+3.
 
