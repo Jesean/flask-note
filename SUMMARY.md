@@ -27,8 +27,11 @@
   * [23 for循环语句详解](chapter1/23-forxun-huan-yu-ju-xiang-jie.md)
   * [24 九九乘法表](chapter1/24-jiu-jiu-cheng-fa-biao.md)
   * [25 宏的概念和基本使用](chapter1/25-hong-de-gai-nian-he-ji-ben-shi-yong.md)
-  * 26 宏的导入和注意事项
-  * 27 include标签使用详解
+  * [26 宏的导入和注意事项](chapter1/26-hong-de-dao-ru-he-zhu-yi-shi-xiang.md)
+  * [27 include标签使用详解](chapter1/27-includebiao-qian-shi-yong-xiang-jie.md)
+  * [28 set和with语句以及模板中定义变量](chapter1/28-sethe-with-yu-ju-yi-ji-mo-ban-zhong-ding-yi-bian-liang.md)
+  * [29 加载静态文件](chapter1/29-jia-zai-jing-tai-wen-jian.md)
+  * [30 模板继承详解](chapter1/30-mo-ban-ji-cheng-xiang-jie.md)
 * 3.Flask视图高级
 * 4.Flask数据库
 
