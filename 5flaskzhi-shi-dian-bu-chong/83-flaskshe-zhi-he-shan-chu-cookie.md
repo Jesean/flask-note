@@ -101,5 +101,12 @@ def index():
 127.0.0.1 cms.ty.com
 ```
 
-3.
+3.设置set\_cookie中的domain参数
+
+```
+ resp = Response("name")
+resp.set_cookie("name", "value",domain=".ty.com")
+```
+
+
 
