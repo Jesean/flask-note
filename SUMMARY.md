@@ -83,4 +83,6 @@
   * [上传文件](5flaskzhi-shi-dian-bu-chong/shang-chuan-wen-jian.md)
     * [80 上传文件以及访问上传的文件](5flaskzhi-shi-dian-bu-chong/80-shang-chuan-wen-jian-yi-ji-fang-wen-shang-chuan-de-wen-jian.md)
     * [81 使用flask\_wtf1验证上传的文件](5flaskzhi-shi-dian-bu-chong/81-shi-yong-flask-wtf1-yan-zheng-shang-chuan-de-wen-jian.md)
+  * [Flask Cookie](5flaskzhi-shi-dian-bu-chong/flask-cookie.md)
+    * [82 cookie的基本概念](5flaskzhi-shi-dian-bu-chong/82-cookiede-ji-ben-gai-nian.md)
 
