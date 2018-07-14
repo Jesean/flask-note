@@ -5,6 +5,7 @@
   * [01 虚拟环境](chapter1/01bi-ji.md)
   * [02 URL组成部分详解](chapter1/02-url-xiang-jie.md)
   * [03 web服务器+应用服务器+web应用框架](chapter1/03-webfu-wu-qi-he-ying-yong.md)
+  * [04 flask程序详解](chapter1/04-di-yi-ge-flask-cheng-xu-xiang-jie.md)
 * 2.Jinja2模版
 * 3.Flask视图高级
 * 4.Flask数据库
