@@ -86,6 +86,17 @@ resp.delete_cookie("name")
       @cms.route("/")
       def index():
           return "cms 首页"
+    
+    
+      cookie.demo.py
+
+      ....
+      from cmsviews import cms
+
+      # 注册蓝图
+      app.register_blueprint(cms)
+      app.config["SERVER_NAME"] = "ty.com:5000"
+      ....
       ```
 
 
