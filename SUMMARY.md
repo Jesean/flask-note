@@ -25,7 +25,8 @@
   * [21 自定义时间处理过滤器案例](chapter1/21-zi-ding-yi-shi-jian-chu-li-guo-lv-qi-an-li.md)
   * [22 if](chapter1/22-if.md)
   * [23 for循环语句详解](chapter1/23-forxun-huan-yu-ju-xiang-jie.md)
-  * 24 九九乘法表
+  * [24 九九乘法表](chapter1/24-jiu-jiu-cheng-fa-biao.md)
+  * 25 宏的概念和基本使用
 * 3.Flask视图高级
 * 4.Flask数据库
 
