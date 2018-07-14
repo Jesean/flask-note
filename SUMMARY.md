@@ -74,5 +74,6 @@
   * [73 项目结构重构](3flaskshi-tu-gao-ji/73-xiang-mu-jie-gou-zhong-gou.md)
   * [74 Flask-Migrate详细讲解](3flaskshi-tu-gao-ji/74-flask-migratexiang-xi-jiang-jie.md)
   * [75 Flask-Migrate注意事项](3flaskshi-tu-gao-ji/75-flask-migratezhu-yi-shi-xiang.md)
-* 5.Flask知识点补充
+* [5.Flask知识点补充](5flaskzhi-shi-dian-bu-chong.md)
+  * [76 WTForms表单验证基本使用](5flaskzhi-shi-dian-bu-chong/76wtformsbiao-dan-yan-zheng-ji-ben-shi-yong.md)
 
