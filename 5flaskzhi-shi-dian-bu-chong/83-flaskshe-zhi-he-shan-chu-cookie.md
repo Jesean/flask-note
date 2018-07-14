@@ -104,7 +104,7 @@ def index():
 3.设置set\_cookie中的domain参数
 
 ```
- resp = Response("name")
+resp = Response("name")
 resp.set_cookie("name", "value",domain=".ty.com")
 ```
 
