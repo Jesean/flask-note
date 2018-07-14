@@ -19,10 +19,10 @@ resp.delete_cookie("name")
 * 设置cookie的有效期
 
   * 使用max\_age参数设置有效期事件
-    * ```
-      # max_age:距离多少秒后cookie值过期
-      resp.set_cookie("name","value",max_age=10)
-      ```
+  * ```
+    # max_age:距离多少秒后cookie值过期
+    resp.set_cookie("name","value",max_age=10)
+    ```
   * 使用expires参数
 
   * ```
