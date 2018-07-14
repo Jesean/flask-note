@@ -14,11 +14,8 @@ cookie:在网站中，HTTP请求是无状态的。也就是第一次和服务器
 # httponly设置为Truecookie只能被浏览器读取，不能被js读取
 # expires无效日期
 # max_age:以秒为单位，距离现在多久过期
-# set_cookie(self, key, value='',
-#            max_age=None, expires=None,
-#            path='/', domain=None,
-#            secure=False, httponly=False,
-#            samesite=None)
+set_cookie(self, key, value='',max_age=None, expires=None,path='/', domain=None,
+secure=False, httponly=False,samesite=None)
 ```
 
 
