@@ -32,6 +32,7 @@
   * [28 set和with语句以及模板中定义变量](chapter1/28-sethe-with-yu-ju-yi-ji-mo-ban-zhong-ding-yi-bian-liang.md)
   * [29 加载静态文件](chapter1/29-jia-zai-jing-tai-wen-jian.md)
   * [30 模板继承详解](chapter1/30-mo-ban-ji-cheng-xiang-jie.md)
-* 3.Flask视图高级
+* [3.Flask视图高级](3flaskshi-tu-gao-ji.md)
+  * 37 add\_url\_rule和app.route原理剖析
 * 4.Flask数据库
 
