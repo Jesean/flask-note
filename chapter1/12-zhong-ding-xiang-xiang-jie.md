@@ -18,9 +18,9 @@
 
 * 必须制定app.response\_class为你自定义的Response
 
-### response笔记
+## response笔记
 
-\#\#\# 视图函数中可以返回那些值
+### 视图函数中可以返回那些值
 
 1.可以返回字符串:返回的字符串其实是底层将这个字符串包装成了一个'Response'对象
 
@@ -28,7 +28,7 @@
 
 3.可以返回'Response'及其子类。
 
-\#\#\# 实现一个自定义的Response对象:
+### 实现一个自定义的Response对象:
 
 1.继承'Response'类
 
