@@ -74,25 +74,32 @@ resp.delete_cookie("name")
 
 * 设置cookie的有效域名
 
-  * 定义蓝图
+1.定义蓝图
 
-    ```
-    cmsviews.py
-    from flask import Blueprint
-    cms = Blueprint("cms",name,subdomain="cms")
-    @cms.route("/")
-    def index():
-        return "cms 首页"
-      cookie.demo.py
+```
+cmsviews.py
+from flask import Blueprint
+cms = Blueprint("cms",name,subdomain="cms")
+@cms.route("/")
+def index():
+    return "cms 首页"
+  cookie.demo.py
 
-      ....
-      from cmsviews import cms
+  ....
+  from cmsviews import cms
 
-      # 注册蓝图
-      app.register_blueprint(cms)
-      app.config["SERVER_NAME"] = "ty.com:5000"
-      ....
-    ```
+  # 注册蓝图
+  app.register_blueprint(cms)
+  app.config["SERVER_NAME"] = "ty.com:5000"
+  ....
+```
+
+2. 地址映射
+
+```
+127.0.0.1 ty.com
+127.0.0.1 cms.ty.com
+```
 
 
 
