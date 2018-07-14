@@ -35,7 +35,7 @@ resp.delete_cookie("name")
     expires = datetime(year=2018, month=7, day=14, hour=8, minute=29, second=0)
 
     three:
-    设置距离多久
+    # 设置距离多久
     expires = datetime.now() + timedelta(seconds=1) - timedelta(hours=8)
     resp.set_cookie("name", "value", expires=expires)
     ```
