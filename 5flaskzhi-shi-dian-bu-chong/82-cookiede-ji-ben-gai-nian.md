@@ -7,5 +7,19 @@ cookie:在网站中，HTTP请求是无状态的。也就是第一次和服务器
 * cookie有有效期，服务器可以设置cookie的有效期，以后浏览器会自动的清除过期的cookie
 * cookie有域名的概念:只有访问同一个域名，才会把之前相同域名返回的cookie携带给服务器，也就是说，访问谷歌的时候，不会把百度的cookie发送给谷歌
 
+---
+
+```
+# secure设置为True只能在HTTPS协议下使用
+# httponly设置为Truecookie只能被浏览器读取，不能被js读取
+# expires无效日期
+# max_age:以秒为单位，距离现在多久过期
+# set_cookie(self, key, value='',
+#            max_age=None, expires=None,
+#            path='/', domain=None,
+#            secure=False, httponly=False,
+#            samesite=None)
+```
+
 
 
