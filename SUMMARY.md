@@ -104,5 +104,5 @@
   * [Flask钩子函数](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu.md)
     * 98 before\_request钩子函数详解
     * 99 context\_processor钩子函数详解
-    * 100 errorhandler钩子函数详解1
+    * [100 errorhandler钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/100-errorhandlergou-zi-han-shu-xiang-jie-1.md)
 
