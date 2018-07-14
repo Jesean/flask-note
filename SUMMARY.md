@@ -80,6 +80,7 @@
     * [77 WTForms常用验证器](5flaskzhi-shi-dian-bu-chong/77-wtformschang-yong-yan-zheng-qi.md)
     * [78 自定义表单验证器](5flaskzhi-shi-dian-bu-chong/78-zi-ding-yi-biao-dan-yan-zheng-qi.md)
     * [79 使用WTForms渲染模版](5flaskzhi-shi-dian-bu-chong/79-shi-yong-wtforms-xuan-ran-mo-ban.md)
-  * [80 上传文件以及访问上传的文件](5flaskzhi-shi-dian-bu-chong/80-shang-chuan-wen-jian-yi-ji-fang-wen-shang-chuan-de-wen-jian.md)
-  * [81 使用flask\_wtf1验证上传的文件](5flaskzhi-shi-dian-bu-chong/81-shi-yong-flask-wtf1-yan-zheng-shang-chuan-de-wen-jian.md)
+  * [上传文件](5flaskzhi-shi-dian-bu-chong/shang-chuan-wen-jian.md)
+    * [80 上传文件以及访问上传的文件](5flaskzhi-shi-dian-bu-chong/80-shang-chuan-wen-jian-yi-ji-fang-wen-shang-chuan-de-wen-jian.md)
+    * [81 使用flask\_wtf1验证上传的文件](5flaskzhi-shi-dian-bu-chong/81-shi-yong-flask-wtf1-yan-zheng-shang-chuan-de-wen-jian.md)
 
