@@ -98,4 +98,6 @@
     * [93 Flask中CSRF防御的方法与原理](5flaskzhi-shi-dian-bu-chong/93-flaskzhong-csrf-fang-yu-de-fang-fa-yu-yuan-li.md)
     * 94 AJAX处理CSRF漏洞
     * 95 Local线程隔离对象
+    * 96 app上下文和request上下文详解
+    * 97 线程隔离的g对象使用详解
 
