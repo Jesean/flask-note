@@ -23,6 +23,8 @@
   * [19 常用过滤器讲解](chapter1/19-chang-yong-guo-lv-qi-jiang-jie.md)
   * [20 自定义过滤器](chapter1/20-zi-ding-yi-guo-lv-qi.md)
   * [21 自定义时间处理过滤器案例](chapter1/21-zi-ding-yi-shi-jian-chu-li-guo-lv-qi-an-li.md)
+  * [22 if](chapter1/22-if.md)
+  * 23 for循环语句详解
 * 3.Flask视图高级
 * 4.Flask数据库
 
