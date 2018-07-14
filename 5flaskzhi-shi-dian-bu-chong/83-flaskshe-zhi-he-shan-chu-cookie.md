@@ -16,7 +16,7 @@ resp.set_cookie("name","value")
 resp.delete_cookie("name")
 ```
 
-* 设置cookie的有效期
+* 设置cookie的有效期，默认有效期:知道浏览器关闭为止
 
   * 使用max\_age参数设置有效期事件
   * ```
