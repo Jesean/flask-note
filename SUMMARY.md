@@ -47,8 +47,25 @@
   * [46 安装MySQL以及注意事项](3flaskshi-tu-gao-ji/46-an-zhuang-mysql-yi-ji-zhu-yi-shi-xiang.md)
   * [47 SQLAlchemy连接数据库](3flaskshi-tu-gao-ji/47-sqlalchemylian-jie-shu-ju-ku.md)
   * 48 ORM介绍
-  * 49 定义ORM模型并将其映射到数据库中
+  * [49 定义ORM模型并将其映射到数据库中](3flaskshi-tu-gao-ji/49-ding-yi-orm-mo-xing-bing-jiang-qi-ying-she-dao-shu-ju-ku-zhong.md)
   * [50 SQLAlchemy对数据的增删改查操作](3flaskshi-tu-gao-ji/50-sqlalchemydui-shu-ju-de-zeng-shan-gai-cha-cao-zuo.md)
   * [51 SQLAlchemy属性常用数据类型详解](3flaskshi-tu-gao-ji/51-sqlalchemyshu-xing-chang-yong-shu-ju-lei-xing-xiang-jie.md)
   * [52 Column常用参数](3flaskshi-tu-gao-ji/52-columnchang-yong-can-shu.md)
+  * [53 query函数可查询的数据](3flaskshi-tu-gao-ji/53-queryhan-shu-ke-cha-xun-de-shu-ju.md)
+  * [54 filter方法常用过滤条件](3flaskshi-tu-gao-ji/54-filterfang-fa-chang-yong-guo-lv-tiao-jian.md)
+  * [55 外键及其四种约束讲解](3flaskshi-tu-gao-ji/55-wai-jian-ji-qi-si-zhong-yue-shu-jiang-jie.md)
+  * [56 ORM层外键和一对多关系](3flaskshi-tu-gao-ji/56-ormceng-wai-jian-he-yi-dui-duo-guan-xi.md)
+  * [57 一对一关系实现](3flaskshi-tu-gao-ji/57-yi-dui-yi-guan-xi-shi-xian.md)
+  * [58 多对多关系实现](3flaskshi-tu-gao-ji/58-duo-dui-duo-guan-xi-shi-xian.md)
+  * 59 ORM层面删除数据注意事项
+  * [60 relationship方法中的cascade参数详解（1）](3flaskshi-tu-gao-ji/60-relationshipfang-fa-zhong-de-cascade-can-shu-xiang-jie-ff08-1.md)
+  * [61 relationship方法中的cascade参数详解（2）](3flaskshi-tu-gao-ji/61-relationshipfang-fa-zhong-de-cascade-can-shu-xiang-jie-ff08-2.md)
+  * [62 三种排序方式详解](3flaskshi-tu-gao-ji/62-san-zhong-pai-xu-fang-shi-xiang-jie.md)
+  * 63 limit、offset以及切片操作
+  * [64 数据查询懒加载技术](3flaskshi-tu-gao-ji/64-shu-ju-cha-xun-lan-jia-zai-ji-zhu.md)
+  * [65 group\_by和having子句](3flaskshi-tu-gao-ji/65-groupby-he-having-zi-ju.md)
+  * [66 join实现复杂查询](3flaskshi-tu-gao-ji/66-joinshi-xian-fu-za-cha-xun.md)
+  * [67 subquery实现复杂查询](3flaskshi-tu-gao-ji/67-subqueryshi-xian-fu-za-cha-xun.md)
+  * [68 Flask-SQLAlchemy的使用详解](3flaskshi-tu-gao-ji/68-flask-sqlalchemyde-shi-yong-xiang-jie.md)
+  * [69 alembic数据库迁移工具基本使用](3flaskshi-tu-gao-ji/69-alembicshu-ju-ku-qian-yi-gong-ju-ji-ben-shi-yong.md)
 
