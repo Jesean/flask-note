@@ -73,5 +73,5 @@
   * [72 Flask-Script详细讲解](3flaskshi-tu-gao-ji/72-flask-scriptxiang-xi-jiang-jie.md)
   * [73 项目结构重构](3flaskshi-tu-gao-ji/73-xiang-mu-jie-gou-zhong-gou.md)
   * [74 Flask-Migrate详细讲解](3flaskshi-tu-gao-ji/74-flask-migratexiang-xi-jiang-jie.md)
-  * 75 Flask-Migrate注意事项
+  * [75 Flask-Migrate注意事项](3flaskshi-tu-gao-ji/75-flask-migratezhu-yi-shi-xiang.md)
 
