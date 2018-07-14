@@ -83,7 +83,7 @@
   * [81 使用flask\_wtf1验证上传的文件](5flaskzhi-shi-dian-bu-chong/81-shi-yong-flask-wtf1-yan-zheng-shang-chuan-de-wen-jian.md)
   * [82 cookie的基本概念](5flaskzhi-shi-dian-bu-chong/82-cookiede-ji-ben-gai-nian.md)
   * [83 Flask设置和删除cookie\|84 Flask设置cookie过期时间\|85 设置Cookie的有效域名](5flaskzhi-shi-dian-bu-chong/83-flaskshe-zhi-he-shan-chu-cookie.md)
-  * 86 session的基本概念
+  * [86 session的基本概念](5flaskzhi-shi-dian-bu-chong/86-sessionde-ji-ben-gai-nian.md)
   * 87 Flask操作session
   * 88 CSRF攻击原理
   * 89 实战项目-中国工商银行注册功能完成
