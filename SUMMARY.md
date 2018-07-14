@@ -18,7 +18,9 @@
   * [14 Jinja2模板介绍](chapter1/14-jinja2mo-ban-jie-shao.md)
   * [15 模板传参及其技巧](chapter1/15-mo-ban-chuan-can-ji-qi-ji-qiao.md)
   * [16 模板中使用url\_for](chapter1/16-mo-ban-zhong-shi-yong-url-for.md)
-  * 17 过滤器基本使用
+  * [17 过滤器基本使用](chapter1/17-guo-lv-qi-ji-ben-shi-yong.md)
+  * [18 default过滤器详解](chapter1/18-defaultguo-lv-qi-xiang-jie.md)
+  * [19 常用过滤器讲解](chapter1/19-chang-yong-guo-lv-qi-jiang-jie.md)
 * 3.Flask视图高级
 * 4.Flask数据库
 
