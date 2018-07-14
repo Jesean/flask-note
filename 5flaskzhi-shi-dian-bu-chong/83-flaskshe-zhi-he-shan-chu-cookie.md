@@ -74,5 +74,19 @@ resp.delete_cookie("name")
 
 * 设置cookie的有效域名
 
+  * 定义蓝图
+
+    * ```
+      cmsviews.py
+
+      from flask import Blueprint
+
+      cms = Blueprint("cms",__name__,subdomain="cms")
+
+      @cms.route("/")
+      def index():
+          return "cms 首页"
+      ```
+
 
 
