@@ -88,5 +88,13 @@
     * [83 Flask设置和删除cookie\|Flask设置cookie过期时间\|设置Cookie的有效域名](5flaskzhi-shi-dian-bu-chong/83-flaskshe-zhi-he-shan-chu-cookie.md)
   * [Flask Session](5flaskzhi-shi-dian-bu-chong/flask-session.md)
     * [86 session的基本概念](5flaskzhi-shi-dian-bu-chong/86-sessionde-ji-ben-gai-nian.md)
-    * 87 Flask操作session
+    * [87 Flask操作session](5flaskzhi-shi-dian-bu-chong/87-flaskcao-zuo-session.md)
+  * [CSRF攻击与防御](5flaskzhi-shi-dian-bu-chong/csrfgong-ji-yu-fang-yu.md)
+    * 88 CSRF攻击原理
+    * 89 实战项目-中国工商银行注册功能完成
+    * 90 实战项目-中国工商银行登录和转账实现
+    * 91 实战项目-病毒网站使用CSRF漏洞转账
+    * 92 CSRF防御原理
+    * [93 Flask中CSRF防御的方法与原理](5flaskzhi-shi-dian-bu-chong/93-flaskzhong-csrf-fang-yu-de-fang-fa-yu-yuan-li.md)
+    * 94 AJAX处理CSRF漏洞
 
