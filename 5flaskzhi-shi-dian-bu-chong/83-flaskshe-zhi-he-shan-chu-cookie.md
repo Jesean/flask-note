@@ -28,15 +28,16 @@ resp.delete_cookie("name")
   * ```
     one:
     expires = datetime(year=2018,month=7,day=14,hour=16,minute=29,second=0)
+
     two:
     使用expires参数，就必须使用格林尼治时间
-    要相对北京时间少8个小时
+    # 要相对北京时间少8个小时
     expires = datetime(year=2018, month=7, day=14, hour=8, minute=29, second=0)
+
     three:
     设置距离多久
     expires = datetime.now() + timedelta(seconds=1) - timedelta(hours=8)
     resp.set_cookie("name", "value", expires=expires)
-
     ```
 
 * 设置cookie的有效域名
