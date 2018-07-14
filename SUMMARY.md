@@ -68,4 +68,5 @@
   * [67 subquery实现复杂查询](3flaskshi-tu-gao-ji/67-subqueryshi-xian-fu-za-cha-xun.md)
   * [68 Flask-SQLAlchemy的使用详解](3flaskshi-tu-gao-ji/68-flask-sqlalchemyde-shi-yong-xiang-jie.md)
   * [69 alembic数据库迁移工具基本使用](3flaskshi-tu-gao-ji/69-alembicshu-ju-ku-qian-yi-gong-ju-ji-ben-shi-yong.md)
+  * 70 alembic常用命令和经典错误解决办法
 
