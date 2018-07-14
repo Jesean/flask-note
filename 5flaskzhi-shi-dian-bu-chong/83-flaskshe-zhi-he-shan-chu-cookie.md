@@ -10,6 +10,12 @@ resp.set_cookie("name","value")
 ```
 
 * 删除cookie
+
+```
+# 删除指定cookie
+resp.delete_cookie("name")
+```
+
 * 设置cookie的有效期
 * 设置cookie的有效域名
 
