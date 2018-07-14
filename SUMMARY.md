@@ -49,4 +49,6 @@
   * 48 ORM介绍
   * 49 定义ORM模型并将其映射到数据库中
   * [50 SQLAlchemy对数据的增删改查操作](3flaskshi-tu-gao-ji/50-sqlalchemydui-shu-ju-de-zeng-shan-gai-cha-cao-zuo.md)
+  * [51 SQLAlchemy属性常用数据类型详解](3flaskshi-tu-gao-ji/51-sqlalchemyshu-xing-chang-yong-shu-ju-lei-xing-xiang-jie.md)
+  * [52 Column常用参数](3flaskshi-tu-gao-ji/52-columnchang-yong-can-shu.md)
 
