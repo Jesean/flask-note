@@ -12,8 +12,8 @@
   * [08 url\_for使用详解](chapter1/08-urlfor-shi-yong-xiang-jie.md)
   * [09 自定义URL转换器](chapter1/09-zi-ding-yi-url-zhuan-huan-qi.md)
   * [10 必会的小细节知识](chapter1/10-bi-hui-de-xiao-xi-jie-zhi-shi-dian.md)
-  * [11 重定向详解](11-zhong-ding-xiang-xiang-jie.md)
-  * [12 视图函数Response返回值详解](chapter1/12-shi-tu-hanshu-response-fan-hui-zhi-xiang-jie.md)
+  * [11 重定向详解](chapter1/11-zhong-ding-xiang-xiang-jie.md)
+  * [12 视图函数Response返回值详解](chapter1/12-zhong-ding-xiang-xiang-jie.md)
 * 2.Jinja2模版
 * 3.Flask视图高级
 * 4.Flask数据库
