@@ -28,6 +28,7 @@
   * [24 九九乘法表](chapter1/24-jiu-jiu-cheng-fa-biao.md)
   * [25 宏的概念和基本使用](chapter1/25-hong-de-gai-nian-he-ji-ben-shi-yong.md)
   * 26 宏的导入和注意事项
+  * 27 include标签使用详解
 * 3.Flask视图高级
 * 4.Flask数据库
 
