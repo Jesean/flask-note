@@ -40,6 +40,7 @@ resp.delete_cookie("name")
 
     resp.set_cookie("name", "value", expires=expires)
     ```
+  * 注意:max\_age在IE8以下的浏览器是不支持的。expires在新班的http协议中被废弃，但是到目前为止所有的浏览器都能够支持它
 
 * 设置cookie的有效域名
 
