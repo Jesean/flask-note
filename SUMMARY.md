@@ -46,7 +46,7 @@
 * [4.Flask数据库](4flaskshu-ju-ku.md)
   * [46 安装MySQL以及注意事项](3flaskshi-tu-gao-ji/46-an-zhuang-mysql-yi-ji-zhu-yi-shi-xiang.md)
   * [47 SQLAlchemy连接数据库](3flaskshi-tu-gao-ji/47-sqlalchemylian-jie-shu-ju-ku.md)
-  * 48 ORM介绍
+  * [48 ORM介绍](3flaskshi-tu-gao-ji/48-ormjie-shao.md)
   * [49 定义ORM模型并将其映射到数据库中](3flaskshi-tu-gao-ji/49-ding-yi-orm-mo-xing-bing-jiang-qi-ying-she-dao-shu-ju-ku-zhong.md)
   * [50 SQLAlchemy对数据的增删改查操作](3flaskshi-tu-gao-ji/50-sqlalchemydui-shu-ju-de-zeng-shan-gai-cha-cao-zuo.md)
   * [51 SQLAlchemy属性常用数据类型详解](3flaskshi-tu-gao-ji/51-sqlalchemyshu-xing-chang-yong-shu-ju-lei-xing-xiang-jie.md)
@@ -73,4 +73,5 @@
   * [72 Flask-Script详细讲解](3flaskshi-tu-gao-ji/72-flask-scriptxiang-xi-jiang-jie.md)
   * [73 项目结构重构](3flaskshi-tu-gao-ji/73-xiang-mu-jie-gou-zhong-gou.md)
   * [74 Flask-Migrate详细讲解](3flaskshi-tu-gao-ji/74-flask-migratexiang-xi-jiang-jie.md)
+  * 75 Flask-Migrate注意事项
 
