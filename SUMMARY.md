@@ -33,6 +33,7 @@
   * [29 加载静态文件](chapter1/29-jia-zai-jing-tai-wen-jian.md)
   * [30 模板继承详解](chapter1/30-mo-ban-ji-cheng-xiang-jie.md)
 * [3.Flask视图高级](3flaskshi-tu-gao-ji.md)
-  * 37 add\_url\_rule和app.route原理剖析
+  * [37 add\_url\_rule和app.route原理剖析](3flaskshi-tu-gao-ji/37-addurl-rule-he-app-route-yuan-li-pou-xi.md)
+  * 38 标准类视图及其使用场景
 * 4.Flask数据库
 
