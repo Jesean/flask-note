@@ -75,6 +75,11 @@
   * [74 Flask-Migrate详细讲解](3flaskshi-tu-gao-ji/74-flask-migratexiang-xi-jiang-jie.md)
   * [75 Flask-Migrate注意事项](3flaskshi-tu-gao-ji/75-flask-migratezhu-yi-shi-xiang.md)
 * [5.Flask知识点补充](5flaskzhi-shi-dian-bu-chong.md)
-  * [76 WTForms表单验证基本使用](5flaskzhi-shi-dian-bu-chong/76wtformsbiao-dan-yan-zheng-ji-ben-shi-yong.md)
-  * 77 WTForms常用验证器
+  * [WTForms](5flaskzhi-shi-dian-bu-chong/wtforms.md)
+    * [76 WTForms表单验证基本使用](5flaskzhi-shi-dian-bu-chong/76wtformsbiao-dan-yan-zheng-ji-ben-shi-yong.md)
+    * [77 WTForms常用验证器](5flaskzhi-shi-dian-bu-chong/77-wtformschang-yong-yan-zheng-qi.md)
+    * [78 自定义表单验证器](5flaskzhi-shi-dian-bu-chong/78-zi-ding-yi-biao-dan-yan-zheng-qi.md)
+    * [79 使用WTForms渲染模版](5flaskzhi-shi-dian-bu-chong/79-shi-yong-wtforms-xuan-ran-mo-ban.md)
+  * [80 上传文件以及访问上传的文件](5flaskzhi-shi-dian-bu-chong/80-shang-chuan-wen-jian-yi-ji-fang-wen-shang-chuan-de-wen-jian.md)
+  * [81 使用flask\_wtf1验证上传的文件](5flaskzhi-shi-dian-bu-chong/81-shi-yong-flask-wtf1-yan-zheng-shang-chuan-de-wen-jian.md)
 
