@@ -76,18 +76,13 @@ resp.delete_cookie("name")
 
   * 定义蓝图
 
-    * ```
-      cmsviews.py
-
-      from flask import Blueprint
-
-      cms = Blueprint("cms",__name__,subdomain="cms")
-
-      @cms.route("/")
-      def index():
-          return "cms 首页"
-    
-    
+    ```
+    cmsviews.py
+    from flask import Blueprint
+    cms = Blueprint("cms",name,subdomain="cms")
+    @cms.route("/")
+    def index():
+        return "cms 首页"
       cookie.demo.py
 
       ....
@@ -97,7 +92,7 @@ resp.delete_cookie("name")
       app.register_blueprint(cms)
       app.config["SERVER_NAME"] = "ty.com:5000"
       ....
-      ```
+    ```
 
 
 
