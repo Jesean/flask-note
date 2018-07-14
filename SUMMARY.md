@@ -43,5 +43,6 @@
   * [43 蓝图中静态文件寻找规则](3flaskshi-tu-gao-ji/43-lan-tu-zhong-jing-tai-wen-jian-xun-zhao-gui-ze.md)
   * [44 url\_for反转蓝图注意事项](3flaskshi-tu-gao-ji/44-urlfor-fan-zhuan-lan-tu-zhu-yi-shi-xiang.md)
   * [45 子域名实现详解](3flaskshi-tu-gao-ji/45-zi-yu-ming-shi-xian-xiang-jie.md)
-* 4.Flask数据库
+* [4.Flask数据库](4flaskshu-ju-ku.md)
+  * 46 安装MySQL以及注意事项
 
