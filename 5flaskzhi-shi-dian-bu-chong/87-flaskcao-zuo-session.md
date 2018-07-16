@@ -1,6 +1,6 @@
 ### flask操作session
 
-* 设置session：设置session在session对象上进行设置的，通过"flask.session"对象上的一个"session.setdefault\(\)"方法来进行设置session信息
+* 设置session：设置session在session对象上进行设置的，通过"flask.session"对象上的一个"session.setdefault\(\)"方法或者字典来进行设置session信息
 
 ```
 # one
