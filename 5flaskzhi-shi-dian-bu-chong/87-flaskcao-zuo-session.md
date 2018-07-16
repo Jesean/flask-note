@@ -32,6 +32,7 @@ session.clear()
 * 设置session有效期:通过配置config进行这是，默认有效期为31天
 
 ```
+from datetime import timedelta
 # 设置会话有效期时间:两个小时以后会话有效期时间过期
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(hours=2)
 
