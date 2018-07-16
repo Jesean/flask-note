@@ -9,5 +9,7 @@ session.setdefault("name","angle")
 session["name"] = "angle"
 ```
 
+* 获取session:通过"session.get\(\)"方法获取
+
 
 
