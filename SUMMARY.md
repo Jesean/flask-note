@@ -61,7 +61,7 @@
   * [60 relationship方法中的cascade参数详解（1）](3flaskshi-tu-gao-ji/60-relationshipfang-fa-zhong-de-cascade-can-shu-xiang-jie-ff08-1.md)
   * [61 relationship方法中的cascade参数详解（2）](3flaskshi-tu-gao-ji/61-relationshipfang-fa-zhong-de-cascade-can-shu-xiang-jie-ff08-2.md)
   * [62 三种排序方式详解](3flaskshi-tu-gao-ji/62-san-zhong-pai-xu-fang-shi-xiang-jie.md)
-  * 63 limit、offset以及切片操作
+  * [63 limit、offset以及切片操作](3flaskshi-tu-gao-ji/63-limitoffsetyi-ji-qie-pian-cao-zuo.md)
   * [64 数据查询懒加载技术](3flaskshi-tu-gao-ji/64-shu-ju-cha-xun-lan-jia-zai-ji-zhu.md)
   * [65 group\_by和having子句](3flaskshi-tu-gao-ji/65-groupby-he-having-zi-ju.md)
   * [66 join实现复杂查询](3flaskshi-tu-gao-ji/66-joinshi-xian-fu-za-cha-xun.md)

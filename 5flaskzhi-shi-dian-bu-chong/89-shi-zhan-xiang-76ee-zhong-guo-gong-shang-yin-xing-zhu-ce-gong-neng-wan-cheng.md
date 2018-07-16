@@ -56,13 +56,11 @@ app.add_url_rule("/regist/",view_func=RegistView.as_view("regist"))
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 #### config.py
 
 ```
-
 DB_URI = "mysql+pymysql://root:123456@localhost:3306/icbc?charset=utf8"
 
 SQLALCHEMY_DATABASE_URI = DB_URI
@@ -84,8 +82,6 @@ class User(db.Model):
     username = db.Column(db.String(50),nullable=False)
     password = db.Column(db.String(50),nullable=False)
     deposit = db.Column(db.Float(50),default=0)
-
-    
 ```
 
 #### manage.py
@@ -129,7 +125,6 @@ if __name__ == "__main__":
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
-
 ```
 
 #### forms.py
