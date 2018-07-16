@@ -40,7 +40,14 @@ app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(hours=2)
 session.permanent = True
 ```
 
-* 注意，使用session
+* 注意，使用session需要配置SECRET\_KEY
+
+```
+import os
+
+# os.unrandom(n):产生24位的随机数
+app.config["SECRET_KEY"] = os.urandom(24)
+```
 
 
 
