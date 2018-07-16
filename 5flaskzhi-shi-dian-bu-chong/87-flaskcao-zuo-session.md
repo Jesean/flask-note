@@ -44,7 +44,7 @@ session.permanent = True
 
 ```
 import os
-
+...
 # os.unrandom(n):产生24位的随机数
 app.config["SECRET_KEY"] = os.urandom(24)
 ```
