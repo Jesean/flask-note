@@ -22,5 +22,12 @@ name = session.get("name")
 session.pop("name")
 ```
 
+* 清除所有的session值
+
+```
+# 清除所有session
+session.clear()
+```
+
 
 
