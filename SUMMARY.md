@@ -90,7 +90,7 @@
     * [86 session的基本概念](5flaskzhi-shi-dian-bu-chong/86-sessionde-ji-ben-gai-nian.md)
     * [87 Flask操作session](5flaskzhi-shi-dian-bu-chong/87-flaskcao-zuo-session.md)
   * [CSRF攻击与防御](5flaskzhi-shi-dian-bu-chong/csrfgong-ji-yu-fang-yu.md)
-    * 88 CSRF攻击原理
+    * [88 CSRF攻击原理](5flaskzhi-shi-dian-bu-chong/88-csrfgong-ji-yuan-li.md)
     * 89 实战项目-中国工商银行注册功能完成
     * 90 实战项目-中国工商银行登录和转账实现
     * 91 实战项目-病毒网站使用CSRF漏洞转账
