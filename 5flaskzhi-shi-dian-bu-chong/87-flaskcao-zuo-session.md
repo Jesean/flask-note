@@ -29,5 +29,15 @@ session.pop("name")
 session.clear()
 ```
 
+* 设置session有效期
+
+```
+# 设置会话有效期时间
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(hours=2)
+
+# 设置session的过期时间,permanent:持久性，默认时间为一个月
+session.permanent = True
+```
+
 
 
