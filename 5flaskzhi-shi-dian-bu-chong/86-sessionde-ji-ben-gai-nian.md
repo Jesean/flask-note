@@ -8,5 +8,5 @@ session:session和cookie的作用类似，都是为了存储用户相关的信�
 
 由于随着web的开发，发展至今，一般有两种存储方式:
 
-存储在服务端:通过cookie存储一个session\_id，然后具体的数据则是保存在session中。如果用户已经登录，则服务器会在cookie中保存一个session_id，下次再次请求的时候，会把session_id
+存储在服务端:通过cookie存储一个session\_id，然后具体的数据则是保存在session中。如果用户已经登录，则服务器会在cookie中保存一个session\_id，下次再次请求的时候，会把session_id携带上来，服务器根据sessionid_
 
