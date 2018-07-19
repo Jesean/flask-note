@@ -96,7 +96,7 @@
     * [91 实战项目-病毒网站使用CSRF漏洞转账](5flaskzhi-shi-dian-bu-chong/91-shi-zhan-xiang-76ee-bing-du-wang-zhan-shi-yong-csrf-lou-dong-zhuan-zhang.md)
     * [92 CSRF防御原理](5flaskzhi-shi-dian-bu-chong/92-csrffang-yu-yuan-li.md)
     * [93 Flask中CSRF防御的方法与原理](5flaskzhi-shi-dian-bu-chong/93-flaskzhong-csrf-fang-yu-de-fang-fa-yu-yuan-li.md)
-    * 94 AJAX处理CSRF漏洞
+    * [94 AJAX处理CSRF漏洞](5flaskzhi-shi-dian-bu-chong/94-ajaxchu-li-csrf-lou-dong.md)
   * [Flask 上下文](5flaskzhi-shi-dian-bu-chong/flask-shang-xia-wen.md)
     * [95 Local线程隔离对象](5flaskzhi-shi-dian-bu-chong/95-localxian-cheng-ge-li-dui-xiang.md)
     * [96 app上下文和request上下文详解](5flaskzhi-shi-dian-bu-chong/96-appshang-xia-wen-he-request-shang-xia-wen-xiang-jie.md)
