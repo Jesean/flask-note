@@ -68,5 +68,21 @@ $(function () {
 });
 ```
 
+推荐使用meta方法
+
+```
+<meta name="csrf_token" content="{{ csrf_token() }}">
+
+var csrf_token = $('meta[name=csrf_token]').attr('content');
+
+        $.ajaxSetup({
+            "beforeSend":function(xhr,settings){
+                if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type) && !this.crossDomain){
+                    xhr.setRequestHeader("X-CRSFToken",csrf_token)
+                }
+            }
+        });
+```
+
 
 
