@@ -18,6 +18,11 @@ mythread.start()
 mythread.join()
 
 print("主线程",local.request)
+
+“”“
+子线程 abc
+主线程 123
+“”“
 ```
 
 
