@@ -1,4 +1,4 @@
-只要绑定在Local对象上的属性，在每个线程中都是隔离的
+只要绑定在Local对象上的属性，在每个线程中都是独立隔离的
 
 ```
 from threading import Thread
