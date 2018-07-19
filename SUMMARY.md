@@ -101,8 +101,8 @@
     * [95 Local线程隔离对象](5flaskzhi-shi-dian-bu-chong/95-localxian-cheng-ge-li-dui-xiang.md)
     * [96 app上下文和request上下文详解](5flaskzhi-shi-dian-bu-chong/96-appshang-xia-wen-he-request-shang-xia-wen-xiang-jie.md)
     * [97 线程隔离的g对象使用详解](5flaskzhi-shi-dian-bu-chong/97-xian-cheng-ge-li-de-g-dui-xiang-shi-yong-xiang-jie.md)
-    * [Flask钩子函数](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu.md)
-      * 98 before\_request钩子函数详解
-      * 99 context\_processor钩子函数详解
-      * [100 errorhandler钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/100-errorhandlergou-zi-han-shu-xiang-jie-1.md)
+  * [Flask钩子函数](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu.md)
+    * 98 before\_request钩子函数详解
+    * 99 context\_processor钩子函数详解
+    * [100 errorhandler钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/100-errorhandlergou-zi-han-shu-xiang-jie-1.md)
 
