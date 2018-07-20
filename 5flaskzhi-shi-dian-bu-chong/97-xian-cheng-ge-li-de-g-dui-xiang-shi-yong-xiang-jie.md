@@ -34,7 +34,21 @@ def index():
 
 if __name__ == '__main__':
     app.run()
+```
 
+```
+utils.py
+
+from flask import g
+
+def log_a():
+    print("log a {}".format(g.username))
+
+def log_b():
+    print("log b {}".format(g.username))
+
+def log_c():
+    print("log c {}".format(g.username))
 ```
 
 
