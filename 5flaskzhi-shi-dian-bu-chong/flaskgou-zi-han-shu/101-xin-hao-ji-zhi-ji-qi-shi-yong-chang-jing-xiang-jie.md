@@ -11,6 +11,8 @@ pip install blinker
 ```
 from blinker import Namespace
 
+# Namespace的作用:为了防止多人开发的时候，信号名字冲突的问题
+
 mysignal = Namespace()
 visit_signal = mysignal.signal('visit-signal')
 ```
@@ -71,7 +73,6 @@ def login():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 ##### signals.py
