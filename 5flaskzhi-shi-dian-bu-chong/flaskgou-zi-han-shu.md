@@ -21,7 +21,18 @@ def teardown(exc=None):
 template\_filter:在jinja2模板的时候自定义过滤器，比如可以增加一个upper的过滤器
 
 ```
-@app.template_filter
+### 自定义模板过滤器
+过滤器本质上就是一个函数，如果在模板中调用这个过滤器，那么就会将这个变量的值作为第一个参数传给过滤器这个函数，然后函数的返回值会作为这个过滤器的返回值
+使用到一个装饰器:@app.template_filter('my_cut')
+
+# 指定一个名字
+@app.template_filter('my_cut')
+def cut(value):
+    value = value.replace("hello",'')
+    return value
+
+
+
 ```
 
 context\_processor:上下处理器。返回的字典中的键可以在模板上下文中使用
