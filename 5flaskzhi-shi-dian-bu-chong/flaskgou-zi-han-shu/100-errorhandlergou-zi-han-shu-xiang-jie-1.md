@@ -27,5 +27,5 @@ def param_error(error):
     return '参数不正确'
 ```
 
-
+abort\(\)函数可以手动抛出相应的错误
 
