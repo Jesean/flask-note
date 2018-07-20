@@ -97,6 +97,9 @@
     * [92 CSRF防御原理](5flaskzhi-shi-dian-bu-chong/92-csrffang-yu-yuan-li.md)
     * [93 Flask中CSRF防御的方法与原理](5flaskzhi-shi-dian-bu-chong/93-flaskzhong-csrf-fang-yu-de-fang-fa-yu-yuan-li.md)
     * [94 AJAX处理CSRF漏洞](5flaskzhi-shi-dian-bu-chong/94-ajaxchu-li-csrf-lou-dong.md)
+  * Flask信号
+    * [101 信号机制及其使用场景详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/101-xin-hao-ji-zhi-ji-qi-shi-yong-chang-jing-xiang-jie.md)
+    * [102 Flask内置的信号讲解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/102-flasknei-zhi-de-xin-hao-jiang-jie.md)
   * [Flask 上下文](5flaskzhi-shi-dian-bu-chong/flask-shang-xia-wen.md)
     * [95 Local线程隔离对象](5flaskzhi-shi-dian-bu-chong/95-localxian-cheng-ge-li-dui-xiang.md)
     * [96 app上下文和request上下文详解](5flaskzhi-shi-dian-bu-chong/96-appshang-xia-wen-he-request-shang-xia-wen-xiang-jie.md)
@@ -105,9 +108,6 @@
     * [98 before\_request钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/98-beforerequest-gou-zi-han-shu-xiang-jie.md)
     * [99 context\_processor钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/99-contextprocessor-gou-zi-han-shu-xiang-jie.md)
     * [100 errorhandler钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/100-errorhandlergou-zi-han-shu-xiang-jie-1.md)
-  * Flask信号
-    * [101 信号机制及其使用场景详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/101-xin-hao-ji-zhi-ji-qi-shi-yong-chang-jing-xiang-jie.md)
-    * [102 Flask内置的信号讲解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/102-flasknei-zhi-de-xin-hao-jiang-jie.md)
   * [Flask Restful](5flaskzhi-shi-dian-bu-chong/flask-restful.md)
     * [103 Restful API规范介绍](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/103-restful-apigui-fan-jie-shao.md)
     * [104 Flask-Restful插件的基本使用](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/104-flask-restfulcha-jian-de-ji-ben-shi-yong.md)
