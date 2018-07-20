@@ -12,6 +12,6 @@ template_rendered.connect(template_rendered_func)
 
 * flask.request\_started:请求开始之前，在到达视图函数之前发送，订阅者可以调用request之类的标准全局代理访问请求
 * flask.request\_finished:请求结束时，在响应发送给客户端之前发送，可以传递response
-* 
+
 
 
