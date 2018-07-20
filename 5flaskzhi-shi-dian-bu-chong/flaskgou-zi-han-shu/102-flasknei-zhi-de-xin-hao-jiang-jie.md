@@ -12,9 +12,14 @@ template_rendered.connect(template_rendered_func)
 
 * request\_started:模板开始渲染
 * request\_finished:模板完成渲染
-* got\_request.exception:在请求过程中抛出异常时发送，异常本身会通过exception传递到订阅的函数
+
 * request\_tearing\_down:request对象被销毁的信号
 * got\_request\_exception:视图函数发生异常的信号，一般可以监听这个信号，来记录网站异常信号
+* ```
+  def request_exception_log(sender,exception):
+      print(exception)
+  got_request_exception.connect(request_exception_log)
+  ```
 * appcontext\_tearing\_down:app上下文被销毁的信号
 * appcontext\_pushed:app上下文被推入到栈上的信号
 * appcontext\_poped:app上下文被退出栈中的信号
