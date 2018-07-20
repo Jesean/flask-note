@@ -1,6 +1,19 @@
 errorhandler:errorhandler接收状态码，可以自定义返回这种状态码的响应的处理方法
 
 ```
+@app.route('/list/')
+def my_list():
+    session["user_id"] = 1
+    # return 'my_list'
+    # 将本页面设置为404页面
+    # abort(404)
+    user_id = request.args.get('user_id')
+    if user_id == '1':
+        return 'hello'
+    else:
+        abort(400)
+    return render_template('index.html')
+
 def serror_error(error):
     return "服务器刷新的太频繁"
 
