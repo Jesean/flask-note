@@ -28,5 +28,77 @@ def visit_func(sender,username):
 mysignal.send(username='angle')
 ```
 
+---
+
+##### signal\_demo.py
+
+```
+from flask import Flask,request,render_template
+from blinker import Namespace
+from signals import login_signal
+
+# # Namespace 命名空间
+# # 1.定义信号
+# namespace = Namespace()
+# fire_signal = namespace.signal('fire')
+#
+# # 2.监听信号
+# def fire_test(sender):
+#     print(sender)
+#     print("start fire")
+# fire_signal.connect(fire_test)
+#
+# # 3. 发送一个信号
+# fire_signal.send()
+
+
+# 定义一个登陆的信号，以后用户登录进来以后就发送一个登陆信号，然后能够监听这个信号,然后能够监听这个信号，在监听到这个信号以后，就记录当前这个用户登录的信息，用信号的方式，记录用户的登录信息
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+@app.route('/login/')
+def login():
+    username = request.args.get('username')
+    if username:
+        login_signal.send(username=username)
+        return '登录成功'
+    else:
+        return '请输入用户名'
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+```
+
+##### signals.py
+
+```
+from blinker import Namespace
+from datetime import datetime
+from flask import request
+
+namespace = Namespace()
+
+login_signal = namespace.signal('login')
+
+# 监听
+def login_log(sender,username):
+    # print('用户登录')
+    # 记录 用户名，登录时间，ip地址
+    username = username
+    now = datetime.now()
+    ip = request.remote_addr
+    log = "登录日志:用户名:{},登录时间:{},ip地址:{}\n".format(username,now,ip)
+    print(log)
+    with open('login_log.txt','a+',encoding='utf-8') as f:
+        f.write(log)
+
+login_signal.connect(login_log)
+```
+
 
 
