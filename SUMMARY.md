@@ -102,10 +102,15 @@
     * [96 app上下文和request上下文详解](5flaskzhi-shi-dian-bu-chong/96-appshang-xia-wen-he-request-shang-xia-wen-xiang-jie.md)
     * [97 线程隔离的g对象使用详解](5flaskzhi-shi-dian-bu-chong/97-xian-cheng-ge-li-de-g-dui-xiang-shi-yong-xiang-jie.md)
   * [Flask钩子函数](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu.md)
-    * 98 before\_request钩子函数详解
-    * 99 context\_processor钩子函数详解
+    * [98 before\_request钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/98-beforerequest-gou-zi-han-shu-xiang-jie.md)
+    * [99 context\_processor钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/99-contextprocessor-gou-zi-han-shu-xiang-jie.md)
     * [100 errorhandler钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/100-errorhandlergou-zi-han-shu-xiang-jie-1.md)
     * [101 信号机制及其使用场景详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/101-xin-hao-ji-zhi-ji-qi-shi-yong-chang-jing-xiang-jie.md)
     * 102 Flask内置的信号讲解
     * 103 Restful API规范介绍
+    * 104 Flask-Restful插件的基本使用
+    * 105 Flask-Restful参数验证
+    * 106 Flask-Restful标准化返回参数（1）
+    * 107 Flask-Restful标准化返回参数（2）
+    * 108 Flask-Restful细节强化
 
