@@ -15,5 +15,17 @@ resource_fields = {
 }
 ```
 
+### 默认值
+
+为指定字段设置默认值
+
+```
+class ArticleView(Resource):
+    # 可以渲染指定字段
+    resource_fields = {
+        'content':fields.String(default="angle"),
+    }
+```
+
 
 
