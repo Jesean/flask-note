@@ -10,12 +10,17 @@
    @api.representation('text/html')
    def output_html(data,code,headers):
        print(data)
-       # 在representation装饰的函数中，必须返回一个Response对象
+       # 在representation装
+       饰的函数中，必须返回一个Response对象
        resp = make_response(data)
        return resp
+    
+    
+    
+    
+    
+    
    ```
-
-
 
 
 
