@@ -20,6 +20,7 @@ api = Api(app)
 class IndexView(Resource):
     def get(self,username=None):
         return {"username":"angle"}
+# 可以指定多个url
 api.add_resource(IndexView,'/index/<username>/','/regist/',endpoint='index')
 
 with app.test_request_context():
@@ -27,7 +28,6 @@ with app.test_request_context():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 注意事项:
