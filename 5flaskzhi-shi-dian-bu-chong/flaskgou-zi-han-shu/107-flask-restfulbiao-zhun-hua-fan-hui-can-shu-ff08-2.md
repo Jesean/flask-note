@@ -25,5 +25,9 @@ resource_fields = {
     }
 ```
 
+### 复杂结构
+
+使用fields.List字段的值为列表，使用fields.Nested字段的值为字典
+
 
 
