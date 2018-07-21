@@ -9,6 +9,22 @@ pip install flask-restful
 使用flask-restful，那么定义视图函数的时候，就要继承自flask\_restful.Resource类，然后再根据当前请求的method来定义相应的方法。比如期望客户端是使用get方法发送过来的请求，那么就定义一个get方法。类似于MethodView。
 
 ```
+from flask import Flask,render_template,url_for
+from flask_restful import Api,Resource
+
+app = Flask(__name__)
+# 用Api来绑定app
+api = Api(app)
+
+# Json数据
+class IndexView(Resource):
+    def get(self):
+        return {"username":"angle"}
+api.add_resource(IndexView,'/',endpoint='index')
+
+
+if __name__ == '__main__':
+    app.run()
 
 ```
 
