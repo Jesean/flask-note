@@ -8,6 +8,11 @@ resource_fields = {
         'title':fields.String,
         '内容':fields.String(attribute='content'),
     }
+------------------------------------------------------
+{
+    "title": "angle",
+    "内容": "angle"
+}
 ```
 
 
