@@ -122,7 +122,6 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 ```
 
 ##### models.py
@@ -164,8 +163,48 @@ class Tag(db.Model):
     __tablename__ = 'tag'
     id = db.Column(db.Integer,primary_key=True)
     name = db.Column(db.String(50))
+```
 
+##### manage.py
 
+```
+from flask_script import Manager
+from flask_restful_demo2 import app
+from flask_migrate import MigrateCommand,Migrate
+from exts import db
+import models
+
+manager = Manager(app)
+
+Migrate(app,db)
+manager.add_command('db',MigrateCommand)
+
+if __name__ == '__main__':
+    manager.run()
+```
+
+##### config.py
+
+```
+DB_USERNAME = 'root'
+DB_PASSWORD = '123456'
+DB_HOST = '127.0.0.1'
+DB_PORT = '3306'
+DB_NAME = 'flask_restful_demo'
+
+DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(DB_USERNAME,DB_PASSWORD,DB_HOST,DB_PORT,DB_NAME)
+
+SQLALCHEMY_DATABASE_URI = DB_URI
+
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+```
+
+##### exts.py
+
+```
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
 ```
 
 
