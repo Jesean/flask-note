@@ -6,20 +6,20 @@
    api = Api(article_bp)
    ```
 2. 如果在'flask-restful'的视图中想要返回'html'代码或者是模板，那么就应该使用'api.representation'这个装饰器来定义一个函数，在这个函数中，应该对'html'代码进行一个封装，再返回
+   \`\`\`
+   @api.representation\('text/html'\)
+   def output\_html\(data,code,headers\):
    ```
-   @api.representation('text/html')
-   def output_html(data,code,headers):
-       print(data)
-       # 在representation装
-       饰的函数中，必须返回一个Response对象
-       resp = make_response(data)
-       return resp
-    
-    
-    
-    
-    
-    
+   print(data)
+   # 在representation装
+   饰的函数中，必须返回一个Response对象
+   resp = make_response(data)
+   return resp
+
+   class ListView(Resource):
+       def get(self):
+           return render_template('index.html')
+   api.add_resource(ListView,'/list/',endpoint='list')
    ```
 
 
