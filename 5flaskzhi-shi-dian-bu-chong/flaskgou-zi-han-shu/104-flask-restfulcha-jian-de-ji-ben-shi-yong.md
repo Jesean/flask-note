@@ -18,13 +18,15 @@ api = Api(app)
 
 # Json数据
 class IndexView(Resource):
-    def get(self):
+    def get(self,username=None):
         return {"username":"angle"}
-api.add_resource(IndexView,'/',endpoint='index')
+api.add_resource(IndexView,'/index/<username>/','/regist/',endpoint='index')
 
+with app.test_request_context():
+    print(url_for('index',username='angle'))
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
 
 ```
 
