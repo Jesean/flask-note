@@ -29,3 +29,18 @@ resource_fields = {
 
 使用fields.List可以使字段的值为列表，使用fields.Nested可以使字段的值为字典
 
+```
+class ProfileView(Resource):
+    resource_field = {
+        'username':fields,String,
+        'age':fields.Integer,
+        'school':fields.String,
+        'tags':fields.List(fields.String),
+        'more':fields.Nested{{
+            'signature':fields.String,
+        }}
+    }
+```
+
+
+
