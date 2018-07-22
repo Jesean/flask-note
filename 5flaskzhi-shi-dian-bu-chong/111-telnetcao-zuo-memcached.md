@@ -3,7 +3,7 @@
 ##### telnet登录memcached
 
 ```
-telnet ip地址 11211
+telnet ip地址 端口号
 telnet 127.0.0.1 11211
 ```
 
