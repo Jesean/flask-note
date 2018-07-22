@@ -122,7 +122,7 @@
   * 112 Python操作memcached
   * 113 memcached的安全机制
 * [7.Redis键值对数据库](7redisjian-zhi-dui-shu-ju-ku.md)
-  * 114 Redis概述和使用场景介绍
+  * [114 Redis概述和使用场景介绍](7redisjian-zhi-dui-shu-ju-ku/114-redisgai-shu-he-shi-yong-chang-jing-jie-shao.md)
   * 115 Redis的安装以及客户端连接
   * 116 Redis的字符串以及过期时间操作
   * 117 Redis的列表操作

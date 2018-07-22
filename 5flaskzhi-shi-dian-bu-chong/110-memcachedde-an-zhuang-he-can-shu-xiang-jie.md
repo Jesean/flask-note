@@ -27,6 +27,12 @@
 
    * 安装:sudo apt-get install memcached
    * 启动:sudo service memcached start
+   * 查看是否启动成功
+     ```
+     查看当前所有端口
+     ps aux|grep start
+     ```
+   * 
 
 3. 可能出现的问题:
 
