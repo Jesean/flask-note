@@ -41,7 +41,10 @@
    * 提示缺少pthreadGC2.dll文件；将缺少文件拷贝到windows/System32中
 
 ```
-ps aux|grep start
+/usr/bin/memcached -u memcache start
+
+# 后台运行
+/usr/bin/memcached -u memcache -d start
 ```
 
 4.启动memcached:
