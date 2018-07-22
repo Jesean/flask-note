@@ -80,5 +80,9 @@ delete username
 
 4.查看memcached的当前状态
 
+* 语法:stats
+
+
+
 
 
