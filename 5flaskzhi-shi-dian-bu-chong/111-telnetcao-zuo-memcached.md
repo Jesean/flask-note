@@ -79,5 +79,13 @@ delete username
 
 * 语法:stats
 
+5.增加
+
+```
+set age 0 120 2
+incr age 2
+注意:必须都是数值类型，不然会报错
+```
+
 
 
