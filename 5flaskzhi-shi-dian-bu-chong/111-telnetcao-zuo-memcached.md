@@ -73,7 +73,7 @@ delete key
 delete username
 ```
 
-* flush\_all:删除memcached中的所有数据。
+* flush\_all:删除memcached中的所有键值对。
 
 4.查看memcached的当前状态
 
