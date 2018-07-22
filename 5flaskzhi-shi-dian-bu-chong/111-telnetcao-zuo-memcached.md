@@ -1,6 +1,6 @@
 ### telnet操作memcached:
 
-连接到别的机器的memcached
+### telnet登录memcached
 
 ```
 telnet ip地址 11211
