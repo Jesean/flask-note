@@ -32,7 +32,7 @@
      查看当前所有端口
      ps aux|grep memcached
      ```
-   * 
+   * 建议使用windows自带的linux子系统
 
 3. 可能出现的问题:
 
