@@ -14,7 +14,7 @@ telnet 127.0.0.1 11211
   * 语法:
 
   ```
-  set key flas(0) timeout value_length
+  set key flas(是否压缩) timeout value_length
   value
   ```
 
