@@ -46,7 +46,7 @@
 # 后台运行
 /usr/bin/memcached -u memcache -d start
 
-# 杀掉所有进程
+# 杀掉所有memcached进程
 sudo killall memcached
 ```
 
