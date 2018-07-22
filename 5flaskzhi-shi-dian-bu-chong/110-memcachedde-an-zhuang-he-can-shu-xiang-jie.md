@@ -9,6 +9,8 @@
      64位系统 1.4.5版本：http://static.runoob.com/download/memcached-1.4.5-amd64.zip
      ```
    * 启动:memcached -d start
+   * 停止:memcached.exe -d stop
+   * 卸载:memcached.exe -d uninstall
 2. linux\(ubuntu\):
    * 安装:sudo apt-get install memcached
    * 启动:sudo service memcached start
