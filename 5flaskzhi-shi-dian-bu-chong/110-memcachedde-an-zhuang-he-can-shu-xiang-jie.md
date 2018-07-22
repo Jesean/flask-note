@@ -29,9 +29,17 @@
    * 启动:sudo service memcached start
 
 3. 可能出现的问题:
+
    * 提示没有权限:使用管理员权限
    * 不要放在含有中文的路径下面
    * 提示缺少pthreadGC2.dll文件；将缺少文件拷贝到windows/System32中
+
+4.启动memcached:
+
+* -d:这个参数是让memcached在后台运行
+* -m:指定占用多少内存，以n为单位，默认为64M
+* -p:指定占用的端口。默认的端口是11211
+* -l:哪些ip地址可以链接
 
 
 
