@@ -38,7 +38,7 @@ telnet 127.0.0.1 11211
 
   ```
   add username 0 60 7
-  xiaotuo
+  abcdefg
   ```
 
   set 和 add 的区别:add是只负责添加数据，不会去修改数据。如果添加的数据的key已经存在了，则添加失败，如果是添加的key不存在，则添加成功。而set不同，如果memcached中不存在相同的key，则进行添加，如果存在，则替换。
