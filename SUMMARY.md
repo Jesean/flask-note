@@ -116,4 +116,22 @@
     * [99 context\_processor钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/99-contextprocessor-gou-zi-han-shu-xiang-jie.md)
     * [100 errorhandler钩子函数详解](5flaskzhi-shi-dian-bu-chong/flaskgou-zi-han-shu/100-errorhandlergou-zi-han-shu-xiang-jie-1.md)
 * [6.memcached缓存系统](6memcachedhuan-cun-xi-tong.md)
+  * [109 memcached介绍](5flaskzhi-shi-dian-bu-chong/109-memcachedjie-shao.md)
+  * 110 memcached的安装和参数详解
+  * 111 telnet操作memcached
+  * 112 Python操作memcached
+  * 113 memcached的安全机制
+* [7.Redis键值对数据库](7redisjian-zhi-dui-shu-ju-ku.md)
+  * 114 Redis概述和使用场景介绍
+  * 115 Redis的安装以及客户端连接
+  * 116 Redis的字符串以及过期时间操作
+  * 117 Redis的列表操作
+  * 118 Redis的集合操作
+  * 119 Redis的哈希操作
+  * 120 Redis的事务操作
+  * 121 Redis的发布和订阅操作
+  * 122 RDB和AOF的两种数据持久化机制
+  * 123 Redis设置连接密码
+  * 124 其他机器连接本机redis
+  * 125 Python操作redis
 
