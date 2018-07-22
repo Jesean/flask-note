@@ -78,7 +78,7 @@ delete username
 
 * flush\_all:删除memcached中的所有数据。
 
-4. 查看memcached的当前状态
+4.查看memcached的当前状态
 
 
 
