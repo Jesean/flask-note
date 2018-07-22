@@ -61,5 +61,9 @@ sudo killall memcached
 * -p:指定占用的端口。默认的端口是11211
 * -l:别的机器可以通过哪个ip地址链接到这台服务器。想要别的机器链接，就必须配置'-l 0.0.0.0'
 
+```
+ /usr/bin/memcached -u memcache -l 0.0.0.0 -d start
+```
+
 
 
