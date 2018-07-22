@@ -82,10 +82,18 @@ delete username
 5.增加
 
 ```
-set age 0 120 2
-incr age 2
+set age 0 120 2     > 20
+incr age 2          > 22
 注意:必须都是数值类型，不然会报错
 ```
+
+6.减少
+
+```
+decr age 2         > 20
+```
+
+
 
 
 
