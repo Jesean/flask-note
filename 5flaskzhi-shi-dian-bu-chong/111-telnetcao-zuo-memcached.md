@@ -32,7 +32,7 @@ telnet 127.0.0.1 11211
   * 语法:
 
   ```
-  add key flas(0) timeout value_length
+  add key 0(否)(是否压缩) timeout value_length
   value
   ```
 
