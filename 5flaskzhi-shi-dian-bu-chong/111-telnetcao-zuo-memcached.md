@@ -1,6 +1,6 @@
 ### telnet操作memcached:
 
-### telnet登录memcached
+##### telnet登录memcached
 
 ```
 telnet ip地址 11211
