@@ -1,6 +1,7 @@
 ### 安装和启动memcached
 
 1. windows:
+
    * 安装:memcached -d install
      ```
      32位系统 1.4.4版本：http://static.runoob.com/download/memcached-win32-1.4.4-14.zip
@@ -12,11 +13,16 @@
    * 停止:memcached.exe -d stop
    * 卸载:memcached.exe -d uninstall
    * memcached版本&gt;=1.45
+
      * 安装
 
      ```
      schtasks /create /sc onstart /tn memcached /tr "'F:\software\memcached>memcached.exe' -m 512"
+
+     注意：-m 512 意思是设置 memcached 最大的缓存配置为512M。我们可以通过使用
+      "memcached.exe -h" 命令查看更多的参数配置。
      ```
+
 2. linux\(ubuntu\):
    * 安装:sudo apt-get install memcached
    * 启动:sudo service memcached start
