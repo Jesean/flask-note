@@ -2,6 +2,12 @@
 
 1. windows:
    * 安装:memcached -d install
+     ```
+     32位系统 1.4.4版本：http://static.runoob.com/download/memcached-win32-1.4.4-14.zip
+     64位系统 1.4.4版本：http://static.runoob.com/download/memcached-win64-1.4.4-14.zip
+     32位系统 1.4.5版本：http://static.runoob.com/download/memcached-1.4.5-x86.zip
+     64位系统 1.4.5版本：http://static.runoob.com/download/memcached-1.4.5-amd64.zip
+     ```
    * 启动:memcached -d start
 2. linux\(ubuntu\):
    * 安装:sudo apt-get install memcached
