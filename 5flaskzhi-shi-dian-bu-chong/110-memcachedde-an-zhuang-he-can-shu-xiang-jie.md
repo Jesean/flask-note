@@ -11,6 +11,12 @@
    * 启动:memcached -d start
    * 停止:memcached.exe -d stop
    * 卸载:memcached.exe -d uninstall
+   * memcached版本&gt;=1.45
+     * 安装
+
+     ```
+     schtasks /create /sc onstart /tn memcached /tr "'F:\software\memcached>memcached.exe' -m 512"
+     ```
 2. linux\(ubuntu\):
    * 安装:sudo apt-get install memcached
    * 启动:sudo service memcached start
