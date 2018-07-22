@@ -1,5 +1,11 @@
 ### telnet操作memcached:
 
+连接到别的机器的memcached
+
+```
+telnet ip地址 11211
+```
+
 1.添加数据:
 
 * set:
