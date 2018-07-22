@@ -118,7 +118,7 @@
 * [6.memcached缓存系统](6memcachedhuan-cun-xi-tong.md)
   * [109 memcached介绍](5flaskzhi-shi-dian-bu-chong/109-memcachedjie-shao.md)
   * [110 memcached的安装和参数详解](5flaskzhi-shi-dian-bu-chong/110-memcachedde-an-zhuang-he-can-shu-xiang-jie.md)
-  * 111 telnet操作memcached
+  * [111 telnet操作memcached](5flaskzhi-shi-dian-bu-chong/111-telnetcao-zuo-memcached.md)
   * 112 Python操作memcached
   * 113 memcached的安全机制
 * [7.Redis键值对数据库](7redisjian-zhi-dui-shu-ju-ku.md)
