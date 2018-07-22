@@ -24,11 +24,14 @@
      ```
 
 2. linux\(ubuntu\):
+
    * 安装:sudo apt-get install memcached
    * 启动:sudo service memcached start
+
 3. 可能出现的问题:
    * 提示没有权限:使用管理员权限
    * 不要放在含有中文的路径下面
+   * 提示缺少pthreadGC2.dll文件；将缺少文件拷贝到windows/System32中
 
 
 
