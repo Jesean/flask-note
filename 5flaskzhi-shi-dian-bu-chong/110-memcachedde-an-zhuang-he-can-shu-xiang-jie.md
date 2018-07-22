@@ -40,6 +40,10 @@
    * 不要放在含有中文的路径下面
    * 提示缺少pthreadGC2.dll文件；将缺少文件拷贝到windows/System32中
 
+```
+ps aux|grep start
+```
+
 4.启动memcached:
 
 ```
