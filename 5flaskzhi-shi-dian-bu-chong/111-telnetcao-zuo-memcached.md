@@ -22,7 +22,7 @@ telnet 127.0.0.1 11211
 
   ```
   set username 0 60 7
-  xiaotuo
+  abcdefg
   ```
 
 * add:
