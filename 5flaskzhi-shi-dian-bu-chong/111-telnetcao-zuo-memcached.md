@@ -90,10 +90,8 @@ incr age 2          > 22
 6.减少
 
 ```
-decr age 2         > 20
+decr age 2          > 20
 ```
-
-
 
 
 
