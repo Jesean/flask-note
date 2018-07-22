@@ -79,6 +79,11 @@ delete username
 
 * 语法:stats
 
+```
+'get_hists':get命令命中了多少次
+'get_misses':get命令get空了几次
+```
+
 5.增加
 
 ```
