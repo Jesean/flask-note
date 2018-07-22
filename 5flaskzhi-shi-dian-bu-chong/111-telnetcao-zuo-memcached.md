@@ -83,6 +83,7 @@ delete username
 'get_hists':get命令命中了多少次
 'get_misses':get命令get空了几次
 'curr_items':当前'memcached'中的键值对的个数
+'total_connections':从'memcached'开启到现在总共的连接数
 ```
 
 5.增加
