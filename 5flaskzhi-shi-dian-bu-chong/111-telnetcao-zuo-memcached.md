@@ -16,7 +16,7 @@ telnet 127.0.0.1 11211
   * 语法:
 
   ```
-  set key 0(否)(是否压缩) timeout(过期时间) value_length
+  set key 0(否)(是否压缩) timeout(过期时间) value_length(字符串的长度)
   value
   ```
 
