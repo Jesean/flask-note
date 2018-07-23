@@ -101,5 +101,14 @@ llen key
 (integer) 2
 ```
 
+### 删除指定的元素
+
+```
+lrem key count value
+
+示例:
+lrem websites 0 www.baidu.com
+```
+
 
 
