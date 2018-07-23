@@ -53,9 +53,21 @@ OK
 
 ```
 set key value EX seconds
+或者
+set key timeout value
 
 # 设置10秒后过期
 set name angle EX 10
+```
+
+### 查看过期时间
+
+```
+语法:
+ttl key
+
+示例:
+ttl name
 ```
 
 
