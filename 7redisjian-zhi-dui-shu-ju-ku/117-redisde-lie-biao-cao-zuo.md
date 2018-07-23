@@ -101,7 +101,7 @@ llen key
 (integer) 2
 ```
 
-### 删除指定的元素
+* ### 删除指定的元素
 
 ```
 lrem key count value
@@ -110,6 +110,9 @@ lrem key count value
 lrem websites 0 www.baidu.com
 ```
 
-* 
+1. count&gt;0:从表头开始向表尾搜索，移除与value相等的key
+2. count&lt;0:从表尾开始向表头搜索，移除与value相等的key
+3. count=0:移除表中所有与value相等的值
+
 
 
