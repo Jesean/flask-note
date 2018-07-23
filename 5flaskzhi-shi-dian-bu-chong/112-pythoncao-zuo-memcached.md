@@ -16,5 +16,7 @@ pip install python-memcached
 
 #### 6.自增长
 
+#### 7.自减少
+
 
 
