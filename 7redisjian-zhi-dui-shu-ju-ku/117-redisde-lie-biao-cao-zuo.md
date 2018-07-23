@@ -66,6 +66,13 @@ lpush name angle miku
 
   ```
   lrem key couont value
+
+  示例:
+  127.0.0.1:6379> lrem websites 1 www.qq.com
+  (integer) 1
+  127.0.0.1:6379> lrange websites 0 -1
+  1) "www.baidu.com"
+  2) "0"
   ```
 
 将删除可以key这个列表中，count个值为value的元素
