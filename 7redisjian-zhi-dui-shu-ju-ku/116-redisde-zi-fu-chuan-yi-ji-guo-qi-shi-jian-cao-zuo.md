@@ -48,6 +48,7 @@ set key value EX seconds
 或者
 set key timeout value
 
+
 # 设置10秒后过期
 set name angle EX 10
 ```
