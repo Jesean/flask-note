@@ -14,7 +14,9 @@ lpush name angle miku
 * #### 在列表右边添加元素
 
 ```
-rpush key values
+语法: rpush key values
+
+示例:rpush websites www.qq.com 0 -1
 ```
 
 将值value插入到列表可以的表尾。如果可以不存在，一个空列表会被创建并执行RPUSH操作。当key存在但不是列表类型时，返回一个错误。
