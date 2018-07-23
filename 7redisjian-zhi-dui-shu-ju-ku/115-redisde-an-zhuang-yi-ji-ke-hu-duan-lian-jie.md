@@ -47,5 +47,5 @@ redis-server.exe            # 服务器
 redis.windows.conf          # 配置文件
 ```
 
-用cd命令切换redis的目录并运行**redis-server.exe redis.windows.conf**
+1.用cd命令切换redis的目录并运行**redis-server.exe redis.windows.conf**
 
