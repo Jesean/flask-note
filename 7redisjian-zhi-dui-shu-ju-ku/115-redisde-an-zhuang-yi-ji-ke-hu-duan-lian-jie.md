@@ -22,5 +22,11 @@ ps aux|grep redis
 sudo service redis-server start
 ```
 
+4.停止
+
+```
+sudo service redis-server stop
+```
+
 
 
