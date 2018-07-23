@@ -110,8 +110,8 @@ lrem key count value
 lrem websites 0 www.baidu.com
 ```
 
-1. count&gt;0:从表头开始向表尾搜索，移除与value相等的key
-2. count&lt;0:从表尾开始向表头搜索，移除与value相等的key
+1. count&gt;0:从表头开始向表尾搜索，移除与value相等的元素，数量为count
+2. count&lt;0:从表尾开始向表头搜索，移除与value相等的元素，数量为count的绝对值
 3. count=0:移除表中所有与value相等的值
 
 
