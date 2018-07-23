@@ -54,6 +54,7 @@ OK
 ```
 set key value EX seconds
 
+# 设置10秒后过期
 set name angle EX 10
 ```
 
