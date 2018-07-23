@@ -81,6 +81,12 @@ lpush name angle miku
 
 ```
 lindex key index
+
+示例:
+127.0.0.1:6379> lindex websites 0
+"www.baidu.com"
+127.0.0.1:6379> lindex websites 1
+"0"
 ```
 
 
