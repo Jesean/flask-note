@@ -77,3 +77,11 @@ lpush name angle miku
 
 将删除可以key这个列表中，count个值为value的元素
 
+### 指定返回第几个元素
+
+```
+lindex key index
+```
+
+
+
