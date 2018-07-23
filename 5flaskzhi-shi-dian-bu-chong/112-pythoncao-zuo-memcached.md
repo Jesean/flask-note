@@ -35,7 +35,16 @@ mc.delete('name')
 
 #### 6.自增长
 
+```
+# 默认自增加一,delta属性设置增加值
+mc.incr('age',delta=10)
+```
+
 #### 7.自减少
+
+```
+mc.decr('age',delta=10)
+```
 
 
 
