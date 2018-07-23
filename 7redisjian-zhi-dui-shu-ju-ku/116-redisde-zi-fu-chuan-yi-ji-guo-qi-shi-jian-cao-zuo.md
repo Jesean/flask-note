@@ -71,5 +71,15 @@ ttl key
 ttl name
 ```
 
-删除数据
+### 删除数据
+
+```
+语法:
+del key
+
+示例:
+del name
+```
+
+
 
