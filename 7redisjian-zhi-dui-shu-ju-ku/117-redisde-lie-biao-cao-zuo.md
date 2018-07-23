@@ -107,7 +107,9 @@ llen key
 lrem key count value
 
 示例:
-lrem websites 0 www.baidu.com
+lrem websites 1 1
+lrem websites -1 1
+lrem websites 0 1
 ```
 
 1. count&gt;0:从表头开始向表尾搜索，移除与value相等的元素，数量为count
