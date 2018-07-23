@@ -48,7 +48,7 @@ OK
 ```
 set key value EX seconds
 或者
-set key timeout value
+setex key timeout value
 
 
 # 设置10秒后过期
