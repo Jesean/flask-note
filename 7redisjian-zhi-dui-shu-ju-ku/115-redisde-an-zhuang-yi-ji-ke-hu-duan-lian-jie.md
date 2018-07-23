@@ -32,12 +32,13 @@ sudo service redis-server stop
 
 ### Windows下安装redis
 
-官网:https://redis.io/
+redis官网:[https://redis.io/](https://redis.io/)
+
+GitHub:https://github.com/MicrosoftArchive/redis/releases
 
 解压后bin目录下的文件
 
 ```
-
 redis-benchmark.exe         #基准测试
 redis-check-aof.exe         # aof
 redis-check-dump.exe        # dump
