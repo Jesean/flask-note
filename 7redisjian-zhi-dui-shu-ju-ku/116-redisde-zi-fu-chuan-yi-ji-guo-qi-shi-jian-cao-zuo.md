@@ -26,15 +26,10 @@ set name angle
 
 ### 获取value
 
+```
 语法:
-
-```
 get key
-```
-
 示例:
-
-```
 get name
 ```
 
