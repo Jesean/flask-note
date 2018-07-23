@@ -32,5 +32,14 @@ get key
 get name
 ```
 
+注意:如果设置值为多个单词，需要添加双引号
+
+```
+127.0.0.1:6379> set username "hello world"
+OK
+127.0.0.1:6379> get username
+"hello world"
+```
+
 
 
