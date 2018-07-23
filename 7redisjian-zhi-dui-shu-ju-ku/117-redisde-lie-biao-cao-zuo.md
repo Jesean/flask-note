@@ -107,8 +107,11 @@ llen key
 lrem key count value
 
 示例:
+# 从表头开始搜索，删除数量为1，删除值为1
 lrem websites 1 1
+# 从表尾开始搜索，删除数量为1，删除值为1
 lrem websites -1 1
+# 删除所有1
 lrem websites 0 1
 ```
 
