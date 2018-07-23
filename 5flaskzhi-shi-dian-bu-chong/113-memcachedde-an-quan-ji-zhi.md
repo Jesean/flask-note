@@ -6,9 +6,10 @@ memccached 的操作不需要任何用户名和密码，只需要知道'memcache
 2. 使用防火墙，关闭'11211'端口，外面也不能访问
 
 ```
-关闭所有端口:ufw default deny
+ufw default deny:防火墙以禁止的方式打开，默认是关闭哪些没有开启的端口
+ufw deny 端口号 # 关闭某个端口
+ufw allow 端口号 # 开启某个端口
 查看端口状态:ufw status
-开启端口:ufw allow 11211
 ```
 
 
