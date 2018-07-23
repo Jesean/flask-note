@@ -4,6 +4,12 @@
 redis-cli -h 127.0.0.1 -p 6379 或者redis-cli
 ```
 
+### set语法
+
+```
+set key value [EX seconds] [PX milliseconds]
+```
+
 ### 设置key-velue
 
 语法:
@@ -39,6 +45,16 @@ get name
 OK
 127.0.0.1:6379> get username
 "hello world"
+```
+
+### 设置过期时间
+
+#### 第一种:
+
+```
+set key value EX seconds
+
+set name angle EX 10
 ```
 
 
