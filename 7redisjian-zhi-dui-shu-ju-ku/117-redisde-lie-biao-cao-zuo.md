@@ -48,10 +48,8 @@ lpush name angle miku
   * 移除并返回列表可以的中间元素
 
   ```
-
+  lrem key couont value
   ```
 
 将删除可以key这个列表中，count个值为value的元素
-
-
 
