@@ -35,5 +35,23 @@ lpush name angle miku
 
   * 移除并返回列表key的头元素
 
+  ```
+  lpop key
+  ```
+
+  * 移除并返回列表的尾元素
+
+  ```
+  rpop key
+  ```
+
+  * 移除并返回列表可以的中间元素
+
+  ```
+
+  ```
+
+将删除可以key这个列表中，count个值为value的元素
+
 
 
