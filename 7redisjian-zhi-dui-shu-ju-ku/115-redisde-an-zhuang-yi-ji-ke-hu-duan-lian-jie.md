@@ -34,7 +34,7 @@ sudo service redis-server stop
 
 redis官网:[https://redis.io/](https://redis.io/)
 
-GitHub:https://github.com/MicrosoftArchive/redis/releases
+GitHub:[https://github.com/MicrosoftArchive/redis/releases](https://github.com/MicrosoftArchive/redis/releases)
 
 解压后bin目录下的文件
 
@@ -47,5 +47,5 @@ redis-server.exe            # 服务器
 redis.windows.conf          # 配置文件
 ```
 
-
+用cd命令切换redis的目录并运行**redis-server.exe redis.windows.conf**
 
