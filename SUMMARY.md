@@ -123,7 +123,7 @@
   * [113 memcached的安全机制](5flaskzhi-shi-dian-bu-chong/113-memcachedde-an-quan-ji-zhi.md)
 * [7.Redis键值对数据库](7redisjian-zhi-dui-shu-ju-ku.md)
   * [114 Redis概述和使用场景介绍](7redisjian-zhi-dui-shu-ju-ku/114-redisgai-shu-he-shi-yong-chang-jing-jie-shao.md)
-  * 115 Redis的安装以及客户端连接
+  * [115 Redis的安装以及客户端连接](7redisjian-zhi-dui-shu-ju-ku/115-redisde-an-zhuang-yi-ji-ke-hu-duan-lian-jie.md)
   * 116 Redis的字符串以及过期时间操作
   * 117 Redis的列表操作
   * 118 Redis的集合操作
