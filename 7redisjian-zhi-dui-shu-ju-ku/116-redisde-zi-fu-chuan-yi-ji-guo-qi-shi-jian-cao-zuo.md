@@ -51,8 +51,11 @@ set key value EX seconds
 setex key timeout value
 
 
-# 设置10秒后过期
+# 第一:设置10秒后过期
 set name angle EX 10
+
+# 第二:设置3秒后过期
+setex name 3 angle
 ```
 
 #### 第二种:
