@@ -53,6 +53,12 @@ set key timeout value
 set name angle EX 10
 ```
 
+#### 第二种:
+
+```
+expire key timeout(seconds)
+```
+
 ### 查看过期时间
 
 ```
