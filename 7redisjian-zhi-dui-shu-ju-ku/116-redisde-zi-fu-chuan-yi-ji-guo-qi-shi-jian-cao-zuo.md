@@ -12,15 +12,11 @@ set key value [EX seconds] [PX milliseconds]
 
 ### 设置key-velue
 
+```
 语法:
-
-```
 set key value
-```
 
 示例:
-
-```
 set name angle
 ```
 
@@ -29,6 +25,7 @@ set name angle
 ```
 语法:
 get key
+
 示例:
 get name
 ```
