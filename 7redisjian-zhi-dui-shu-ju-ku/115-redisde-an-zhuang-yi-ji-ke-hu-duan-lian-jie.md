@@ -47,9 +47,22 @@ redis-server.exe            # 服务器
 redis.windows.conf          # 配置文件
 ```
 
-1.用cd命令切换redis的目录并运行**redis-server.exe redis.windows.conf**
+用cd命令切换redis的目录并运行**redis-server.exe redis.windows.conf**
 
-2.运行**redis-cli.exe -h 127.0.0.1 -p 6379**
+---
 
-如果配置好服务可以直接运行redis-cli命令
+### 启动redis:
+
+```
+ubuntu:sudo service redis-server
+windows:net start redis
+```
+
+### 连接redis
+
+```
+redis-cli -h [ip] -p[端口]
+```
+
+
 

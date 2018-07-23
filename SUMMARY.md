@@ -124,8 +124,8 @@
 * [7.Redis键值对数据库](7redisjian-zhi-dui-shu-ju-ku.md)
   * [114 Redis概述和使用场景介绍](7redisjian-zhi-dui-shu-ju-ku/114-redisgai-shu-he-shi-yong-chang-jing-jie-shao.md)
   * [115 Redis的安装以及客户端连接](7redisjian-zhi-dui-shu-ju-ku/115-redisde-an-zhuang-yi-ji-ke-hu-duan-lian-jie.md)
-  * 116 Redis的字符串以及过期时间操作
-  * 117 Redis的列表操作
+  * [116 Redis的字符串以及过期时间操作](7redisjian-zhi-dui-shu-ju-ku/116-redisde-zi-fu-chuan-yi-ji-guo-qi-shi-jian-cao-zuo.md)
+  * [117 Redis的列表操作](7redisjian-zhi-dui-shu-ju-ku/117-redisde-lie-biao-cao-zuo.md)
   * 118 Redis的集合操作
   * 119 Redis的哈希操作
   * 120 Redis的事务操作
