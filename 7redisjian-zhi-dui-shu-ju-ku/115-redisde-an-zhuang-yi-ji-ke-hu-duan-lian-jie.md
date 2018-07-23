@@ -28,5 +28,23 @@ sudo service redis-server start
 sudo service redis-server stop
 ```
 
+---
+
+### Windows下安装redis
+
+官网:https://redis.io/
+
+解压后bin目录下的文件
+
+```
+
+redis-benchmark.exe         #基准测试
+redis-check-aof.exe         # aof
+redis-check-dump.exe        # dump
+redis-cli.exe               # 客户端
+redis-server.exe            # 服务器
+redis.windows.conf          # 配置文件
+```
+
 
 
