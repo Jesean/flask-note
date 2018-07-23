@@ -37,6 +37,15 @@ lpush name angle miku
 
   ```
   lpop key
+
+  示例:
+  127.0.0.1:6379> lpop websites
+  "www.163.com"
+  127.0.0.1:6379> lrange websites 0 -1
+  1) "www.baidu.com"
+  2) "www.qq.com"
+  3) "0"
+  4) "-1"
   ```
 
   * 移除并返回列表的尾元素
@@ -45,7 +54,7 @@ lpush name angle miku
   rpop key
   ```
 
-  * 移除并返回列表可以的中间元素
+  * 移除并返回列表key的中间元素
 
   ```
   lrem key couont value
