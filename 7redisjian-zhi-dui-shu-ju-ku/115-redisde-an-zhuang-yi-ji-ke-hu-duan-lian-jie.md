@@ -61,7 +61,7 @@ windows:net start redis
 ### 连接redis
 
 ```
-redis-cli -h [ip] -p[端口]
+redis-cli -h [ip] -p[端口](默认端口为6379)
 ```
 
 
