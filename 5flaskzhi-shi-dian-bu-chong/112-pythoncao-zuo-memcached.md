@@ -14,7 +14,7 @@ pip install python-memcached
 
 #### 5.删除数据
 
-##### 6.自增长
+#### 6.自增长
 
 
 
