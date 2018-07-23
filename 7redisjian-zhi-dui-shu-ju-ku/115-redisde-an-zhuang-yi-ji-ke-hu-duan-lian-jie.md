@@ -51,3 +51,5 @@ redis.windows.conf          # 配置文件
 
 2.运行**redis-cli.exe -h 127.0.0.1 -p 6379**
 
+如果配置好服务可以直接运行redis-cli命令
+
