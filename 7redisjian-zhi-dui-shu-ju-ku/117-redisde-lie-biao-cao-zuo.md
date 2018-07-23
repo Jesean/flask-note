@@ -77,7 +77,7 @@ lpush name angle miku
 
 将删除可以key这个列表中，count个值为value的元素
 
-### 指定返回第几个元素
+* ### 指定返回第几个元素
 
 ```
 lindex key index
@@ -91,7 +91,7 @@ lindex key index
 
 将返回key这个列表中，索引为index的这个元素
 
-### 获取列表中的元素个数
+* ### 获取列表中的元素个数
 
 ```
 llen key
@@ -110,5 +110,6 @@ lrem key count value
 lrem websites 0 www.baidu.com
 ```
 
+* 
 
 
