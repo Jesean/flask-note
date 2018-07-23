@@ -8,7 +8,18 @@ pip install python-memcached
 
 #### 2.建立连接
 
+```
+mc = memcache.Client(["127.0.0.1:11211"],debug=True)
+```
+
 #### 3.设置数据
+
+```
+mc.set(key="name",val="angle",time=60,min_compress_len=5)
+
+# 设置多个值
+mc.set_multi({'title':r'小红帽','content':r'没有内容'},time=100)
+```
 
 #### 4.获取数据
 
