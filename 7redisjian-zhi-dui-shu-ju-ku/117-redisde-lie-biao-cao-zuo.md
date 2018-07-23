@@ -89,5 +89,17 @@ lindex key index
 "0"
 ```
 
+将返回key这个列表中，索引为index的这个元素
+
+### 获取列表中的元素个数
+
+```
+llen key
+
+示例:
+127.0.0.1:6379> llen websites
+(integer) 2
+```
+
 
 
