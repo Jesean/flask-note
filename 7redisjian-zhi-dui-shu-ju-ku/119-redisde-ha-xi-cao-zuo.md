@@ -35,5 +35,24 @@ hdel person name
 
 * #### 获取某个哈希中所有的field和value
 
+```
+语法:
+hkeys key
+
+示例:
+127.0.0.1:6379> hset person name angle
+(integer) 1
+127.0.0.1:6379> hset person age 18
+(integer) 1
+127.0.0.1:6379> hset person sex boy
+(integer) 1
+127.0.0.1:6379> hkeys person
+1) "name"
+2) "age"
+3) "sex"
+```
+
+* #### 获取某个哈希中所有的值
+
 
 
