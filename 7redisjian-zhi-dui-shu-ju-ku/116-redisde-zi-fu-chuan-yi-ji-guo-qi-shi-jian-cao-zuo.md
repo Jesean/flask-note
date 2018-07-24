@@ -84,5 +84,12 @@ del key
 del name
 ```
 
+### 删除所有数据
+
+```
+语法:
+flushall
+```
+
 
 
