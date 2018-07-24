@@ -29,6 +29,7 @@ smembers a
 srem key members[members...]
 
 示例:
+# 从a集合中移除1、2元素
 srem a 1 2
 ```
 
