@@ -64,5 +64,14 @@ windows:net start redis
 redis-cli -h [ip] -p[端口](默认端口为6379)
 ```
 
+---
+
+### Redis中文问题
+
+```
+如果要在redis-cli中使用中文时，必须打开--raw选项，才能正常地显示中文
+redis-cli --raw
+```
+
 
 
