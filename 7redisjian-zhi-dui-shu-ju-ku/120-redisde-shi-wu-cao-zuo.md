@@ -20,5 +20,5 @@ multi
 exec
 ```
 
-
+会将在multi和exec中的操作一并提交
 
