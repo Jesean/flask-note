@@ -29,6 +29,8 @@ exec
 discard
 ```
 
+会将multi后的所有命令取消
+
 * ### 监视一个或者多个key
 
 
