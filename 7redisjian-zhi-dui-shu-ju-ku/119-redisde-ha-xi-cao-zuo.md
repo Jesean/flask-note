@@ -106,7 +106,13 @@ hexists key field
 * ### 获取哈希中总共的键值对
 
 ```
+语法:
+hlen key
 
+示例:
+# 判断person中有几个键值对
+127.0.0.1:6379> hlen person
+(integer) 3
 ```
 
 
