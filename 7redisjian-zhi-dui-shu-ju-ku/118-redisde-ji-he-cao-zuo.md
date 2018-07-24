@@ -73,8 +73,8 @@ sdiff b a
 sunion key[key...]
 
 示例:
+# 返回得到a和b集合的并集
 sunion a b
-
 ```
 
 
