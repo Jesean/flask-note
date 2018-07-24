@@ -23,13 +23,14 @@ hget key field
 "angle"
 ```
 
-* #### 删除field中的某个field
+* #### 删除key中的某个field
 
 ```
 语法:
 hdel key field[field...]
 
 示例:
+# 删除person下的name字段
 hdel person name
 ```
 
