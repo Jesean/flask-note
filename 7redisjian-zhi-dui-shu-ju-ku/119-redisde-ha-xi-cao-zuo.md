@@ -36,7 +36,17 @@ hdel person name
 * #### 获取某个哈希中所有的field和value
 
 ```
+语法:
+hgetall key
 
+示例:
+127.0.0.1:6379> hgetall person
+1) "name"
+2) "angle"
+3) "age"
+4) "18"
+5) "sex"
+6) "boy"
 ```
 
 * #### 获取某个哈希中所有的字段
