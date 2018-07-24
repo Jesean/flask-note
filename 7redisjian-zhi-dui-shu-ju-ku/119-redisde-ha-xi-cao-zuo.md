@@ -36,6 +36,12 @@ hdel person name
 * #### 获取某个哈希中所有的field和value
 
 ```
+
+```
+
+* #### 获取某个哈希中所有的字段
+
+```
 语法:
 hkeys key
 
