@@ -11,6 +11,10 @@ hset key field value
 hset person name angle
 ```
 
+将哈希表key中的域field的值设为value
+
+如果key不存在，一个新的哈希表被创建并进行HSET操作。如果域field已经存在于哈希表中，旧值将被覆盖
+
 * #### 获取哈希中的field对应的值
 
 ```
