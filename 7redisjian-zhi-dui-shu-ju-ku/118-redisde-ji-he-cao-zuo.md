@@ -62,8 +62,8 @@ sinter a b
 sdiff key[key...]
 
 示例:
+# 返回得到集合b在集合a中没有的元素
 sdiff b a
-
 ```
 
 
