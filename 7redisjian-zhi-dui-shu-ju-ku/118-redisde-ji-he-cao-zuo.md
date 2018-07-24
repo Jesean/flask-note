@@ -55,5 +55,16 @@ sinter key[key...]
 sinter a b
 ```
 
+* #### 获取多个集合的差集
+
+```
+语法:
+sdiff key[key...]
+
+示例:
+sdiff b a
+
+```
+
 
 
