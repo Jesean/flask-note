@@ -96,7 +96,7 @@ hvals key
 hexists key field
 
 示例:
-# 
+# 判断person中是否存在这个字段，存在返回1，否则返回0
 127.0.0.1:6379> hexists person age
 (integer) 1
 127.0.0.1:6379> hexists person username
