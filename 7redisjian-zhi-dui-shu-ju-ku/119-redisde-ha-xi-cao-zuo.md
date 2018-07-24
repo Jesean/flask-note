@@ -47,7 +47,7 @@ hkeys key
 127.0.0.1:6379> hset person sex boy
 (integer) 1
 
-# 获取person下的所有的字段
+# 获取person下的所有的字段名
 127.0.0.1:6379> hkeys person
 1) "name"
 2) "age"
