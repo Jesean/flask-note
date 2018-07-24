@@ -28,6 +28,11 @@ hget key field
 ```
 语法:
 hdel key field[field...]
+
+示例:
+hdel person name
+
+
 ```
 
 * #### 获取某个哈希中所有的field和value
