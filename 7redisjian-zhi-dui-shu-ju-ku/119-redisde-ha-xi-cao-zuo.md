@@ -34,14 +34,13 @@ hdel person name
 ```
 
 ```
+# 定义数据
 127.0.0.1:6379> hset person name angle
 (integer) 1
 127.0.0.1:6379> hset person age 18
 (integer) 1
 127.0.0.1:6379> hset person sex boy
 (integer) 1
-
-
 ```
 
 * #### 获取某个哈希中所有的field和value
