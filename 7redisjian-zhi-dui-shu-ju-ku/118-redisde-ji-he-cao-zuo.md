@@ -46,5 +46,14 @@ scard a
 
 * #### 获取多个集合的交集
 
+```
+语法:
+sinter key[key...]
+
+示例:
+# 返回a、b集合的交集
+sinter a b
+```
+
 
 
