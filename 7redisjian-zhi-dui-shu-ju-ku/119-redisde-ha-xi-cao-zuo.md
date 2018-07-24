@@ -86,5 +86,24 @@ hvals key
 3) "boy"
 ```
 
+* #### 判断哈希中是否存在某个field
+
+```
+语法:
+hexists key field
+
+示例:
+127.0.0.1:6379> hexists person age
+(integer) 1
+127.0.0.1:6379> hexists person username
+(integer) 0
+```
+
+* ### 获取哈希中总共的键值对
+
+```
+
+```
+
 
 
