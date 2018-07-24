@@ -66,5 +66,16 @@ sdiff key[key...]
 sdiff b a
 ```
 
+* #### 获取多个集合的并集
+
+```
+语法:
+sunion key[key...]
+
+示例:
+sunion a b
+
+```
+
 
 
