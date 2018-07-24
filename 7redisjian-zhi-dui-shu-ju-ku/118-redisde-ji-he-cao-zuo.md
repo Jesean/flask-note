@@ -29,7 +29,7 @@ smembers a
 srem key members[members...]
 
 示例:
-srem a 1 2 3
+srem a 1 2
 ```
 
 * #### 查看集合中的元素个数
