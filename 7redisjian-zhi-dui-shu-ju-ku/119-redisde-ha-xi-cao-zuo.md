@@ -12,6 +12,17 @@ hset person name angle
 ```
 
 * #### 获取哈希中的field对应的值
+
+```
+语法:
+hget key field
+
+示例:
+# 获取person下的字段的值
+127.0.0.1:6379> hget person name
+"angle"
+```
+
 * #### 删除field中的某个field
 * #### 获取某个哈希中所有的field和value
 
