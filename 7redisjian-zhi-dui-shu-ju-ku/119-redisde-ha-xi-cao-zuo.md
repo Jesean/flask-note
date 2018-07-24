@@ -31,8 +31,6 @@ hdel key field[field...]
 
 示例:
 hdel person name
-
-
 ```
 
 * #### 获取某个哈希中所有的field和value
