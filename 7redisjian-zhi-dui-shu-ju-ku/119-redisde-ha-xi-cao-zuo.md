@@ -24,6 +24,12 @@ hget key field
 ```
 
 * #### 删除field中的某个field
+
+```
+语法:
+hdel key field[field...]
+```
+
 * #### 获取某个哈希中所有的field和value
 
 
