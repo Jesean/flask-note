@@ -127,7 +127,7 @@
   * [116 Redis的字符串以及过期时间操作](7redisjian-zhi-dui-shu-ju-ku/116-redisde-zi-fu-chuan-yi-ji-guo-qi-shi-jian-cao-zuo.md)
   * [117 Redis的列表操作](7redisjian-zhi-dui-shu-ju-ku/117-redisde-lie-biao-cao-zuo.md)
   * [118 Redis的集合操作](7redisjian-zhi-dui-shu-ju-ku/118-redisde-ji-he-cao-zuo.md)
-  * 119 Redis的哈希操作
+  * [119 Redis的哈希操作](7redisjian-zhi-dui-shu-ju-ku/119-redisde-ha-xi-cao-zuo.md)
   * 120 Redis的事务操作
   * 121 Redis的发布和订阅操作
   * 122 RDB和AOF的两种数据持久化机制
