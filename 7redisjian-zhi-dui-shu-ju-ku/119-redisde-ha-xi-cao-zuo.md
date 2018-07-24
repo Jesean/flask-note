@@ -56,13 +56,6 @@ hgetall key
 hkeys key
 
 示例:
-127.0.0.1:6379> hset person name angle
-(integer) 1
-127.0.0.1:6379> hset person age 18
-(integer) 1
-127.0.0.1:6379> hset person sex boy
-(integer) 1
-
 # 获取person下的所有的字段名
 127.0.0.1:6379> hkeys person
 1) "name"
