@@ -50,6 +50,7 @@ hdel person name
 hgetall key
 
 示例:
+# 获取person下的所有的键值对
 127.0.0.1:6379> hgetall person
 1) "name"
 2) "angle"
