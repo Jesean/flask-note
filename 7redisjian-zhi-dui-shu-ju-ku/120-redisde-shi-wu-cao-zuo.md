@@ -67,9 +67,13 @@ QUEUED
 OK
 127.0.0.1:6379> get name
 angle
+```
 
+* ### 取消所有可以的监视
 
-
+```
+语法:
+unwatch
 ```
 
 
