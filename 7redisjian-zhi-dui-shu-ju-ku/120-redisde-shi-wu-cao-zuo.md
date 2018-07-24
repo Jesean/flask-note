@@ -33,5 +33,30 @@ discard
 
 * ### 监视一个或者多个key
 
+```
+语法:
+watch key[key...]
+
+示例:
+
+127.0.0.1:6379> watch username
+OK
+127.0.0.1:6379> multi
+OK
+127.0.0.1:6379> set username angle
+QUEUED
+
+重新打开一个cmd
+127.0.0.1:6379> set username miku
+OK
+
+127.0.0.1:6379> exec
+
+
+127.0.0.1:6379> get username
+miku
+
+```
+
 
 
