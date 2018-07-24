@@ -80,6 +80,7 @@ hkeys key
 hvals key
 
 示例:
+# 获取person下的所有字段的值
 127.0.0.1:6379> hvals person
 1) "angle"
 2) "18"
@@ -93,6 +94,7 @@ hvals key
 hexists key field
 
 示例:
+# 
 127.0.0.1:6379> hexists person age
 (integer) 1
 127.0.0.1:6379> hexists person username
