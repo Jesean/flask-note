@@ -26,6 +26,14 @@ name = op_redis.get("name")
 print(name)
 # 删除
 op_redis.delete(name)
+
+
+# 2.列表的操作
+# 添加
+op_redis.lpush("languages","java")
+op_redis.lpush("languages","python")
+op_redis.lpush("languages","c/c++")
+print(op_redis.lrange("languages",0,-1))
 ```
 
 
