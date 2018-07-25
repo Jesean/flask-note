@@ -34,6 +34,14 @@ op_redis.lpush("languages","java")
 op_redis.lpush("languages","python")
 op_redis.lpush("languages","c/c++")
 print(op_redis.lrange("languages",0,-1))
+
+
+# 3.集合的操作
+op_redis.sadd("like","a")
+op_redis.sadd("like","b")
+op_redis.sadd("like","c")
+like = op_redis.smembers('like')
+print(like)
 ```
 
 
