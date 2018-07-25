@@ -11,3 +11,5 @@
 
 注意修改完配置，需重启服务:sudo service redis-server restart
 
+更多细节:http://redisdoc.com/topic/persistence.html\#redis
+
