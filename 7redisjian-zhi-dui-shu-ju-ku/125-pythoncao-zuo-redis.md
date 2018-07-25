@@ -83,6 +83,13 @@ while True:
         if item['type'] == 'message':
             data = item['data']
             print(data)
+            
+            
+# 发送
+from redis import Redis
+op_redis = Redis(host="192.168.5.128",port=6379)
+# 从email频道发布
+op_redis.publish('email','python')           
 ```
 
 
