@@ -130,7 +130,7 @@
   * [119 Redis的哈希操作](7redisjian-zhi-dui-shu-ju-ku/119-redisde-ha-xi-cao-zuo.md)
   * [120 Redis的事务操作](7redisjian-zhi-dui-shu-ju-ku/120-redisde-shi-wu-cao-zuo.md)
   * [121 Redis的发布和订阅操作](7redisjian-zhi-dui-shu-ju-ku/121-redisde-fa-bu-he-ding-yue-cao-zuo.md)
-  * 122 RDB和AOF的两种数据持久化机制
+  * [122 RDB和AOF的两种数据持久化机制](7redisjian-zhi-dui-shu-ju-ku/122-rdbhe-aof-de-liang-zhong-shu-ju-chi-jiu-hua-ji-zhi.md)
   * 123 Redis设置连接密码
   * 124 其他机器连接本机redis
   * 125 Python操作redis
