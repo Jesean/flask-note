@@ -10,11 +10,12 @@
 requirepass 123456
 ```
 
-临时设置密码
+临时设置密码，但是重启服务后失效
 
 ```
 config set requirepass password
 config get requirepass
+auth overload
 ```
 
 ### 连接redis
