@@ -5,7 +5,7 @@
   * cd /etc/redis,vim redis.conf
 * windows
   * 找到配置文件，使用notepad记事本打开
-* 找到bind,进行修改绑定
+* 找到bind,进行修改绑定本机地址
 
 ```
 bind 127.0.0.1 本机地址
