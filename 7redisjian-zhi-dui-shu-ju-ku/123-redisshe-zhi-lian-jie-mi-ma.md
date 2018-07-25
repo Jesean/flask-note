@@ -10,9 +10,18 @@
 requirepass 123456
 ```
 
+### 连接redis
+
 ```
 redis-cli -h 127.0.0.1 -p 6379 -a 123456
+
+或者
+
+redis-cli -h 127.0.0.1 -p 6379
+> auth 123456
 ```
+
+
 
 
 
