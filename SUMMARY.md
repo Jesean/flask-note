@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [介绍](README.md)
 * [1.Flask视图和URL](1flaskshi-tu-he-url.md)
   * [01 虚拟环境](chapter1/01bi-ji.md)
   * [02 URL组成部分详解](chapter1/02-url-xiang-jie.md)
