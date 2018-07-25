@@ -65,6 +65,24 @@ pip.set('name','angle')
 pip.set('name','miku')
 # 执行事务
 pip.execute()
+
+
+
+# 6.发布与订阅功能
+
+# 接收
+# 异步发送邮件的功能
+# 获取对象
+ps = op_redis.pubsub()
+# 频道
+ps.subscribe('email')
+while True:
+    # 监听该频道
+    for item in ps.listen():
+        # print(item)
+        if item['type'] == 'message':
+            data = item['data']
+            print(data)
 ```
 
 
