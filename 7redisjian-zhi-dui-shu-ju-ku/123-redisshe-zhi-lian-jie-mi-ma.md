@@ -10,6 +10,13 @@
 requirepass 123456
 ```
 
+临时设置密码
+
+```
+config set requirepass password
+config get requirepass
+```
+
 ### 连接redis
 
 ```
