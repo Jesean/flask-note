@@ -133,5 +133,5 @@
   * [122 RDB和AOF的两种数据持久化机制](7redisjian-zhi-dui-shu-ju-ku/122-rdbhe-aof-de-liang-zhong-shu-ju-chi-jiu-hua-ji-zhi.md)
   * [123 Redis设置连接密码](7redisjian-zhi-dui-shu-ju-ku/123-redisshe-zhi-lian-jie-mi-ma.md)
   * [124 其他机器连接本机redis](7redisjian-zhi-dui-shu-ju-ku/124-qi-ta-ji-qi-lian-jie-ben-ji-redis.md)
-  * 125 Python操作redis
+  * [125 Python操作redis](7redisjian-zhi-dui-shu-ju-ku/125-pythoncao-zuo-redis.md)
 
