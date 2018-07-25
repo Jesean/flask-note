@@ -55,6 +55,16 @@ op_redis.hset('web','google','www.google.com')
 # 获取所有的字段及其值
 web = op_redis.hgetall('web')
 print(web)
+
+
+# 5.事务操作
+# 在redis中执行事务，需要借助pipline()函数
+pip = op_redis.pipeline()
+# 绑定命令
+pip.set('name','angle')
+pip.set('name','miku')
+# 执行事务
+pip.execute()
 ```
 
 
