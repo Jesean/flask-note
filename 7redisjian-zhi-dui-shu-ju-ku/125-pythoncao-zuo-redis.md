@@ -15,5 +15,18 @@ from redis import Redis
 op_redis = Redis(host="192.168.5.128",port=6379)
 ```
 
+3.对字符串的操作:操作redis的方法名称，跟之前使用redis-cli一样
+
+```
+# 1.字符串
+# 设置
+op_redis.set("name","angle")
+# 获取数据
+name = op_redis.get("name")
+print(name)
+# 删除
+op_redis.delete(name)
+```
+
 
 
