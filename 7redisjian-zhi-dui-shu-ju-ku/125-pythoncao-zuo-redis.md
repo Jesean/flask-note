@@ -33,6 +33,7 @@ op_redis.delete(name)
 op_redis.lpush("languages","java")
 op_redis.lpush("languages","python")
 op_redis.lpush("languages","c/c++")
+# 获取集合中的所有元素
 print(op_redis.lrange("languages",0,-1))
 
 
@@ -44,9 +45,6 @@ op_redis.sadd("like","c")
 # 获取集合中的所有元素
 like = op_redis.smembers('like')
 print(like)
-
-
-
 ```
 
 
