@@ -5,6 +5,10 @@
   * cd /etc/redis,vim redis.conf
 * windows
   * 找到配置文件，使用notepad记事本打开
+* 找到bind
 
+![](/assets/124.1.png)
+
+* 
 
 
