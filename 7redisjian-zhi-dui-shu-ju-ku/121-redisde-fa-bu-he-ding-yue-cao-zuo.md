@@ -13,9 +13,7 @@ publish channel message
 
 ```
 语法:
-subscribe channel
-
-
+subscribe channel[channel...]
 ```
 
 
