@@ -45,6 +45,16 @@ op_redis.sadd("like","c")
 # 获取集合中的所有元素
 like = op_redis.smembers('like')
 print(like)
+
+
+# 4.哈希的操作
+# 添加web键，和几个字段以及对应的值
+op_redis.hset('web','baidu','www.baidu.com')
+op_redis.hset('web','python','www.python.com')
+op_redis.hset('web','google','www.google.com')
+# 获取所有的字段及其值
+web = op_redis.hgetall('web')
+print(web)
 ```
 
 
