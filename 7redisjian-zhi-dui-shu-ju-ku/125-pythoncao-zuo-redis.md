@@ -37,11 +37,16 @@ print(op_redis.lrange("languages",0,-1))
 
 
 # 3.集合的操作
+# 添加
 op_redis.sadd("like","a")
 op_redis.sadd("like","b")
 op_redis.sadd("like","c")
+# 获取集合中的所有元素
 like = op_redis.smembers('like')
 print(like)
+
+
+
 ```
 
 
