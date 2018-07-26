@@ -9,5 +9,5 @@ pycharm
 破解码:[http://idea.yoonasy.com/](http://idea.yoonasy.com/)
 
 如果想看笔记的小伙伴请点击这里
-Gitbook:https://xintiaohuiyi.gitbook.io/flask-note/5flaskzhi-shi-dian-bu-chong/flask-restful
+Gitbook:https://xintiaohuiyi.gitbook.io/flask-note/
 
