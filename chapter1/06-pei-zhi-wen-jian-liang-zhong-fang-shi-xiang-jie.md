@@ -1,6 +1,6 @@
 ## config配置笔记
 
-### 使用"app.confgi.from\_object\(config\)"的方式加载配置文件
+### 使用"app.config.from\_object\(config\)"的方式加载配置文件
 
 1. 导入"import config"
 2. 使用"app.config.from\_object\(config\)"
