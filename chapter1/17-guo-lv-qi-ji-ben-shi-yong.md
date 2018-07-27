@@ -141,12 +141,12 @@ index.html
      <p>{{ article }}</p>
      <p>-----------------</p>
      <div>
-       {# % autoescape off % #}
+       {% autoescape off % #}
          <!--禁止转义-->
             <p>个性签名:{{ signature|escape}}</p>
             <!--转义-->
             <p>个性签名:{{ signature|safe}}</p>
-       {# % endautoescape % #}
+       {% endautoescape % #}
          <p>---------------</p>
          {{ "%s"|format(signature) }}
          {{ persons|length }}
