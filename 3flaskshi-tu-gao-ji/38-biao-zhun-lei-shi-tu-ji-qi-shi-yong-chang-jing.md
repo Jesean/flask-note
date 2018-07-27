@@ -4,7 +4,7 @@
 
 ### 标准视图:
 
-标准视图继承自flask.views.View,并且在子类中必须实现 dispetch\_request方法，这个方法类似于视图函数，也要返回一个基于Response或者子类的对象，以下将用一个例子进行讲解:
+标准视图继承自flask.views.View,并且在子类中必须实现 dispatch\_request方法，这个方法类似于视图函数，也要返回一个基于Response或者子类的对象，以下将用一个例子进行讲解:
 
 ```
 class BaseView(views.View):

@@ -9,7 +9,7 @@ Jinja2中内置了许多过滤器，在这里可以看到所有的过滤器，�
 
 * abs\(value\):返回一个数值的绝对值。例如:-1\|abs。
 
-* .default\(value,default\_value,boolean=false\):如果当前变量没有值，则会使用参数中的值来代替。  
+* default\(value,default\_value,boolean=false\):如果当前变量没有值，则会使用参数中的值来代替。  
   name\|default\('xiaotuo'\) == 如果name不存在，则会使用xiaotuo来代替。boolean=False默认是在只  
   有这个变量为undefined的时候才会使用default中的值，如果想使用python的形式判断是否为false，则可以传递Boolean=true。也可以使用or来代替
 
@@ -17,9 +17,7 @@ Jinja2中内置了许多过滤器，在这里可以看到所有的过滤器，�
 
 * first\(value\):返回一个序列的第一个元素。name\|first
 
-* format\(value,\*args,\*\*kwargs\):格式化字符串。例如以下代码:
-
-将输出:hello?-foo!
+* format\(value,\*args,\*\*kwargs\):格式化字符串。
 
 * last\(value\):返回一个序列的最后一个元素。示例:names\|last。
 
