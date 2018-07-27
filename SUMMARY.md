@@ -13,7 +13,7 @@
   * [09 自定义URL转换器](chapter1/09-zi-ding-yi-url-zhuan-huan-qi.md)
   * [10 必会的小细节知识](chapter1/10-bi-hui-de-xiao-xi-jie-zhi-shi-dian.md)
   * [11 重定向详解](chapter1/11-zhong-ding-xiang-xiang-jie.md)
-  * [12-13 视图函数Response返回值详解](chapter1/12-zhong-ding-xiang-xiang-jie.md)
+  * [12-13 视图函数Response返回值详解](chapter1/13-shi-tu-hanshu-response-fan-hui-zhi-xiang-jie.md)
 * [2.Jinja2模版](2jinja2mo-ban.md)
   * [14 Jinja2模板介绍](chapter1/14-jinja2mo-ban-jie-shao.md)
   * [15 模板传参及其技巧](chapter1/15-mo-ban-chuan-can-ji-qi-ji-qiao.md)
