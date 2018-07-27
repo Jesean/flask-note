@@ -1,8 +1,8 @@
-## 发布/订阅操作
+# 121 Redis的发布和订阅操作
 
-* ### 给某个频道发布消息
+* **给某个频道发布消息**
 
-```
+```text
 语法:
 publish channel message
 
@@ -13,9 +13,9 @@ publish channel message
 127.0.0.1:6379>
 ```
 
-* ### 订阅某个频道的消息
+* **订阅某个频道的消息**
 
-```
+```text
 语法:
 subscribe channel[channel...]
 
@@ -29,6 +29,4 @@ message
 channe2
 hello
 ```
-
-
 

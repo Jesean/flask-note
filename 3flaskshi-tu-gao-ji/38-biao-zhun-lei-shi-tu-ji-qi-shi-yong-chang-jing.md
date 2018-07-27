@@ -1,12 +1,14 @@
-### 类视图
+# 38 标准类视图及其使用场景
+
+## 类视图
 
 之前的视图都是函数，所以一般简称为视图函数。其实视图也可以基于类来实现，类视图的好处是支持继承，但是类视图不能跟函数视图一样，写完类视图好需要通过 app.add\_urlrule\(urlrule,view\_func\)。以下将对两种类视图进行讲解:
 
-### 标准视图:
+## 标准视图:
 
 标准视图继承自flask.views.View,并且在子类中必须实现 dispatch\_request方法，这个方法类似于视图函数，也要返回一个基于Response或者子类的对象，以下将用一个例子进行讲解:
 
-```
+```text
 class BaseView(views.View):
     # 自定义方法，用来获取模板路径
     def get_template_name(self):
@@ -37,11 +39,11 @@ class UserView(BaseView):
 app.add_url_rule('/users/',view_func=UserView.as_view('userview'))
 ```
 
-### 基于调度方法的视图:
+## 基于调度方法的视图:
 
 Flask提供了另外一种类视图flask.views.MethodView，对每个HTTP方法执行不同的函数\(映射到对应的方法的小写的同名方法上\)，还对 RESTful API尤其有用，例子:
 
-```
+```text
 class UserAPI(views.MethodView):
     #客户端通过get方法进行访问的时候执行的函数、
     def get(self):
@@ -61,7 +63,7 @@ app.add_url_rule('/myuser/',view_func=UserAPI.as_view('userapiview'))
 
 用类视图的一个缺陷就是比较难用装饰器来装饰，比如有时候需要做权限验证的时候，比如:
 
-```
+```text
 def user_required(f)
     def decorator(*args,**kwargs):
         if not g.user:
@@ -72,22 +74,20 @@ def user_required(f)
 
 如果要在类视图上进行装饰，只能在as\_view函数上进行装饰了，使用方式:
 
-```
+```text
 view = user_required(UserAPI.as_view('users'))
 app.add_url_rule('/users/',views_func=view)
 ```
 
 从flask 0.8 开始，还可以通过在类中添加decorators属性来实现对视图的装饰:
 
-```
+```text
 class UserAPI(views.MethodView):
     decorator = [user_required]
     ....
 ```
 
----
-
-### 标准类视图
+## 标准类视图
 
 1. 标准类视图，必须继承来自"flask.views.View"
 2. 必须实现"dipatch\_request"方法，以后请求过来后，都会执行这个方法，这个方法的返回值就相当于是之前的函数视图一样，也必须返回"Response"或者子类的对象，或者是字符串，或者是元组
@@ -95,7 +95,7 @@ class UserAPI(views.MethodView):
 4. 如果指定了"endpoint",那么在使用"url\_for"反转的时候就必须使用"endpoint"指定的那个值，如果没有指定"endpoint"，那么就可以使用"as\_view\(视图名字\)"中指定的视图名字作为反转
 5. 类视图有以下好处:可以继承，把一些共性的东西抽取出来放到父视图中，子视图直接拿来使用就可以了，但是也不是说所有的视图都要使用类视图，这个要根据情况而定
 
-```
+```text
 # 必须继承自views
 class ListView(views.View):
     def dispatch_request(self):
@@ -106,9 +106,9 @@ class ListView(views.View):
 app.add_url_rule('/list/',endpoint='list',view_func=ListView.as_view('list'))
 ```
 
-![](/assets/38.img1.png)
+![](../.gitbook/assets/38.img1.png)
 
-```
+```text
 # 有几个url需要返回json数据，“需要用jsonify”
 class JSONView(views.View):
     def get_data(self):
@@ -144,9 +144,9 @@ class ListView(JSONView):
         return {"username":"angle"}
 ```
 
-![](/assets/38.img2.png)
+![](../.gitbook/assets/38.img2.png)
 
-```
+```text
 class ADSView(views.View):
     def __init__(self):
         super(ADSView,self).__init__()
@@ -167,5 +167,5 @@ class RegistView(ADSView):
         return render_template('regist.html',**self.context)
 ```
 
-![](/assets/38login.png)
+![](../.gitbook/assets/38login.png)
 

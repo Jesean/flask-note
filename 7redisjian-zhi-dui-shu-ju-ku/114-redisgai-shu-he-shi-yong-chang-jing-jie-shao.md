@@ -1,10 +1,12 @@
-### 概述
+# 114 Redis概述和使用场景介绍
+
+## 概述
 
 redis是一种nosql数据库，它的数据是保存在内存中，同时redis可以定时把内存数据同步到磁盘，即可以将数据持久化，并且它比memcached支持更多的数据结构\(string，list列表\[队列和栈\],set\(集合\)，sorted set\[有序集合\]，hash\(hash表\)\)。
 
 相关参考文档:[http://redisdoc.com/index.html](http://redisdoc.com/index.html)
 
-### redis使用场景
+## redis使用场景
 
 1. 登录会话存储，存储在redis中，与memcached相比，数据不会丢失
 2. 排行版/计数器:比如一些秀场类的项目，经常会有一些前多少名的主播排名。还有一些文章阅读量的技术，或者新浪微博的点赞数等。
@@ -15,7 +17,7 @@ redis是一种nosql数据库，它的数据是保存在内存中，同时redis�
 7. 好友关系:微博的好友关系使用redis实现
 8. 发布和订阅功能:可以用来做聊天软件
 
-### redis和memcached的比较
+## redis和memcached的比较
 
 |  | memcached | redis |
 | :--- | :--- | :--- |
@@ -27,6 +29,4 @@ redis是一种nosql数据库，它的数据是保存在内存中，同时redis�
 | 灾难恢复 | 不支持 | 可以将磁盘中的数据恢复到内存中 |
 | 分布式 | 支持 | 主从同步 |
 | 订阅与发布 | 不支持 | 支持 |
-
-
 

@@ -1,8 +1,8 @@
-### set集合的 操作
+# 118 Redis的集合操作
 
-* #### 添加元素
+* **添加元素**
 
-```
+```text
 语法:
 sadd key member[member...]
 
@@ -11,9 +11,9 @@ sadd key member[member...]
 sadd a 1 2 3 4 5 6
 ```
 
-* #### 查看元素
+* **查看元素**
 
-```
+```text
 语法:
 smembers key
 
@@ -22,9 +22,9 @@ smembers key
 smembers a
 ```
 
-* #### 移除元素
+* **移除元素**
 
-```
+```text
 语法:
 srem key members[members...]
 
@@ -33,9 +33,9 @@ srem key members[members...]
 srem a 1 2
 ```
 
-* #### 查看集合中的元素个数
+* **查看集合中的元素个数**
 
-```
+```text
 语法:
 scard a
 
@@ -44,9 +44,9 @@ scard a
 scard a
 ```
 
-* #### 获取多个集合的交集
+* **获取多个集合的交集**
 
-```
+```text
 语法:
 sinter key[key...]
 
@@ -55,9 +55,9 @@ sinter key[key...]
 sinter a b
 ```
 
-* #### 获取多个集合的差集
+* **获取多个集合的差集**
 
-```
+```text
 语法:
 sdiff key[key...]
 
@@ -66,9 +66,9 @@ sdiff key[key...]
 sdiff b a
 ```
 
-* #### 获取多个集合的并集
+* **获取多个集合的并集**
 
-```
+```text
 语法:
 sunion key[key...]
 
@@ -76,6 +76,4 @@ sunion key[key...]
 # 返回得到a和b集合的并集
 sunion a b
 ```
-
-
 

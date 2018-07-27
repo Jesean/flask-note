@@ -1,9 +1,9 @@
-### 类视图中的装饰器
+# 40 类视图中使用装饰器
 
 1. 如果使用的是函数视图，那么自己定义的装饰器必须放在"app.route"下面，否者装饰器失效
 2. 类视图的装饰器，需要重写类视图的一个类属性"decorators"，这个类属性是一个列表或者元组都可以，里面装的是装饰器
 
-```
+```text
 from flask import Flask,request
 from functools import wraps
 
@@ -35,9 +35,9 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-![](/assets/40.login_required.png)![](/assets/40.login.png)
+![](../.gitbook/assets/40.login_required.png)![](../.gitbook/assets/40.login.png)
 
-```
+```text
 class ProfileView(views.View):
 
     # 装饰器
@@ -48,6 +48,4 @@ class ProfileView(views.View):
 
 app.add_url_rule(rule='/profile/',view_func=ProfileView.as_view('profile'))
 ```
-
-
 

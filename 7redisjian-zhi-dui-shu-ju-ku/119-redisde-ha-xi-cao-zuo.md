@@ -1,8 +1,8 @@
-### hash哈希操作
+# 119 Redis的哈希操作
 
-* ### 添加
+* **添加**
 
-```
+```text
 语法:
 hset key field value
 
@@ -15,9 +15,9 @@ hset person name angle
 
 如果key不存在，一个新的哈希表被创建并进行HSET操作。如果域field已经存在于哈希表中，旧值将被覆盖
 
-* #### 获取哈希中的field对应的值
+* **获取哈希中的field对应的值**
 
-```
+```text
 语法:
 hget key field
 
@@ -27,9 +27,9 @@ hget key field
 "angle"
 ```
 
-* #### 删除key中的某个field
+* **删除key中的某个field**
 
-```
+```text
 语法:
 hdel key field[field...]
 
@@ -38,7 +38,7 @@ hdel key field[field...]
 hdel person name
 ```
 
-```
+```text
 # 定义数据
 127.0.0.1:6379> hset person name angle
 (integer) 1
@@ -48,9 +48,9 @@ hdel person name
 (integer) 1
 ```
 
-* #### 获取某个哈希中所有的field和value
+* **获取某个哈希中所有的field和value**
 
-```
+```text
 语法:
 hgetall key
 
@@ -65,9 +65,9 @@ hgetall key
 6) "boy"
 ```
 
-* #### 获取某个哈希中所有的字段
+* **获取某个哈希中所有的字段**
 
-```
+```text
 语法:
 hkeys key
 
@@ -79,9 +79,9 @@ hkeys key
 3) "sex"
 ```
 
-* #### 获取某个哈希中所有的值
+* **获取某个哈希中所有的值**
 
-```
+```text
 语法:
 hvals key
 
@@ -93,9 +93,9 @@ hvals key
 3) "boy"
 ```
 
-* #### 判断哈希中是否存在某个field
+* **判断哈希中是否存在某个field**
 
-```
+```text
 语法:
 hexists key field
 
@@ -107,9 +107,9 @@ hexists key field
 (integer) 0
 ```
 
-* ### 获取哈希中总共的键值对
+* **获取哈希中总共的键值对**
 
-```
+```text
 语法:
 hlen key
 
@@ -118,6 +118,4 @@ hlen key
 127.0.0.1:6379> hlen person
 (integer) 3
 ```
-
-
 

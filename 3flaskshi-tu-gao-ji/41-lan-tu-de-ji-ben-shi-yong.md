@@ -1,8 +1,8 @@
-### 创建项目
+# 41 蓝图的基本使用
 
-![](/assets/41.img1.png)
+![](../.gitbook/assets/41.img1.png)
 
-```
+```text
 blueprint_demo.py
 
 from flask import Flask,Blueprint
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-```
+```text
 user.py
 
 from flask import Blueprint
@@ -47,7 +47,7 @@ def settings():
     return "个人中心页面"
 ```
 
-```
+```text
 news.py
 
 from flask import Blueprint
@@ -66,23 +66,19 @@ def detail():
 ## 蓝图
 
 * 蓝图的作用就是让flask项目更加模块化，结构更加清晰，可以将相同模块的视图函数放在同一个蓝图下，同一个文件中，方便管理
-
 * 基本语法:
-
 * 在蓝图文件中导入Blueprint：
 
-```
+```text
 'from flask import Blueprint'
 # 注意url_prefix参数的斜杠
 user_bp = Blueprint('user',__name__,url_prefix='/user')
 # http://127.0.0.1:5000/user/profile/
 ```
 
-
-
 * 在主app文件中注册蓝图:
 
-```
+```text
 from blueprints.user import user_bp
 
 app.regist_blueprint(user_bp)
@@ -90,9 +86,7 @@ app.regist_blueprint(user_bp)
 
 * 如果想要某个蓝图下的所有url都有一个url前缀，那么可以定义蓝图的时候，指定url\_prefix参数:
 
-```
+```text
 user_bp = Blueprint('user',__name__,url_prefix='/user/')
 ```
-
-
 

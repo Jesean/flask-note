@@ -1,14 +1,14 @@
-## python操作redis
+# 125 Python操作redis
 
 1.安装
 
-```
+```text
 pip install redis
 ```
 
 2.新建一个文件redis\_demo.py，然后初始化一个redis实例变量，并且在Ubuntu虚拟机找那个开启redis
 
-```
+```text
 # 从redis包中导入Redis类
 from redis import Redis
 # 初始化redis实例变量
@@ -17,7 +17,7 @@ op_redis = Redis(host="192.168.5.128",port=6379)
 
 3.对字符串的操作:操作redis的方法名称，跟之前使用redis-cli一样
 
-```
+```text
 # 1.字符串
 # 设置
 op_redis.set("name","angle")
@@ -90,6 +90,4 @@ op_redis = Redis(host="192.168.5.128",port=6379)
 # 从email频道发布
 op_redis.publish('email','python')
 ```
-
-
 

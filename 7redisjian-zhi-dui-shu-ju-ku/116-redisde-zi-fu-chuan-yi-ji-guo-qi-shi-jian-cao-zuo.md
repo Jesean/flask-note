@@ -1,18 +1,20 @@
-### 连接redis
+# 116 Redis的字符串以及过期时间操作
 
-```
+## 连接redis
+
+```text
 redis-cli -h 127.0.0.1 -p 6379 或者redis-cli
 ```
 
-### set语法
+## set语法
 
-```
+```text
 set key value [EX seconds] [PX milliseconds]
 ```
 
-### 设置key-velue
+## 设置key-velue
 
-```
+```text
 语法:
 set key value
 
@@ -20,9 +22,9 @@ set key value
 set name angle
 ```
 
-### 获取value
+## 获取value
 
-```
+```text
 语法:
 get key
 
@@ -32,20 +34,20 @@ get name
 
 注意:如果设置值为多个单词，需要添加双引号
 
-```
+```text
 127.0.0.1:6379> set username "hello world"
 OK
 127.0.0.1:6379> get username
 "hello world"
 ```
 
-### 设置过期时间
+## 设置过期时间
 
-##### 如果不设置过期时间，则永久不会过期
+#### 如果不设置过期时间，则永久不会过期
 
-#### 第一种:
+### 第一种:
 
-```
+```text
 set key value EX seconds
 或者
 setex key timeout value
@@ -58,15 +60,15 @@ set name angle EX 10
 setex name 3 angle
 ```
 
-#### 第二种:
+### 第二种:
 
-```
+```text
 expire key timeout(seconds)
 ```
 
-### 查看过期时间
+## 查看过期时间
 
-```
+```text
 语法:
 ttl key
 
@@ -74,9 +76,9 @@ ttl key
 ttl name
 ```
 
-### 删除数据
+## 删除数据
 
-```
+```text
 语法:
 del key
 
@@ -84,12 +86,10 @@ del key
 del name
 ```
 
-### 删除所有数据
+## 删除所有数据
 
-```
+```text
 语法:
 flushall
 ```
-
-
 

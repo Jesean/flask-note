@@ -1,6 +1,8 @@
+# 100 errorhandler钩子函数详解
+
 errorhandler:errorhandler接收状态码，可以自定义返回这种状态码的响应的处理方法
 
-```
+```text
 @app.route('/list/')
 def my_list():
     session["user_id"] = 1
