@@ -1,4 +1,4 @@
-### 1.g对象
+使用g对象作为全局变量，便于获取用户
 
 ```
 from .views import bp
@@ -16,5 +16,5 @@ def before_request():
             g.cms_user = user
 ```
 
-
+为了代码不冗余，可以将代码提出来放在单独一个文件，但是这样就不会被运行，为了使用之运行，在_init_
 
