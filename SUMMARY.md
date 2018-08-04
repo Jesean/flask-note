@@ -135,5 +135,32 @@
   * [124 其他机器连接本机redis](7redisjian-zhi-dui-shu-ju-ku/124-qi-ta-ji-qi-lian-jie-ben-ji-redis.md)
   * [125 Python操作redis](7redisjian-zhi-dui-shu-ju-ku/125-pythoncao-zuo-redis.md)
 * [8.Flask企业级论坛实战项目](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu.md)
-  * Flask项目实战
+  * [Flask项目实战](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan.md)
+    * 126.实战项目介绍
+    * 127.项目结构搭建
+    * 128.cms用户模型定义
+    * 129.cms后台登录界面完成
+    * 130.cms后台登录功能完成
+    * 131.cms后台登录限制
+    * 132.cms后台模版渲染完成
+    * 133.cms用户名渲染和注销功能实现
+    * 134.cms模版抽离和个人信息页面完成
+    * 135.cms登录页面CSRF保护
+    * 136.cms后台修改密码界面布局完成
+    * 137.cms后台修改密码ajax功能完成
+    * 138.cms后台密码修改服务器逻辑完成
+    * 139.优化json数据的返回
+    * 140.sweetalert提示框用法讲解
+    * 141.sweetalert优化修改密码结果反馈
+    * 142.修改邮箱界面完成
+    * 143.Flask-Mail的使用以及邮箱配置
+    * 144.发送邮箱验证码功能完成
+    * 145.修改邮箱功能完成
+    * 146.二进制及其相关运算
+    * 147.权限和角色模型定义
+    * 148.封装权限判断功能
+    * 149.客户端权限验证功能完成
+    * 150.服务端权限验证功能完成
+    * 151.前台用户模型创建（1）
+    * 152.前台用户模型创建（2）
 
