@@ -136,7 +136,7 @@
   * [125 Python操作redis](7redisjian-zhi-dui-shu-ju-ku/125-pythoncao-zuo-redis.md)
 * [8.Flask企业级论坛实战项目](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu.md)
   * [Flask项目实战](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan.md)
-    * 126.实战项目介绍
+    * [126.实战项目介绍](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/126shi-zhan-xiang-mu-jie-shao.md)
     * 127.项目结构搭建
     * 128.cms用户模型定义
     * 129.cms后台登录界面完成
