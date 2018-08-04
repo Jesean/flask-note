@@ -25,3 +25,5 @@ news_bp = Blueprint('news',__name__,url_prefix='/news',
                     template_folder='miku',static_folder='miku_static')
 ```
 
+
+
