@@ -87,5 +87,25 @@ if __name__ == "__main__":
     manager.run()
 ```
 
+### config.py
+
+```
+DEBUG = True
+
+# 配置数据信息
+DB_USERNAME = 'root'
+DB_PASSWORD = '123456'
+DB_HOST = '127.0.0.1'
+DB_PORT = '3306'
+DB_NAME = 'zlbbs'
+DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(DB_USERNAME,DB_PASSWORD,DB_HOST,DB_PORT,DB_NAME)
+
+# 数据库
+SQLALCHEMY_DATABASE_URI = DB_URI
+# 屏蔽SQLalchemy发送的信号
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+```
+
 
 
