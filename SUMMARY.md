@@ -146,9 +146,9 @@
     * 133.cms用户名渲染和注销功能实现
     * 134.cms模版抽离和个人信息页面完成
     * 135.cms登录页面CSRF保护
-    * 136.cms后台修改密码界面布局完成
-    * 137.cms后台修改密码ajax功能完成
-    * 138.cms后台密码修改服务器逻辑完成
+    * [136.cms后台修改密码界面布局完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/136cmshou-tai-xiu-gai-mi-ma-jie-mian-bu-ju-wan-cheng.md)
+    * [137.cms后台修改密码ajax功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/137cmshou-tai-xiu-gai-mi-ma-ajax-gong-neng-wan-cheng.md)
+    * [138.cms后台密码修改服务器逻辑完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/138cmshou-tai-mi-ma-xiu-gai-fu-wu-qi-luo-ji-wan-cheng.md)
     * 139.优化json数据的返回
     * 140.sweetalert提示框用法讲解
     * 141.sweetalert优化修改密码结果反馈
