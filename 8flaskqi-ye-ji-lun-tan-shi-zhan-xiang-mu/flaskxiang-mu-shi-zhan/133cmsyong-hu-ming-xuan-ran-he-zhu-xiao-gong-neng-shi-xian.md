@@ -16,5 +16,12 @@ def before_request():
             g.cms_user = user
 ```
 
-为了代码不冗余，可以将代码提出来放在单独一个文件，但是这样就不会被运行，为了使用之运行，在_init_
+为了代码不冗余，可以将代码提出来放在单独一个文件，但是这样就不会被运行，为了使用之运行，在\_\__init\_\_.py中导入py_
+
+```
+# from .hooks import before_request
+import apps.cms.hooks
+```
+
+
 
