@@ -14,5 +14,13 @@ crsf = CSRFProtect()
 crsf.init_app(app)
 ```
 
+无论何时为通过csrf验证都会返回响应，可以定义这个错误响应
+
+```
+@crsf.error_handler
+def csrf_error(reason):
+    return render_template("xx.html",reason=reason),400
+```
+
 
 
