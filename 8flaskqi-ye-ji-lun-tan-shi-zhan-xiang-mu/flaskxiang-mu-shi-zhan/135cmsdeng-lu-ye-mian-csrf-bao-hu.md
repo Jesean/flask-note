@@ -7,6 +7,11 @@ CSRFProtect(app)
 
 在表单中添加如下:
 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+
+
+# 可以惰性加载
+crsf = CSRFProtect()
+crsf.init_app(app)
 ```
 
 
