@@ -22,5 +22,15 @@ def csrf_error(reason):
     return render_template("xx.html",reason=reason),400
 ```
 
+提供某些视图不需要保护
+
+```
+@csrf.exempt
+@app.route('/foo', methods=('GET', 'POST'))
+def my_handler():
+    # ...
+    return 'ok'
+```
+
 
 
