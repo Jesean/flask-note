@@ -12,9 +12,18 @@ pip install Flask-Mail
 
 ```
 from flask_mail import Mail
-..
+...
 mail = Mail(app)
+```
 
+惰性加载
+
+```
+from flask_mail import Mail
+
+mail = Mail()
+...
+mail.init_app(app)
 ```
 
 
