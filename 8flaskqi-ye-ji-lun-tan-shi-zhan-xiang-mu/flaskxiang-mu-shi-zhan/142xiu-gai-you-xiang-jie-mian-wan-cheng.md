@@ -39,5 +39,20 @@
 {% endblock %}
 ```
 
+类视图
+
+```
+class ResetEmailView(views.MethodView):
+    decorators = [login_requeired]
+
+    def get(self):
+        return render_template('cms/resetemail.html')
+
+    def post(self):
+        pass
+        
+bp.add_url_rule('/resetemail/',view_func=ResetEmailView.as_view('resetemail'))
+```
+
 
 
