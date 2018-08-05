@@ -16,5 +16,15 @@
   </div>
 ```
 
+### 给类视图定义装饰器
+
+```
+class ResetPwdView(views.MethodView):
+
+    # 给类视图定义装饰器
+    decorators = [login_requeired,]
+    .....
+```
+
 
 
