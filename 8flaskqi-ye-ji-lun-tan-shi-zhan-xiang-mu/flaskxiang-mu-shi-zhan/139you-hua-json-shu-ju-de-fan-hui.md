@@ -8,16 +8,39 @@ json
 {
     'code':200,
     "message":"",
+    "data":[
+        {
+            "title":"xxx",
+            "content":"xxx",
+        },
+        {
+            "title":"xxx",
+            "content":"xxx",
+        }
+    ]
+}
+
+
+
+{
+    'code':200,
+    "message":"",
     "data":{
-        "title":"xxx",
-        "content":"xxx",
-    },
-    {
-        "title":"xxx",
-        "content":"xxx",
-    }
+            "title":"xxx",
+            "content":"xxx",
+        },
 }
 ```
+
+#### 状态码的规范
+
+1.200：成功
+
+2.401:没有授权
+
+3.400:参数错误
+
+4.500:服务器内部错误
 
 
 
