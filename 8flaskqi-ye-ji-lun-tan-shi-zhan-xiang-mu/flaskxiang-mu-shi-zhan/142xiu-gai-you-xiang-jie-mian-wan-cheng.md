@@ -50,7 +50,7 @@ class ResetEmailView(views.MethodView):
 
     def post(self):
         pass
-        
+
 bp.add_url_rule('/resetemail/',view_func=ResetEmailView.as_view('resetemail'))
 ```
 
