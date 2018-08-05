@@ -1,6 +1,6 @@
 导入sweetalert相关的包
 
-然后书写js，利用ajax异步请求
+然后书写js，利用ajax异步加载时处理
 
 ```
 // $ ==> JQuery
