@@ -32,7 +32,7 @@ def my_handler():
     return 'ok'
 ```
 
-默认情况下你也可以在所有的视图中禁用 CSRF 保护，通过设置`WTF_CSRF_CHECK_DEFAULT`为`False`，仅仅当你需要的时候选择调用`csrf.protect()`。这也能够让你在检查 CSRF 令牌前做一些预先处理:
+默认情况下可以在所有的视图中禁用 CSRF 保护，通过设置`WTF_CSRF_CHECK_DEFAULT`为`False`，仅仅当需要的时候选择调用`csrf.protect()`。
 
 ```
 @app.before_request
