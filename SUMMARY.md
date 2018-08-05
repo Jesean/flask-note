@@ -151,7 +151,7 @@
     * [138.cms后台密码修改服务器逻辑完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/138cmshou-tai-mi-ma-xiu-gai-fu-wu-qi-luo-ji-wan-cheng.md)
     * [139.优化json数据的返回](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/139you-hua-json-shu-ju-de-fan-hui.md)
     * [140.sweetalert提示框用法讲解](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/140sweetalertti-shi-kuang-yong-fa-jiang-jie.md)
-    * 141.sweetalert优化修改密码结果反馈
+    * [141.sweetalert优化修改密码结果反馈](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/141sweetalertyou-hua-xiu-gai-mi-ma-jie-guo-fan-kui.md)
     * 142.修改邮箱界面完成
     * 143.Flask-Mail的使用以及邮箱配置
     * 144.发送邮箱验证码功能完成
