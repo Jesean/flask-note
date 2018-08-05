@@ -81,7 +81,9 @@ def server_error(message=""):
 ```
 
 ```
-以后通过restful.params_error(form.get_error())调用方法
+# return jsonify({"code":400,"message":"旧密码错误"})
+return restful.params_error('旧密码错误!')
+这样能够让代码更加规范，减少重复写代码
 ```
 
 
