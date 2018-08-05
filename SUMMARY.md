@@ -154,7 +154,7 @@
     * [141.sweetalert优化修改密码结果反馈](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/141sweetalertyou-hua-xiu-gai-mi-ma-jie-guo-fan-kui.md)
     * [142.修改邮箱界面完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/142xiu-gai-you-xiang-jie-mian-wan-cheng.md)
     * [143.Flask-Mail的使用以及邮箱配置](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/143flask-mailde-shi-yong-yi-ji-you-xiang-pei-zhi.md)
-    * 144.发送邮箱验证码功能完成
+    * [144.发送邮箱验证码功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/144fa-song-you-xiang-yan-zheng-ma-gong-neng-wan-cheng.md)
     * 145.修改邮箱功能完成
     * 146.二进制及其相关运算
     * 147.权限和角色模型定义
