@@ -203,4 +203,5 @@
     * 190.celery实现异步任务
     * 191.Flask+Celery实现邮件和短信异步发送
     * 192.Flask和Ajax技术
+* 9.Python web开发核心技术
 
