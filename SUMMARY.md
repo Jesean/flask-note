@@ -157,7 +157,7 @@
     * [144.发送邮箱验证码功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/144fa-song-you-xiang-yan-zheng-ma-gong-neng-wan-cheng.md)
     * [145.修改邮箱功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/145xiu-gai-you-xiang-gong-neng-wan-cheng.md)
     * [146.二进制及其相关运算](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/146er-jin-zhi-ji-qi-xiang-guan-yun-suan.md)
-    * 147.权限和角色模型定义
+    * [147.权限和角色模型定义](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/147quan-xian-he-jiao-se-mo-xing-ding-yi.md)
     * 148.封装权限判断功能
     * 149.客户端权限验证功能完成
     * 150.服务端权限验证功能完成
