@@ -204,11 +204,13 @@
     * 191.Flask+Celery实现邮件和短信异步发送
     * 192.Flask和Ajax技术
 * [9.Python web开发核心技术](9python-webkai-fa-he-xin-ji-zhu.md)
-  * 193.开发机上的准备工作
-  * 194.服务器安装Python和虚拟环境
-  * 195.服务器安装ssh、git以及mysql
-  * 196.生产环境下项目的配置
-  * 197.uWSGI部署项目
-  * 198.uWSGI配置文件
-  * 199.nginx+uwsgi部署项目
+  * [部署](9python-webkai-fa-he-xin-ji-zhu/bu-shu.md)
+    * [193.开发机上的准备工作](9python-webkai-fa-he-xin-ji-zhu/193kai-fa-ji-shang-de-zhun-bei-gong-zuo.md)
+    * [194.服务器安装Python和虚拟环境](9python-webkai-fa-he-xin-ji-zhu/194fu-wu-qi-an-zhuang-python-he-xu-ni-huan-jing.md)
+    * [195.服务器安装ssh、git以及mysql](9python-webkai-fa-he-xin-ji-zhu/195fu-wu-qi-an-zhuang-ssh-git-yi-ji-mysql.md)
+    * [196.生产环境下项目的配置](9python-webkai-fa-he-xin-ji-zhu/196sheng-chan-huan-jing-xia-xiang-mu-de-pei-zhi.md)
+    * [197.uWSGI部署项目](9python-webkai-fa-he-xin-ji-zhu/197uwsgibu-shu-xiang-mu.md)
+    * [198.uWSGI配置文件](9python-webkai-fa-he-xin-ji-zhu/198uwsgipei-zhi-wen-jian.md)
+    * [199.nginx+uwsgi部署项目](9python-webkai-fa-he-xin-ji-zhu/199nginx+uwsgibu-shu-xiang-mu.md)
+    * [200.supervisor管理uwsgi进程](9python-webkai-fa-he-xin-ji-zhu/200supervisorguan-liuwsgi-jin-cheng.md)
 
