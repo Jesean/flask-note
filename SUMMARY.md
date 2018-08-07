@@ -203,5 +203,12 @@
     * 190.celery实现异步任务
     * 191.Flask+Celery实现邮件和短信异步发送
     * 192.Flask和Ajax技术
-* 9.Python web开发核心技术
+* [9.Python web开发核心技术](9python-webkai-fa-he-xin-ji-zhu.md)
+  * 193.开发机上的准备工作
+  * 194.服务器安装Python和虚拟环境
+  * 195.服务器安装ssh、git以及mysql
+  * 196.生产环境下项目的配置
+  * 197.uWSGI部署项目
+  * 198.uWSGI配置文件
+  * 199.nginx+uwsgi部署项目
 
