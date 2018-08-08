@@ -15,8 +15,7 @@ def create_front_user(telephone,username,password):
 
 ```
 # 前台用户测试数据
-# python manage.py create_front_user -t 18892332606 -u angle -p 123456
-
+# python manage.py create_front_user -t 153556565-u angle -p 123456
 ```
 
 
