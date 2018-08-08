@@ -50,10 +50,10 @@ mail.init_app(app)
 # 发送者服务器地址
 MAIL_SERVER = "smtp.qq.com"
 MAIL_PORT = 587
-MAIL_USERNAME = "1479852727@qq.com"
+MAIL_USERNAME = "154565621@qq.com"
 # 授权码不是qq密码
-MAIL_PASSWORD = "eokcegzpiumdhjdc"
-MAIL_DEFAULT_SENDER = "1479852727@qq.com"
+MAIL_PASSWORD = "dasdaddasdasda"
+MAIL_DEFAULT_SENDER = "154565621@qq.com"
 MAIL_USE_TLS = True
 ```
 
@@ -69,7 +69,7 @@ def send_email():
     # recipients:接收者，列表类型，可以有多个接收者
     # body:发送的邮件的内容
     # sender:发送者，这个参数，可以修改发送者
-    message = Message(subject='邮件发送',recipients=['1479852727@qq.com'],body='测试')
+    message = Message(subject='邮件发送',recipients=['154565621@qq.com'],body='测试')
     mail.send(message)
     return "发送成功"
 ```
