@@ -57,5 +57,7 @@ def permission_requeired(permission):
     return outter
 ```
 
+这里所进行的验证，是基于原来的规定的功能的二进制码，进行与或运算判断是否具有相应的访问权限
+
 
 
