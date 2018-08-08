@@ -164,7 +164,7 @@
     * [151.前台用户模型创建（1）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/151qian-tai-yong-hu-mo-xing-chuang-jian-ff08-1.md)
     * [152.前台用户模型创建（2）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/152qian-tai-yong-hu-mo-xing-chuang-jian-ff08-2.md)
     * [153.注册界面完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/153zhu-ce-jie-mian-wan-cheng.md)
-    * 154.图形验证码生成技术详解
+    * [154.图形验证码生成技术详解](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/154tu-xing-yan-zheng-ma-sheng-cheng-ji-zhu-xiang-jie.md)
     * 155.点击更换图形验证码
     * 156.发送短信验证码
     * 157注册页面对接短信验证码接口
