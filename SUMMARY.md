@@ -160,7 +160,7 @@
     * [147.权限和角色模型定义](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/147quan-xian-he-jiao-se-mo-xing-ding-yi.md)
     * [148.封装权限判断功能](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/148feng-zhuang-quan-xian-pan-duan-gong-neng.md)
     * [149.客户端权限验证功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/149ke-hu-duan-quan-xian-yan-zheng-gong-neng-wan-cheng.md)
-    * 150.服务端权限验证功能完成
+    * [150.服务端权限验证功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/150fu-wu-duan-quan-xian-yan-zheng-gong-neng-wan-cheng.md)
     * 151.前台用户模型创建（1）
     * 152.前台用户模型创建（2）
     * 153.注册界面完成
