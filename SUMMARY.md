@@ -161,7 +161,7 @@
     * [148.封装权限判断功能](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/148feng-zhuang-quan-xian-pan-duan-gong-neng.md)
     * [149.客户端权限验证功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/149ke-hu-duan-quan-xian-yan-zheng-gong-neng-wan-cheng.md)
     * [150.服务端权限验证功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/150fu-wu-duan-quan-xian-yan-zheng-gong-neng-wan-cheng.md)
-    * 151.前台用户模型创建（1）
+    * [151.前台用户模型创建（1）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/151qian-tai-yong-hu-mo-xing-chuang-jian-ff08-1.md)
     * 152.前台用户模型创建（2）
     * 153.注册界面完成
     * 154.图形验证码生成技术详解
