@@ -21,5 +21,18 @@ def get(self):
         return render_template('front/signup.html')
 ```
 
+防止return\_to被利用跳转到其他页面，进行url判断
+
+```
+from urllib.parse import  urlparse,urljoin
+from flask import request
+
+def is_safe_url(target):
+    ref_url = urlparse(request.host_url)
+    print(request.host_url)
+    test_url = urlparse(urljoin(request.host_url,target))
+    return test_url.scheme in ('http','https') and ref_url.netloc == test_url.netloc
+```
+
 
 
