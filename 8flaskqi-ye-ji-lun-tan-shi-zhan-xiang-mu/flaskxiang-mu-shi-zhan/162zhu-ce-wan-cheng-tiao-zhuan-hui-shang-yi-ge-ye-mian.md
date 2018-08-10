@@ -13,12 +13,12 @@ var return_to = $('#return-to-span').text();
 判断return\_to参数值
 
 ```
-if (return_to){
-    window.location = return_to;
-}else{
-    //跳转到首页
-    window.location = '/';
-}
+    def get(self):
+        return_to = request.referrer
+        if return_to and return_to != request.url and safeutils.is_safe_url(return_to):
+            return render_template('front/signup.html',return_to=return_to)
+        else:
+            return render_template('front/signup.html')
 ```
 
 
