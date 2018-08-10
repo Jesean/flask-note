@@ -35,7 +35,7 @@
 
         <div class="sign-box">
             {% block signbox %}
-            
+
             {% endblock %}
         </div>
     </div>
@@ -100,6 +100,111 @@
                 </button>
             </div>
 {% endblock %}
+```
+
+登录页面
+
+```
+{% extends 'front/signbase.html' %}
+{% from "common/_macros.html" import static %}
+
+{% block title %}
+    论坛账号登录
+{% endblock %}
+
+{% block head %}
+    <style>
+        .reset-link{
+            float: right;
+        }
+    </style>
+{% endblock %}
+
+{% block h2_block %}
+    论坛账号登录
+{% endblock %}
+
+{% block signbox %}
+    <div class="form-group">
+        <input type="text" name="telephone" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="password" name="password" class="form-control" placeholder="密码">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="remember" value="1"/>记住我
+        </label>
+    </div>
+    <div class="form-group">
+        <button id="submit-btn" class="btn btn-warning btn-block">
+            立即登录
+        </button>
+    </div>
+    <div class="form-group">
+        <a href="{{ url_for("front.signup") }}" class="signup-link">没有账号?立即注册</a>
+        <a href="#" class="reset-link">忘记密码?</a>
+    </div>
+{% endblock %}
+```
+
+渲染登录页面模板
+
+```
+class SigninView(views.MethodView):
+    def get(self):
+        return render_template("front/signin.html")
+
+    def post(self):
+        pass
+
+bp.add_url_rule(rule='/signin/',view_func=SigninView.as_view('signin'))
+```
+
+共用css样式表
+
+```
+        body{
+            background: #f3f3f3;
+        }
+        div[class=outer-box]{
+            width:854px;
+            background: #fff;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .logo-box{
+            text-align: center;
+            padding-top:40px;
+        }
+
+        div > div[class=logo-box]  img{
+            width:60px;
+            height: 60px;
+        }
+
+        .page-title{
+            text-align: center;
+            font-family: 楷体;
+        }
+
+        .sign-box{
+            width:300px;
+            margin:0 auto;
+            margin-top:50px;
+        }
+
+        .captcha-addon{
+            padding:0;
+            /*溢出隐藏*/
+            overflow: hidden;
+        }
+
+        .captcha-img{
+            width:94px;
+            height:32px;
+            cursor:pointer;
+        }
 ```
 
 
