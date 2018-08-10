@@ -4,7 +4,7 @@
 
 短信服务:[https://dysms.console.aliyun.com/dysms.htm?spm=a3142.8039393.0.0.41b81fd2jo7ezh\#/overview](https://dysms.console.aliyun.com/dysms.htm?spm=a3142.8039393.0.0.41b81fd2jo7ezh#/overview)
 
-接口:https://help.aliyun.com/document\_detail/55491.html?spm=a2c4g.11186623.6.568.XFNNA9
+接口:[https://help.aliyun.com/document\_detail/55491.html?spm=a2c4g.11186623.6.568.XFNNA9](https://help.aliyun.com/document_detail/55491.html?spm=a2c4g.11186623.6.568.XFNNA9)
 
 ### 2.阿里大于短信验证码介绍
 
@@ -55,6 +55,156 @@ _短信模板需要审核通过后才可以使用。_
 在“短信签名”页面完成签名的申请，获得短信签名的字符串[签名申请手册](https://help.aliyun.com/document_detail/55327.html?spm=a2c4g.11186623.2.6.qcwY5l)
 
 在“短信模板”页面完成模板的申请，获得模板ID。[模板申请手册](https://help.aliyun.com/document_detail/55330.html?spm=a2c4g.11186623.2.7.qcwY5l)
+
+#### 入参列表 {#h4-u5165u53C2u5217u8868}
+
+| 参数名称 | 参数类型 | 必填与否 | 样例取值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| PhoneNumbers | String | 必须 | 15000000000 | 短信接收号码。支持以逗号分隔的形式进行批量调用，批量上限为1000个手机号码,批量调用相对于单条调用及时性稍有延迟,验证码类型的短信推荐使用单条调用的方式，发送国际/港澳台消息时，接收号码格式为00+国际区号+号码，如“0085200000000” |
+| SignName | String | 必须 | 云通信 | 短信签名 |
+| TemplateCode | String | 必须 | SMS\_0000 | 短信模板ID，发送国际/港澳台消息时，请使用国际/港澳台短信模版 |
+| TemplateParam | String | 可选 | {“code”:”1234”,”product”:”ytx”} | 短信模板变量替换JSON串,友情提示:如果JSON中需要带换行符,请参照标准的JSON协议对换行符的要求,比如短信内容中包含\r\n的情况在JSON中需要表示成\r\n,否则会导致JSON在服务端解析失败 |
+| OutId | String | 可选 | abcdefgh | 外部流水扩展字段 |
+
+#### 出参列表 {#h4-u51FAu53C2u5217u8868}
+
+| 出参名称 | 出参类型 | 样例取值 | 参数说明 |
+| :--- | :--- | :--- | :--- |
+| RequestId | String | 8906582E-6722 | 请求ID |
+| Code | String | OK | 状态码-返回OK代表请求成功,其他错误码详见错误码列表 |
+| Message | String | 请求成功 | 状态码的描述 |
+| BizId | String | 134523^4351232 | 发送回执ID,可根据该ID查询具体的发送状态 |
+
+#### 技术对接步骤 {#h4-u6280u672Fu5BF9u63A5u6B65u9AA4}
+
+* python版本要求：python 2.6+, python3.x
+* SDK下载：[下载地址](https://help.aliyun.com/document_detail/55359.html)
+
+* 执行：
+
+  * 安装依赖：进入根目录执行命令： python setup.py install \#如果为python3，请执行：python3 setup.py install
+  * 修改信息：从阿里云控制台上获取ACCESS\_KEY\_ID与ACCESS\_KEY\_SECRET，并填入文件const.py中
+  * 运行程序：python demo\_sms\_send.py \#如果为python3，请执行python3 demo\_sms\_send.py
+  * `注意：您还需要在控制台上申请短信模板，并将相关信息填入至文件demo_sms_send.py中`
+
+#### 错误码列表 {#h4-u9519u8BEFu7801u5217u8868}
+
+| Code | 描述 |
+| :--- | :--- |
+| OK | 请求成功 |
+| isp.RAM\_PERMISSION\_DENY | RAM权限DENY |
+| isv.OUT\_OF\_SERVICE | 业务停机 |
+| isv.PRODUCT\_UN\_SUBSCRIPT | 未开通云通信产品的阿里云客户 |
+| isv.PRODUCT\_UNSUBSCRIBE | 产品未开通 |
+| isv.ACCOUNT\_NOT\_EXISTS | 账户不存在 |
+| isv.ACCOUNT\_ABNORMAL | 账户异常 |
+| isv.SMS\_TEMPLATE\_ILLEGAL | 短信模板不合法 |
+| isv.SMS\_SIGNATURE\_ILLEGAL | 短信签名不合法 |
+| isv.INVALID\_PARAMETERS | 参数异常 |
+| isp.SYSTEM\_ERROR | 系统错误 |
+| isv.MOBILE\_NUMBER\_ILLEGAL | 非法手机号 |
+| isv.MOBILE\_COUNT\_OVER\_LIMIT | 手机号码数量超过限制 |
+| isv.TEMPLATE\_MISSING\_PARAMETERS | 模板缺少变量 |
+| isv.BUSINESS\_LIMIT\_CONTROL | 业务限流 |
+| isv.INVALID\_JSON\_PARAM | JSON参数不合法，只接受字符串值 |
+| isv.BLACK\_KEY\_CONTROL\_LIMIT | 黑名单管控 |
+| isv.PARAM\_LENGTH\_LIMIT | 参数超出长度限制 |
+| isv.PARAM\_NOT\_SUPPORT\_URL | 不支持URL |
+| isv.AMOUNT\_NOT\_ENOUGH | 账户余额不足 |
+
+**注：查询所有错误码及解决办法请点击**[短信接口调用错误码](https://help.aliyun.com/knowledge_detail/57717.html?spm=5176.doc55322.6.583.l6PFQ7)
+
+#### 时间戳格式： {#h4--}
+
+格式为：yyyy-MM-dd’T’HH:mm:ss’Z’；时区为：GMT
+
+### 4.实例
+
+下载zip文件后，打开后改写一下demo_sms_send.py
+
+```
+# -*- coding: utf-8 -*-
+import sys
+from utils.sms.aliyunsdkdysmsapi.request.v20170525 import SendSmsRequest
+from utils.sms.aliyunsdkdysmsapi.request.v20170525 import QuerySendDetailsRequest
+from aliyunsdkcore.client import AcsClient
+import uuid
+from aliyunsdkcore.profile import region_provider
+from aliyunsdkcore.http import method_type as MT
+from aliyunsdkcore.http import format_type as FT
+from  utils.sms import const
+import json
+
+"""
+短信业务调用接口示例，版本号：v20170525
+
+Created on 2017-06-12
+
+"""
+
+# 注意：不要更改
+REGION = "cn-hangzhou"
+PRODUCT_NAME = "Dysmsapi"
+DOMAIN = "dysmsapi.aliyuncs.com"
+
+acs_client = AcsClient(const.ACCESS_KEY_ID, const.ACCESS_KEY_SECRET, REGION)
+region_provider.add_endpoint(PRODUCT_NAME, REGION, DOMAIN)
+
+def send_sms(business_id, phone_numbers, sign_name, template_code, template_param=None):
+    smsRequest = SendSmsRequest.SendSmsRequest()
+    # 申请的短信模板编码,必填
+    smsRequest.set_TemplateCode(template_code)
+
+    # 短信模板变量参数
+    if template_param is not None:
+        smsRequest.set_TemplateParam(template_param)
+
+    # 设置业务请求流水号，必填。
+    smsRequest.set_OutId(business_id)
+
+    # 短信签名
+    smsRequest.set_SignName(sign_name)
+	
+    # 数据提交方式
+	# smsRequest.set_method(MT.POST)
+	
+	# 数据提交格式
+    smsRequest.set_accept_format(FT.JSON)
+	
+    # 短信发送的号码列表，必填。
+    smsRequest.set_PhoneNumbers(phone_numbers)
+
+    # 调用短信发送接口，返回json
+    smsResponse = acs_client.do_action_with_exception(smsRequest)
+
+    # TODO 业务处理
+
+    return smsResponse
+
+
+
+def send_api(phone=None,code=None):
+    try:
+        __business_id = uuid.uuid1()
+        #print(__business_id)
+        params = r'{"code":"%s"}' % code
+        # print(params)
+        #params = u'{"name":"wqb","code":"12345678","address":"bz","phone":"13000000000"}'
+        response = send_sms(__business_id, phone, const.SIGN_NAME,const.TEMPLATE_CODE, params).decode('utf-8')
+        print(response,phone,code)
+        response = json.loads(response)
+        if response['Code']  == 'OK':
+            return True
+        else:
+            return False
+    except:
+        return False
+
+
+
+
+
+```
 
 
 
