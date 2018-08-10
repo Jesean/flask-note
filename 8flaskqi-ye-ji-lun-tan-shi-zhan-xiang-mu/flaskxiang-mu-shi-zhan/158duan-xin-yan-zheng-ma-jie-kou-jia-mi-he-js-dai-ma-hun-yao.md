@@ -1,5 +1,3 @@
-                                             
-
 js加密，前端和后端指定同一加密规则
 
 ```
@@ -74,7 +72,26 @@ class SMSCaptchaForm(BaseForm):
             return True
         else:
             False
+```
 
+视图以post方法重写
+
+```
+@bp.route('/sms_captcha/',methods=['POST'])
+def sms_captcha():
+    # telephone
+    # timestamp
+    # md5(ts+telephone+salt)
+    form = SMSCaptchaForm(request.form)
+    if form.validate():
+        telephone = form.telephone.data
+        captcha = Captcha.gene_text(4)
+        if demo_sms_send.send_api(telephone,code=captcha):
+            return restful.success()
+        else:
+            return restful.params_error(message="短信验证码发送失败！")
+    else:
+        return restful.params_error(message="参数错误")
 ```
 
 
