@@ -167,7 +167,7 @@
     * [154.图形验证码生成技术详解](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/154tu-xing-yan-zheng-ma-sheng-cheng-ji-zhu-xiang-jie.md)
     * [155.点击更换图形验证码](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/155dian-ji-geng-huan-tu-xing-yan-zheng-ma.md)
     * [156.发送短信验证码](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/156fa-song-duan-xin-yan-zheng-ma.md)
-    * 157注册页面对接短信验证码接口
+    * [157注册页面对接短信验证码接口](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/157zhu-ce-ye-mian-dui-jie-duan-xin-yan-zheng-ma-jie-kou.md)
     * 158.短信验证码接口加密和js代码混淆
     * 159.缓存验证码
     * 160.注册功能前端逻辑代码完成

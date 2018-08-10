@@ -206,7 +206,6 @@ def send_api(phone=None,code=None):
 ```
 @bp.route('/sms_captcha/')
 def sms_captcha():
-    # result = alidayu.send_sms("+86-188923326060",code="abcd")
     result = demo_sms_send.send_api("18892332606","18892332606")
     if result:
         return "发送成功"
