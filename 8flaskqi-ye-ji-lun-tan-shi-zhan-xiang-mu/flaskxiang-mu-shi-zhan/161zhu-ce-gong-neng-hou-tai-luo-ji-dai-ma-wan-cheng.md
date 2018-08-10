@@ -9,7 +9,7 @@ class SignupForm(BaseForm):
     password2 = StringField(validators=[EqualTo("password1",message="两次输入的密码不一致")])
     graph_captcha = StringField(validators=[Regexp(r"\w{4}",message="请输入正确格式的图形验证码")])
     # print(password1,password2)
-    # 短信验证
+    # 短信验证码验证
     def validate_sms_captcha(self,field):
         sms_captcha = field.data
         telephone = self.telephone.data
