@@ -12,3 +12,14 @@ var return_to = $('#return-to-span').text();
 
 判断return\_to参数值
 
+```
+if (return_to){
+    window.location = return_to;
+}else{
+    //跳转到首页
+    window.location = '/';
+}
+```
+
+
+
