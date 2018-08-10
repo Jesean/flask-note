@@ -1,3 +1,7 @@
+js混淆网站:https://www.sojson.com/jscodeconfusion.html
+
+
+
 js加密，前端和后端指定同一加密规则
 
 ```
@@ -93,6 +97,8 @@ def sms_captcha():
     else:
         return restful.params_error(message="参数错误")
 ```
+
+由于考虑安全性，需要对js进行混淆
 
 
 
