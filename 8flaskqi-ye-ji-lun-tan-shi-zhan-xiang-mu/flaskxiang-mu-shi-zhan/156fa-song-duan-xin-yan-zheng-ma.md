@@ -120,7 +120,7 @@ _短信模板需要审核通过后才可以使用。_
 
 ### 4.实例
 
-下载zip文件后，打开后改写一下demo_sms_send.py
+下载zip文件后，打开后改写一下demo\_sms\_send.py
 
 ```
 # -*- coding: utf-8 -*-
@@ -164,13 +164,13 @@ def send_sms(business_id, phone_numbers, sign_name, template_code, template_para
 
     # 短信签名
     smsRequest.set_SignName(sign_name)
-	
+
     # 数据提交方式
-	# smsRequest.set_method(MT.POST)
-	
-	# 数据提交格式
+    # smsRequest.set_method(MT.POST)
+
+    # 数据提交格式
     smsRequest.set_accept_format(FT.JSON)
-	
+
     # 短信发送的号码列表，必填。
     smsRequest.set_PhoneNumbers(phone_numbers)
 
@@ -199,11 +199,19 @@ def send_api(phone=None,code=None):
             return False
     except:
         return False
+```
 
+短信接口视图
 
-
-
-
+```
+@bp.route('/sms_captcha/')
+def sms_captcha():
+    # result = alidayu.send_sms("+86-188923326060",code="abcd")
+    result = demo_sms_send.send_api("18892332606","18892332606")
+    if result:
+        return "发送成功"
+    else:
+        return "发送失败"
 ```
 
 
