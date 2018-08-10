@@ -170,7 +170,7 @@
     * [157注册页面对接短信验证码接口](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/157zhu-ce-ye-mian-dui-jie-duan-xin-yan-zheng-ma-jie-kou.md)
     * [158.短信验证码接口加密和js代码混淆](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/158duan-xin-yan-zheng-ma-jie-kou-jia-mi-he-js-dai-ma-hun-yao.md)
     * [159.缓存验证码](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/159huan-cun-yan-zheng-ma.md)
-    * 160.注册功能前端逻辑代码完成
+    * [160.注册功能前端逻辑代码完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/160zhu-ce-gong-neng-qian-duan-luo-ji-dai-ma-wan-cheng.md)
     * 161.注册功能后台逻辑代码完成
     * 162.注册完成跳转回上一个页面
     * 163.登录界面完成
