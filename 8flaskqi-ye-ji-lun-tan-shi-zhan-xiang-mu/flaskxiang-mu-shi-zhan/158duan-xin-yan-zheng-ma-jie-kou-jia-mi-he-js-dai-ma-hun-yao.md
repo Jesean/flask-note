@@ -1,6 +1,4 @@
-js混淆网站:https://www.sojson.com/jscodeconfusion.html
-
-
+js混淆网站:[https://www.sojson.com/jscodeconfusion.html](https://www.sojson.com/jscodeconfusion.html)
 
 js加密，前端和后端指定同一加密规则
 
@@ -99,6 +97,14 @@ def sms_captcha():
 ```
 
 由于考虑安全性，需要对js进行混淆
+
+网址:https://www.sojson.com/jscodeconfusion.html
+
+混淆后的js文件
+
+```
+
+```
 
 
 
