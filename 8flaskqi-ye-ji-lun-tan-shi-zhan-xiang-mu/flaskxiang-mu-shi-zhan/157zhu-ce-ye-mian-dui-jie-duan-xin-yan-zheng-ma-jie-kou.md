@@ -5,14 +5,14 @@
 <link rel="stylesheet" href="{{ static("common/sweetalert/sweetalert.css") }}">
 <script src="{{ static("common/sweetalert/sweetalert.min.js") }}"></script>
 <script src="{{ static("common/sweetalert/zlalert.js") }}"></script>
-    
-    
+
+
 <button  id="sms-captcha-btn" class="btn btn-default">
     发送验证码
 </button>
 ```
 
-js验证手机号码格式和ajax发送验证码
+js验证手机号码格式和ajax发送验证码、倒计时
 
 ```
 $(function () {
