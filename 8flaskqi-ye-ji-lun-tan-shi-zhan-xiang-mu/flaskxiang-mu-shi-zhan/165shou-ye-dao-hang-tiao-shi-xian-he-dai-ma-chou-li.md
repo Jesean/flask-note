@@ -18,20 +18,21 @@
 ### 3.首页模板
 
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    {% include "common/_heads.html" %}
-    <title>
-        {% block title %}{% endblock %}
-    </title>
-    {% block head %}{% endblock %}
-</head>
-<body>
+{% extends "front/base.html" %}
 
-</body>
-</html>
+{% block title %}
+    Tokimeki论坛
+{% endblock %}
+
+
+{% block head %}
+
+{% endblock %}
+
+
+{% block body %}
+    {{ self.title() }}
+{% endblock %}
 ```
 
 
