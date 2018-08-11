@@ -9,10 +9,10 @@
 <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="{{ static("common/zlajax.js") }}"></script>
-<link rel="stylesheet" href="{{ static("common/sweetalert/sweetalert.css") }}">
-<script src="{{ static("common/sweetalert/sweetalert.min.js") }}"></script>
-<script src="{{ static("common/sweetalert/zlalert.js") }}"></script>
+<script src="{{ url_for('static',filename="common/zlajax.js") }}"></script>
+<link rel="stylesheet" href="{{ url_for('static',filename="common/sweetalert/sweetalert.css") }}">
+<script src="{{ url_for('static',filename="common/sweetalert/sweetalert.min.js") }}"></script>
+<script src="{{ url_for('static',filename="common/sweetalert/zlalert.js") }}"></script>
 ```
 
 ### 3.首页模板
