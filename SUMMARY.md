@@ -175,7 +175,7 @@
     * [162.注册完成跳转回上一个页面](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/162zhu-ce-wan-cheng-tiao-zhuan-hui-shang-yi-ge-ye-mian.md)
     * [163.登录界面完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/163deng-lu-jie-mian-wan-cheng.md)
     * [164.登录功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/164deng-lu-gong-neng-wan-cheng.md)
-    * 165.首页导航条实现和代码抽离
+    * [165.首页导航条实现和代码抽离](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/165shou-ye-dao-hang-tiao-shi-xian-he-dai-ma-chou-li.md)
     * 166.首页轮播图实现
     * 167.cms轮播图管理页面布局
     * 168.cms添加轮播图的模态对话框制作
