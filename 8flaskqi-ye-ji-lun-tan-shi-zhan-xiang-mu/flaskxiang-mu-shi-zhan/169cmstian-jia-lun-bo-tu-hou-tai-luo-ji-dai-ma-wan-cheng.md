@@ -28,16 +28,16 @@ python manage.py db upgrade
 ### 3.添加轮播图
 
 ```
-@bp.route('/abanners/',methods=["POST"])
+@bp.route('/abanner/',methods=['POST'])
 @login_required
-def abanners():
+def abanner():
     form = AddBannerForm(request.form)
     if form.validate():
         name = form.name.data
         image_url = form.image_url.data
         link_url = form.link_url.data
         priority = form.priority.data
-        banner = BannersModel(name=name,image_url=image_url,link_url=link_url,priority=priority)
+        banner = BannerModel(name=name,image_url=image_url,link_url=link_url,priority=priority)
         db.session.add(banner)
         db.session.commit()
         return restful.success()

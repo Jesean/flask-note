@@ -189,84 +189,82 @@ index.html
 <!DOCTYPE html>
 <html>
 <head>
-	<title>sweetalert用法</title>
-	<link rel="stylesheet" href="sweetalert/sweetalert.css"/>
-	<script src="sweetalert/sweetalert.min.js"></script>
-	<script type="text/javascript" src="sweetalert/xtalert.js"></script>
+    <title>sweetalert用法</title>
+    <link rel="stylesheet" href="sweetalert/sweetalert.css"/>
+    <script src="sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="sweetalert/xtalert.js"></script>
 </head>
 <body>
-	<button id="btn1">错误提示</button>
-	<script type="text/javascript">
-		var btn = document.getElementById("btn1");
-		btn.onclick = function(){
-			xtalert.alertError("不能删除板块")
-		}
-	</script>
+    <button id="btn1">错误提示</button>
+    <script type="text/javascript">
+        var btn = document.getElementById("btn1");
+        btn.onclick = function(){
+            xtalert.alertError("不能删除板块")
+        }
+    </script>
 
-	<button id="btn2">消息提示</button>
-	<script type="text/javascript">
-		var btn = document.getElementById("btn2");
-		btn.onclick = function(){
-			xtalert.alertInfo("当前用户没有权限")
-		}
-	</script>
+    <button id="btn2">消息提示</button>
+    <script type="text/javascript">
+        var btn = document.getElementById("btn2");
+        btn.onclick = function(){
+            xtalert.alertInfo("当前用户没有权限")
+        }
+    </script>
 
-	<button id="btn3">成功提示</button>
-	<script type="text/javascript">
-		var btn = document.getElementById("btn3");
-		btn.onclick = function(){
-			xtalert.alertSuccess("发表成功")
-		}
-	</script>
+    <button id="btn3">成功提示</button>
+    <script type="text/javascript">
+        var btn = document.getElementById("btn3");
+        btn.onclick = function(){
+            xtalert.alertSuccess("发表成功")
+        }
+    </script>
 
-	<button id="btn4">成功提示</button>
-	<script type="text/javascript">
-		var btn = document.getElementById("btn4");
-		btn.onclick = function(){
-			xtalert.alertConfirm({
-				"confirmText":"再发一篇",
-				"cancelText":"回到首页",
-				"text":"文章发表成功",
-				"confirmCallback":function(){
-					alert("点击了确认按钮")
-				},
-				"cancelCallback":function(){
-					alert("点击了取消按钮")
-				}
-			})
-		}
-	</script>
+    <button id="btn4">成功提示</button>
+    <script type="text/javascript">
+        var btn = document.getElementById("btn4");
+        btn.onclick = function(){
+            xtalert.alertConfirm({
+                "confirmText":"再发一篇",
+                "cancelText":"回到首页",
+                "text":"文章发表成功",
+                "confirmCallback":function(){
+                    alert("点击了确认按钮")
+                },
+                "cancelCallback":function(){
+                    alert("点击了取消按钮")
+                }
+            })
+        }
+    </script>
 
-	<button id="btn5">输入框</button>
-	<script type="text/javascript">
-		var btn = document.getElementById("btn5");
-		btn.onclick = function(){
-			xtalert.alertOneInput({
-				'title':"提示(输入)",
-				"text":"添加新版块",
-				"placeholder":"输入版块名称",
-				"confirmText":"确认",
-				"cancelText":"取消",
-				"confirmCallback":function(inputValue){
-					alert("输入了"+inputValue)
-				}
-			})
-		}
-	</script>
+    <button id="btn5">输入框</button>
+    <script type="text/javascript">
+        var btn = document.getElementById("btn5");
+        btn.onclick = function(){
+            xtalert.alertOneInput({
+                'title':"提示(输入)",
+                "text":"添加新版块",
+                "placeholder":"输入版块名称",
+                "confirmText":"确认",
+                "cancelText":"取消",
+                "confirmCallback":function(inputValue){
+                    alert("输入了"+inputValue)
+                }
+            })
+        }
+    </script>
 
 
-	<button id="btn6">提示框</button>
-	<script type="text/javascript">
-		var btn = document.getElementById("btn6");
-		btn.onclick = function(){
-			xtalert.alertSuccessToast("修改成功")
-		}
-	</script>	
+    <button id="btn6">提示框</button>
+    <script type="text/javascript">
+        var btn = document.getElementById("btn6");
+        btn.onclick = function(){
+            xtalert.alertSuccessToast("修改成功")
+        }
+    </script>    
 </body>
 </html>
 ```
-
-
 
 
 
