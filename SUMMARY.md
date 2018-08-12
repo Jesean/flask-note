@@ -179,7 +179,7 @@
     * [166.首页轮播图实现](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/166shou-ye-lun-bo-tu-shi-xian.md)
     * [167.cms轮播图管理页面布局](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/167cmslun-bo-tu-guan-li-ye-mian-bu-ju.md)
     * [168.cms添加轮播图的模态对话框制作](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/168cmstian-jia-lun-bo-tu-de-mo-tai-dui-hua-kuang-zhi-zuo.md)
-    * 169.cms添加轮播图后台逻辑代码完成
+    * [169.cms添加轮播图后台逻辑代码完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/169cmstian-jia-lun-bo-tu-hou-tai-luo-ji-dai-ma-wan-cheng.md)
     * 170.cms添加轮播图前台逻辑代码完成
     * 171.cms编辑和删除轮播图功能完成
     * 172.七牛云存储介绍
