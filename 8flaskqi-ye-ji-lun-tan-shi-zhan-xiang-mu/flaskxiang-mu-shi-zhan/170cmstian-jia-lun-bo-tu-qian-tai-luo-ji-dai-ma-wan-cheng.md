@@ -47,5 +47,25 @@ $(function () {
 });
 ```
 
+轮播图数据显示
+
+```
+<tbody>
+            {% for banner in banners %}
+                <tr>
+                    <td>{{ banner.name }}</td>
+                    <td><a href="{{ banner.image_url }}" target="_blank">{{ banner.image_url }}</a></td>
+                    <td><a href="{{ banner.link_url }}" target="_blank">{{ banner.link_url }}</a></td>
+                    <td>{{ banner.priority }}</td>
+                    <td>{{ banner.create_time }}</td>
+                    <td>
+                        <button class="btn btn-default btn-xs">编辑</button>
+                        <button class="btn btn-danger btn-xs">删除</button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+```
+
 
 
