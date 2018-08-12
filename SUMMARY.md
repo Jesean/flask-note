@@ -181,7 +181,7 @@
     * [168.cms添加轮播图的模态对话框制作](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/168cmstian-jia-lun-bo-tu-de-mo-tai-dui-hua-kuang-zhi-zuo.md)
     * [169.cms添加轮播图后台逻辑代码完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/169cmstian-jia-lun-bo-tu-hou-tai-luo-ji-dai-ma-wan-cheng.md)
     * [170.cms添加轮播图前台逻辑代码完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/170cmstian-jia-lun-bo-tu-qian-tai-luo-ji-dai-ma-wan-cheng.md)
-    * 171.cms编辑和删除轮播图功能完成
+    * [171.cms编辑和删除轮播图功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/171cmsbian-ji-he-shan-chu-lun-bo-tu-gong-neng-wan-cheng.md)
     * 172.七牛云存储介绍
     * 173.七牛JS和Python的SDK使用
     * 174.轮播图上传图片功能完成
