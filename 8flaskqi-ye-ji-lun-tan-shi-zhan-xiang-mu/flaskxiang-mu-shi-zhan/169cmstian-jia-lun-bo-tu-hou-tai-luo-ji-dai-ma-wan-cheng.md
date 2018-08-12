@@ -2,6 +2,7 @@
 
 ```
 from exts import  db
+from datetime import datetime
 
 class BannersModel(db.Model):
     __tablename__ = "banners_model"
@@ -10,6 +11,7 @@ class BannersModel(db.Model):
     image_url = db.Column(db.String(255),nullable=False)
     link_url = db.Column(db.String(255),nullable=False)
     priority = db.Column(db.Integer,default=0)
+    create_time = db.Column(db.DateTime,default=datetime.now)
 
 ```
 
@@ -17,7 +19,6 @@ class BannersModel(db.Model):
 
 ```
 from apps import models as apps_models
-
 ```
 
 ```
