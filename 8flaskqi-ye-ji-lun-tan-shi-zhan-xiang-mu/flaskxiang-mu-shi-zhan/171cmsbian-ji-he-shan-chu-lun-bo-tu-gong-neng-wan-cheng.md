@@ -163,7 +163,7 @@ $(function () {
                    'data':{
                        'banner_id':banner_id,
                    },
-                   'success':function () {
+                   'success':function (data) {
                        if(data['code'] == 200){
                            window.location.reload();
                        }else{
