@@ -183,10 +183,10 @@
     * [170.cms添加轮播图前台逻辑代码完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/170cmstian-jia-lun-bo-tu-qian-tai-luo-ji-dai-ma-wan-cheng.md)
     * [171.cms编辑和删除轮播图功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/171cmsbian-ji-he-shan-chu-lun-bo-tu-gong-neng-wan-cheng.md)
     * [172.七牛云存储介绍](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/172qi-niu-yun-cun-chu-jie-shao.md)
-    * 173.七牛JS和Python的SDK使用
+    * [173.七牛JS和Python的SDK使用](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/173qi-niu-js-he-python-de-sdk-shi-yong.md)
     * 174.轮播图上传图片功能完成
     * 175.首页动态获取轮播图数据
-    * 176.板块管理（1）
+    * [176.板块管理（1）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/176ban-kuai-guan-li-ff08-1.md)
     * 177.板块管理（2）
     * 178.UEditor编辑器集成以及配置上传文件到七牛
     * 179.发布帖子后台逻辑完成
