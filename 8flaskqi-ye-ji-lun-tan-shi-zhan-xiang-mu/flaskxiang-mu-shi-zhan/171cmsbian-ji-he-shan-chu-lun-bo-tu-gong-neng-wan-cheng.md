@@ -140,5 +140,62 @@ def ubanner():
 
 ### 删除
 
+删除按钮
+
+```
+ <button class="btn btn-danger btn-xs delete-banner-btn">删除</button>
+```
+
+删除js文件
+
+```
+$(function () {
+   $(".delete-banner-btn").click(function (event) {
+       event.preventDefault();
+       var self = $(this);
+       var tr = self.parent().parent();
+       var banner_id = tr.attr("data-id");
+       zlalert.alertConfirm({
+           'msg':"请确定是否要删除当前的轮播图?",
+           "confirmCallback":function () {
+               zlajax.post({
+                   'url':'/cms/dbanner/',
+                   'data':{
+                       'banner_id':banner_id,
+                   },
+                   'success':function () {
+                       if(data['code'] == 200){
+                           window.location.reload();
+                       }else{
+                           zlalert.alertInfo(data["message"]);
+                       }
+                   },
+                   'fail':function () {
+                       zlalert.alertNetworkError();
+                   },
+               })
+           },
+       });
+   }) ;
+});
+```
+
+删除视图
+
+```
+@bp.route('/dbanner/',methods=['POST'])
+@login_required
+def dbanner():
+    banner_id = request.form.get("banner_id")
+    if not banner_id:
+        return restful.params_error(message="请传入轮播图id")
+    banner = BannerModel.query.get(banner_id)
+    if not banner:
+        return restful.params_error(message="没有这个轮播图")
+    db.session.delete(banner)
+    db.session.commit()
+    return restful.success()
+```
+
 
 
