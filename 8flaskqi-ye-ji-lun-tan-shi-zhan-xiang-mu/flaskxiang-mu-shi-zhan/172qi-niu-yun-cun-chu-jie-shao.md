@@ -1,8 +1,8 @@
 ### 1.相关链接
 
-七牛云:https://portal.qiniu.com/create
+七牛云:[https://portal.qiniu.com/create](https://portal.qiniu.com/create)
 
-存储空间:https://portal.qiniu.com/bucket
+存储空间:[https://portal.qiniu.com/bucket](https://portal.qiniu.com/bucket)
 
 ### 2.创建空间
 
@@ -15,4 +15,8 @@
 个人面板 &gt; 密钥管理
 
 ![](/assets/172-04.png)
+
+### 4.图片样式
+
+
 
