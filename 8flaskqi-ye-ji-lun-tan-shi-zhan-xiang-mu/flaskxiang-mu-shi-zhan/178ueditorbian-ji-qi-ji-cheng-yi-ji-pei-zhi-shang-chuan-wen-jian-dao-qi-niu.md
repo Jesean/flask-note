@@ -2,5 +2,7 @@
 
 UEditor:[http://ueditor.baidu.com/website/](http://ueditor.baidu.com/website/)
 
-下载地址:http://ueditor.baidu.com/website/download.html\#ueditor
+下载地址:[http://ueditor.baidu.com/website/download.html\#ueditor](http://ueditor.baidu.com/website/download.html#ueditor)
+
+文档:http://fex.baidu.com/ueditor/
 
