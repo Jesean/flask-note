@@ -188,7 +188,7 @@
     * 175.首页动态获取轮播图数据
     * [176.板块管理（1）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/176ban-kuai-guan-li-ff08-1.md)
     * [177.板块管理（2）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/177ban-kuai-guan-li-ff08-2.md)
-    * 178.UEditor编辑器集成以及配置上传文件到七牛
+    * [178.UEditor编辑器集成以及配置上传文件到七牛](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/178ueditorbian-ji-qi-ji-cheng-yi-ji-pei-zhi-shang-chuan-wen-jian-dao-qi-niu.md)
     * 179.发布帖子后台逻辑完成
     * 180.发布帖子界面布局完成
     * 181.发布帖子前端逻辑代码完成
