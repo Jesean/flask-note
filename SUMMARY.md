@@ -185,7 +185,7 @@
     * [172.七牛云存储介绍](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/172qi-niu-yun-cun-chu-jie-shao.md)
     * [173.七牛JS和Python的SDK使用](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/173qi-niu-js-he-python-de-sdk-shi-yong.md)
     * [174.轮播图上传图片功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/174lun-bo-tu-shang-chuan-tu-pian-gong-neng-wan-cheng.md)
-    * 175.首页动态获取轮播图数据
+    * [175.首页动态获取轮播图数据](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/175shou-ye-dong-tai-huo-qu-lun-bo-tu-shu-ju.md)
     * [176.板块管理（1）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/176ban-kuai-guan-li-ff08-1.md)
     * [177.板块管理（2）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/177ban-kuai-guan-li-ff08-2.md)
     * [178.UEditor编辑器集成以及配置上传文件到七牛](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/178ueditorbian-ji-qi-ji-cheng-yi-ji-pei-zhi-shang-chuan-wen-jian-dao-qi-niu.md)
