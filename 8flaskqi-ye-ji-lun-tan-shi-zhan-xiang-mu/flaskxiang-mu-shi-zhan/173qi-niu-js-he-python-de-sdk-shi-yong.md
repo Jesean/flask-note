@@ -9,8 +9,21 @@ pip install qiniu
 #### 编写获取uptoken的接口
 
 ```
-
+@app.route('/uptoken/')
+def uptoken():
+    # AK
+    access_key = "xxxxxxx"
+    # SK
+    secret_key = "xxxxxxx"
+    # 验证
+    q = qiniu.Auth(access_key,secret_key)
+    # 储存空间名字
+    bucket = "tokimeki"
+    token = q.upload_token(bucket)
+    return jsonify({"uptoken":token})
 ```
+
+![](/assets/173-01.png)
 
 在前端中添加js的sdk:七牛为javascript提供了一个专门用来传文件的接口
 
@@ -21,6 +34,4 @@ pip install qiniu
 ```
 
 在前段添加zlqiniu.js，js文件封装了七牛的初始化和配置相关的参数
-
-
 
