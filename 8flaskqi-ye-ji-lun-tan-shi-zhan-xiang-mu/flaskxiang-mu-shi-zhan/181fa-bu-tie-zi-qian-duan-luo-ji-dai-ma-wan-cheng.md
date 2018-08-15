@@ -37,7 +37,7 @@ def before_request():
                 {% endif %}
 ```
 
-ajax发送post请求传递数据
+### ajax发送post请求传递数据
 
 ```
 $(function () {
