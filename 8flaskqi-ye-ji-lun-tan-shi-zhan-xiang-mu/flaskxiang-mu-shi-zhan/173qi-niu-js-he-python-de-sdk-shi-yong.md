@@ -36,7 +36,7 @@ def uptoken():
 在前段添加zlqiniu.js，js文件封装了七牛的初始化和配置相关的参数
 
 ```
-<script src{{ url_for('static',filename='zlqiniu.js') }}=""></script>
+<script src{{ url_for('static',filename='zlqiniu.js') }}""></script>
 ```
 
 zlqiniu.js
