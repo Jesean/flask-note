@@ -111,16 +111,20 @@ var zlqiniu = {
 初始化七牛:使用以下代码初始化七牛，配置一些参数
 
 ```
-window.onload = function(){
-    zlqiniu.setUp({
-        'browser_btn':"upload-btn",
-        'uptoken_url:"/uptoken/",
-        'success':function(up,file,info){
-            var url = file.name;
-            console.log(url);
+        window.onload = function () {
+            zlqiniu.setUp({
+                /*http://7xqenu.coml.z0.glb.clouddn.com/*/
+                'domain': 'http://pdhjzz2pa.bkt.clouddn.com/',
+                'browse_btn': 'upload-btn',
+                'uptoken_url': '/uptoken/',
+                'success': function (up,file,info) {
+                    var image_url = file.name
+                    var imageInput = document.getElementById("image-input");
+                    imageInput.value = image_url;
+
+                }
+            });
         }
-    });
-};
 ```
 
 参数解释:
