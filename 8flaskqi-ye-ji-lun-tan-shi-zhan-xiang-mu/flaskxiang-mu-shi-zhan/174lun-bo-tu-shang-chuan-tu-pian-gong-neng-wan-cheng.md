@@ -14,5 +14,15 @@ $(function () {
 });
 ```
 
+banner.html
+
+```
+ <script src="https://cdn.staticfile.org/Plupload/2.1.1/moxie.js"></script>
+    <script src="https://cdn.staticfile.org/Plupload/2.1.1/plupload.dev.js"></script>
+    <script src="https://cdn.staticfile.org/qiniu-js-sdk/1.0.14-beta/qiniu.js"></script>
+    <script src="{{ url_for('static',filename="cms/js/banners.js") }}"></script>
+    <script src="{{ url_for('static',filename="common/zlqiniu.js") }}"></script>
+```
+
 
 
