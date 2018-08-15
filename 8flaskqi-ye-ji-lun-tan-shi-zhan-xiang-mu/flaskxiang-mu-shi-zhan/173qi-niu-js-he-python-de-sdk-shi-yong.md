@@ -129,7 +129,9 @@ var zlqiniu = {
 
 参数解释:
 
-* browser\_btn:
+* browser\_btn:按钮id
+* uptoken\_url:uptoken的视图url
+* domain:域名
 
 
 
