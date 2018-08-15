@@ -28,9 +28,9 @@ def uptoken():
 在前端中添加js的sdk:七牛为javascript提供了一个专门用来传文件的接口
 
 ```
-<script src="https://cdn.staticfile.org/Plupload/2.1.1/moxie.js"></script>
-<script src="https://cdn.staticfile.org/Plupload/2.1.1/plupload.dev.js"></script>
-<script src="https://cdn.staticfile.org/qiniu-js-sdk/1.0.14-beta/qiniu.js"></script>
+    <script src="https://cdn.staticfile.org/Plupload/2.1.1/moxie.js"></script>
+    <script src="https://cdn.staticfile.org/Plupload/2.1.1/plupload.dev.js"></script>
+    <script src="https://cdn.staticfile.org/qiniu-js-sdk/1.0.14-beta/qiniu.js"></script>
 ```
 
 在前段添加zlqiniu.js，js文件封装了七牛的初始化和配置相关的参数
@@ -42,22 +42,21 @@ def uptoken():
 zlqiniu.js
 
 ```
-
 'use strict';
 
 var zlqiniu = {
-	'setUp': function(args) {
-		var domain = args['domain'];
-		var params = {
+    'setUp': function(args) {
+        var domain = args['domain'];
+        var params = {
             browse_button:args['browse_btn'],
-			runtimes: 'html5,flash,html4', //上传模式，依次退化
-			max_file_size: '500mb', //文件最大允许的尺寸
-			dragdrop: false, //是否开启拖拽上传
-			chunk_size: '4mb', //分块上传时，每片的大小
-			uptoken_url: args['uptoken_url'], //ajax请求token的url
-			domain: domain, //图片下载时候的域名
-			get_new_uptoken: false, //是否每次上传文件都要从业务服务器获取token
-			auto_start: true, //如果设置了true,只要选择了图片,就会自动上传
+            runtimes: 'html5,flash,html4', //上传模式，依次退化
+            max_file_size: '500mb', //文件最大允许的尺寸
+            dragdrop: false, //是否开启拖拽上传
+            chunk_size: '4mb', //分块上传时，每片的大小
+            uptoken_url: args['uptoken_url'], //ajax请求token的url
+            domain: domain, //图片下载时候的域名
+            get_new_uptoken: false, //是否每次上传文件都要从业务服务器获取token
+            auto_start: true, //如果设置了true,只要选择了图片,就会自动上传
             unique_names: true,
             multi_selection: false,
             filters: {
@@ -66,21 +65,21 @@ var zlqiniu = {
                     {title:'Video files',extensions: 'flv,mpg,mpeg,avi,wmv,mov,asf,rm,rmvb,mkv,m4v,mp4'}
                 ]
             },
-			log_level: 5, //log级别
-			init: {
-				'FileUploaded': function(up,file,info) {
-					if(args['success']){
-						var success = args['success'];
-						file.name = domain + file.target_name;
-						success(up,file,info);
-					}
-				},
-				'Error': function(up,err,errTip) {
-					if(args['error']){
-						var error = args['error'];
-						error(up,err,errTip);
-					}
-				},
+            log_level: 5, //log级别
+            init: {
+                'FileUploaded': function(up,file,info) {
+                    if(args['success']){
+                        var success = args['success'];
+                        file.name = domain + file.target_name;
+                        success(up,file,info);
+                    }
+                },
+                'Error': function(up,err,errTip) {
+                    if(args['error']){
+                        var error = args['error'];
+                        error(up,err,errTip);
+                    }
+                },
                 'UploadProgress': function (up,file) {
                     if(args['progress']){
                         args['progress'](up,file);
@@ -96,18 +95,17 @@ var zlqiniu = {
                         args['complete']();
                     }
                 }
-			}
-		};
+            }
+        };
 
-		// 把args中的参数放到params中去
-		for(var key in args){
-			params[key] = args[key];
-		}
-		var uploader = Qiniu.uploader(params);
-		return uploader;
-	}
+        // 把args中的参数放到params中去
+        for(var key in args){
+            params[key] = args[key];
+        }
+        var uploader = Qiniu.uploader(params);
+        return uploader;
+    }
 };
-
 ```
 
 初始化七牛:使用以下代码初始化七牛，配置一些参数
@@ -124,6 +122,10 @@ window.onload = function(){
     });
 };
 ```
+
+参数解释:
+
+* browser\_btn:
 
 
 
