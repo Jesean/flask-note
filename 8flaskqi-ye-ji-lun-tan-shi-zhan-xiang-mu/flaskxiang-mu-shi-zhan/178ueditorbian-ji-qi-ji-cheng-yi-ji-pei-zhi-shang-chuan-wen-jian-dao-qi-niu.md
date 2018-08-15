@@ -23,6 +23,48 @@ UEDITOR_QINIU_ACCESS_KEY = "xxxx-xxxx"
 UEDITOR_QINIU_SECRET_KEY = "xxxxx"
 UEDITOR_QINIU_BUCKET_NAME = "xxxx"
 UEDITOR_QINIU_DOMAIN = 'http://pdhjzz2pa.bkt.clouddn.com/'
+```
+
+#### 4.首页
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="{{ url_for('static',filename='ueditor/ueditor.config.js') }}"></script>
+    <script src="{{ url_for('static',filename='ueditor/ueditor.all.min.js') }}"></script>
+    <title>Title</title>
+</head>
+<body>
+    <script id="editor" type="text/plain"></script>
+    <script>
+        var ue = UE.getEditor("editor",{
+            'serverUrl':'/ueditor/upload/',
+        });
+    </script>
+</body>
+</html>
+```
+
+### 5.后台
+
+```
+from flask import Flask,render_template
+import qiniu,config
+from ueditor import bp
+
+app = Flask(__name__)
+app.register_blueprint(bp)
+app.config.from_object(config)
+
+@app.route('/')
+def hello_world():
+    return render_template("index.html")
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 ```
 
