@@ -130,5 +130,46 @@ var zlqiniu = {
 * uptoken\_url:uptoken的视图url
 * domain:域名
 
+---
+
+index.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.staticfile.org/Plupload/2.1.1/moxie.js"></script>
+    <script src="https://cdn.staticfile.org/Plupload/2.1.1/plupload.dev.js"></script>
+    <script src="https://cdn.staticfile.org/qiniu-js-sdk/1.0.14-beta/qiniu.js"></script>
+    <script src="{{ url_for('static',filename='zlqiniu.js') }}"></script>
+    <script>
+        window.onload = function () {
+            zlqiniu.setUp({
+                /*http://7xqenu.coml.z0.glb.clouddn.com/*/
+                'domain': 'http://pdhjzz2pa.bkt.clouddn.com/',
+                'browse_btn': 'upload-btn',
+                'uptoken_url': '/uptoken/',
+                'success': function (up,file,info) {
+                    var image_url = file.name
+                    var imageInput = document.getElementById("image-input");
+                    imageInput.value = image_url;
+
+                    var im = document.getElementById("img");
+                    im.setAttribute("src",image_url);
+
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <button id="upload-btn">上传文件</button>
+    <input type="text" id="image-input">
+    <img src="" alt="" id="img"/>
+</body>
+</html>
+```
+
 
 
