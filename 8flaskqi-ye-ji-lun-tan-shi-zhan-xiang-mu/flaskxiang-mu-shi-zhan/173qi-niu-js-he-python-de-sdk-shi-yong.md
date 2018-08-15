@@ -118,10 +118,7 @@ var zlqiniu = {
                 'browse_btn': 'upload-btn',
                 'uptoken_url': '/uptoken/',
                 'success': function (up,file,info) {
-                    var image_url = file.name
-                    var imageInput = document.getElementById("image-input");
-                    imageInput.value = image_url;
-
+                    console.log(info)
                 }
             });
         }
