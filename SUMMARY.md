@@ -192,8 +192,8 @@
     * [179.发布帖子后台逻辑完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/179fa-bu-tie-zi-hou-tai-luo-ji-wan-cheng.md)
     * [180.发布帖子界面布局完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/180fa-bu-tie-zi-jie-mian-bu-ju-wan-cheng.md)
     * [181.发布帖子前端逻辑代码完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/181fa-bu-tie-zi-qian-duan-luo-ji-dai-ma-wan-cheng.md)
-    * 182.首页帖子列表布局完成
-    * 183.帖子分页技术实现
+    * [182.首页帖子列表布局完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/182shou-ye-tie-zi-lie-biao-bu-ju-wan-cheng.md)
+    * [183.帖子分页技术实现](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/183tie-zi-fen-ye-ji-zhu-shi-xian.md)
     * 184.帖子板块过滤显示
     * 185.帖子详情页布局
     * 186.评论布局和功能实现（1）
