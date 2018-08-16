@@ -24,7 +24,7 @@ def create_test_post():
 ### 3.安装
 
 ```
-
+pip install flask_paginate
 ```
 
 ### 4.参数
@@ -32,7 +32,7 @@ def create_test_post():
 ```
 found：搜索时使用
 
-page：当前页面
+* page：当前页面
 
 per_page：一页上显示的记录数
 
@@ -40,9 +40,9 @@ page_parameter：包含页面索引的GET参数的名称（字符串）。如果
 
 per_page_parameter：一个名字per_page喜欢page_parameter。默认为'per_page'。
 
-inner_window：当前页面有多少链接
+* inner_window：当前页面有多少链接
 
-outer_window：第一个/最后一个链接附近有多少个链接
+* outer_window：第一个/最后一个链接附近有多少个链接
 
 prev_label：上一页的文字，默认为'＆laquo;'
 
