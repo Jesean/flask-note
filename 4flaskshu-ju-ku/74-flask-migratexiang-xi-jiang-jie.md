@@ -84,3 +84,5 @@ class User(db.Model):
     age = db.Column(db.Integer)
 ```
 
+
+

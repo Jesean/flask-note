@@ -104,7 +104,6 @@ DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(DB_USERNAME,DB_PAS
 SQLALCHEMY_DATABASE_URI = DB_URI
 # 屏蔽SQLalchemy发送的信号
 SQLALCHEMY_TRACK_MODIFICATIONS = False
-
 ```
 
 
