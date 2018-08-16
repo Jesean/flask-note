@@ -33,5 +33,23 @@ def index():
     return render_template("front/index.html",**context)
 ```
 
+前端中判断是否被选中
+
+```
+<div class="list-group">
+                {% if current_board %}
+                    <a href="/" class="list-group-item">所有版块</a>
+                {% else %}
+                     <a href="/" class="list-group-item active">所有版块</a>
+                {% endif %}
+                {% for board in boards %}
+                    {% if board.id == current_board %}
+                        <a href="{{ url_for("front.index",board_id = board.id) }}" class="list-group-item active">{{ board.name }}</a>
+                    {% else %}
+                        <a href="{{ url_for("front.index",board_id = board.id) }}" class="list-group-item">{{ board.name }}</a>
+                    {% endif %}
+                {% endfor %}
+```
+
 
 
