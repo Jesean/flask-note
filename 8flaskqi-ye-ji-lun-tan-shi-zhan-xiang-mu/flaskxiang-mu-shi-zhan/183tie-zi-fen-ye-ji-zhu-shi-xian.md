@@ -77,5 +77,28 @@ format_total：数字格式总计，如1,234，默认为False
 format_number：数字格式的开始和结束，如1,234，默认为False
 ```
 
+### 5.初始化对象
+
+```
+    page = request.args.get(get_page_parameter(),type=int,default=1
+
+# 传入页数参数，数据的总条数
+pagination = Pagination(
+    bs_version=3,page=page,
+    total=PostModel.query.count(),
+    outer_window=0,
+    inner_window=2,
+    )
+```
+
+### 6.每页数据
+
+```
+    offset = (page-1) * config.PER_PAGE
+    count = offset + config.PER_PAGE
+    # 从第几条开始显示第end条数据
+    posts = PostModel.query.slice(offset,count)
+```
+
 
 
