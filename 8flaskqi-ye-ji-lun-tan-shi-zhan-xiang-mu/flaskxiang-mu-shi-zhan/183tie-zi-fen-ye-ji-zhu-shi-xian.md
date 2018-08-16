@@ -80,7 +80,8 @@ format_number：数字格式的开始和结束，如1,234，默认为False
 ### 5.初始化对象
 
 ```
-    page = request.args.get(get_page_parameter(),type=int,default=1
+# 获取page页数参数    
+page = request.args.get(get_page_parameter(),type=int,default=1
 
 # 传入页数参数，数据的总条数
 pagination = Pagination(
