@@ -34,6 +34,7 @@ def page_not_found(e):
 ### 3.帖子详情页面
 
 ```
+#@bp.route('/p/<post_id>/')
 @bp.route('/<name>/<post_id>/')
 def post_detail(name,post_id):
     post = PostModel.query.get(post_id)
