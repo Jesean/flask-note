@@ -101,5 +101,38 @@ pagination = Pagination(
     posts = PostModel.query.slice(offset,count)
 ```
 
+### 7.前端
+
+```
+                <ul class="post-list-group">
+                    {% for post in posts %}
+                        <li>
+                            <div class="author-avatar-group">
+                                <img src="{{ post.author.avatar or url_for('static',filename="common/images/logo.png") }}"
+                                     alt="">
+                            </div>
+                            <div class="post-info-group">
+                                <p class="post-title">{{ post.title }}</p>
+                                <p class="post-info">
+                                    <span>作者:{{ post.author.username }}</span>
+                                    <span>发表时间:{{ post.create_time }}</span>
+                                    <span>评论:0</span>
+                                    <span>阅读:0</span>
+                                </p>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div style="text-align: center">
+                    {{ pagination.links }}
+                </div>
+```
+
+### 8.小细节
+
+```
+paginate.links 可以自动完成点击的模块
+```
+
 
 
