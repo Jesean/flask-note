@@ -197,7 +197,7 @@
     * [184.帖子板块过滤显示](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/184tie-zi-ban-kuai-guo-lv-xian-shi.md)
     * [185.帖子详情页布局](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/185tie-zi-xiang-qing-ye-bu-ju.md)
     * [186.评论布局和功能实现（1）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/186ping-lun-bu-ju-he-gong-neng-shi-xian-ff08-1.md)
-    * 187.评论布局和功能实现（2）
+    * [187.评论布局和功能实现（2）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/187ping-lun-bu-ju-he-gong-neng-shi-xian-ff08-2.md)
     * 188.帖子加精和取消加精功能完成
     * 189.帖子按照发布时间和评论数量等排序
     * 190.celery实现异步任务
