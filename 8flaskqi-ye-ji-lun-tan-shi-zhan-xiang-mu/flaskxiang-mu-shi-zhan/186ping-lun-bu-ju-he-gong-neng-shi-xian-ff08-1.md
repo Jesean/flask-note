@@ -181,7 +181,7 @@ def add_comment():
 ### 6.前端评论布局
 
 ```
-<div class="comment-group">
+        <div class="comment-group">
             <h3>评论列表</h3>
             <ul class="comment-list-group">
                 {% for comment in post.comments %}
@@ -191,8 +191,12 @@ def add_comment():
         </div>
         <div class="add-comment-group">
             <h3>发表评论</h3>
-            <script id="editor" type="text/plain"></script>
+            <script id="editor" type="text/plain" style="height:100px;"></script>
+            <div class="comment-btn-group">
+                <button class="btn btn-primary">发表评论</button>
+            </div>
         </div>
+    </div>
 ```
 
 样式表
@@ -213,6 +217,12 @@ def add_comment():
 .add-comment-group h3{
     margin-bottom: 10px;
 }
+
+.comment-btn-group{
+    margin-top: 10px;
+    text-align: right;
+}
+
 ```
 
 
