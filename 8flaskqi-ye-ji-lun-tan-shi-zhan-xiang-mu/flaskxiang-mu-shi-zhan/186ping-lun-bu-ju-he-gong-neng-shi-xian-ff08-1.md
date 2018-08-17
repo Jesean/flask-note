@@ -178,5 +178,42 @@ def add_comment():
         return restful.params_error(form.get_error())
 ```
 
+### 6.前端评论布局
+
+```
+<div class="comment-group">
+            <h3>评论列表</h3>
+            <ul class="comment-list-group">
+                {% for comment in post.comments %}
+                    <li>{{ comment.content }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="add-comment-group">
+            <h3>发表评论</h3>
+            <script id="editor" type="text/plain"></script>
+        </div>
+```
+
+样式表
+
+```
+.comment-group{
+    margin-top:20px;
+    border:1px solid #e8e8e8;
+    padding:10px;
+}
+
+.add-comment-group{
+    margin-top: 20px;
+    padding:10px;
+    border:1px solid #e8e8e8;
+}
+
+.add-comment-group h3{
+    margin-bottom: 10px;
+}
+```
+
 
 
