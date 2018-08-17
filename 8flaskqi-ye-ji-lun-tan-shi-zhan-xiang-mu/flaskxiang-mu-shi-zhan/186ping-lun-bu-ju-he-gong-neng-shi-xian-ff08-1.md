@@ -137,5 +137,46 @@ $(function () {
 <script id="editor" type="text/plain"></script>
 ```
 
+### 4.定义评论模型
+
+```
+class CommentModel(db.Model):
+    __tablename__ = "comment"
+    id = db.Column(db.Integer,primary_key=True,autoincrement=True)
+    content = db.Column(db.Text,nullable=False)
+    create_time = db.Column(db.DateTime,default=datetime.now)
+
+    post_id = db.Column(db.Integer,db.ForeignKey("post.id"))
+    author_id = db.Column(db.String(100),db.ForeignKey("front_user.id"),nullable=False)
+
+    post = db.relationship("PostModel",backref="comments")
+    author = db.relationship("FrontUser",backref="comments")
+```
+
+### 5.定义添加评论视图
+
+```
+@bp.route('/acomment/')
+@login_required
+def add_comment():
+    form = AddCommentForm(request.form)
+    if form.validate():
+        content = form.content.data
+        # 通过帖子id，判断是否有当前帖子
+        post_id = form.post_id.data
+        post = PostModel.query.get(post_id)
+        if post:
+            comment = CommentModel(content=content)
+            comment.post = post
+            comment.author = g.front_user
+            db.session.add(comment)
+            db.session.commit()
+            return restful.success()
+        else:
+            return  restful.params_error("没有这篇帖子！")
+    else:
+        return restful.params_error(form.get_error())
+```
+
 
 
