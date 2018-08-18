@@ -98,10 +98,14 @@ pip install eventlet
 
 ```
 celery -A <mymodule> worker -l info -P eventlet
+或者
+celery -A <mymodule>--pool=eventlet worker --loglevel=info
 ```
 
 ```
 celery -A tasks.celery worker -l info -P eventlet
+-------------------------------------------------
+celery -A tasks.celery --pool=eventlet worker --loglevel=info
 ```
 
 
