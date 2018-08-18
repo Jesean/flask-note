@@ -60,8 +60,7 @@ def index():
         query_obj = db.session.query(PostModel).outerjoin(HighlightPostModel).order_by(HighlightPostModel.create_time.desc(),PostModel.create_time.desc())
     elif sort == 3:
         # 按照点赞数量排序
-        # 暂未实现
-        query_obj = PostModel.query.order_by(PostModel.create_time.desc())
+        query_obj = db.session.query(PostModel).outerjoin(LikePostModel).order_by(LikePostModel.like_num.desc(),PostModel.create_time.desc())
     elif sort == 4:
         query_obj = db.session.query(PostModel).outerjoin(CommentModel).group_by(PostModel.id).order_by(func.count(CommentModel.id).desc(),PostModel.create_time.desc())
 
@@ -82,6 +81,7 @@ def index():
         'pagination':pagination,
         'current_board':board_id,
         'current_sort':sort,
+        'like_obj':db.session.query(LikePostModel).outerjoin(PostModel),
     }
     return render_template("front/index.html",**context)
 ```

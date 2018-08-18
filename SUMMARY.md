@@ -200,7 +200,7 @@
     * [187.评论布局和功能实现（2）](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/187ping-lun-bu-ju-he-gong-neng-shi-xian-ff08-2.md)
     * [188.帖子加精和取消加精功能完成](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/188tie-zi-jia-jing-he-qu-xiao-jia-jing-gong-neng-wan-cheng.md)
     * [189.帖子按照发布时间和评论数量等排序](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/189tie-zi-an-zhao-fa-bu-shi-jian-he-ping-lun-shu-liang-deng-pai-xu.md)
-    * 190.celery实现异步任务
+    * [190.celery实现异步任务](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/190celeryshi-xian-yi-bu-ren-wu.md)
     * 191.Flask+Celery实现邮件和短信异步发送
     * 192.Flask和Ajax技术
 * [9.Python web开发核心技术](9python-webkai-fa-he-xin-ji-zhu.md)
