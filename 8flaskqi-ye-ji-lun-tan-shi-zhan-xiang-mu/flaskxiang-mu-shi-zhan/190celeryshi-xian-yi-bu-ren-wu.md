@@ -21,7 +21,5 @@ pip install celery
 pip install eventlet
 ```
 
-redis:http://docs.celeryproject.org/en/latest/getting-started/brokers/redis.html\#broker-redis
-
-
+redis:[http://docs.celeryproject.org/en/latest/getting-started/brokers/redis.html\#broker-redis](http://docs.celeryproject.org/en/latest/getting-started/brokers/redis.html#broker-redis)
 
