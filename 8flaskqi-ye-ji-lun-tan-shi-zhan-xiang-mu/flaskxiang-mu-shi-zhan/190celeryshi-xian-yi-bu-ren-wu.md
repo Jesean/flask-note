@@ -23,3 +23,19 @@ pip install eventlet
 
 redis:[http://docs.celeryproject.org/en/latest/getting-started/brokers/redis.html\#broker-redis](http://docs.celeryproject.org/en/latest/getting-started/brokers/redis.html#broker-redis)
 
+安装
+
+```
+pip install -U "celery[redis]"
+```
+
+配置
+
+```
+app.conf.broker_url = 'redis://localhost:6379/0'
+-------------------------------------------------
+redis://:password@hostname:port/db_number
+```
+
+
+
