@@ -202,7 +202,8 @@
     * [189.帖子按照发布时间和评论数量等排序](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/189tie-zi-an-zhao-fa-bu-shi-jian-he-ping-lun-shu-liang-deng-pai-xu.md)
     * [190.celery实现异步任务](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/190celeryshi-xian-yi-bu-ren-wu.md)
     * [191.Flask+Celery实现邮件和短信异步发送](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/flaskxiang-mu-shi-zhan/191flask+celeryshi-xian-you-jian-he-duan-xin-yi-bu-fa-song.md)
-    * 192.Flask和Ajax技术
+  * [ajax技术](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/ajaxji-zhu.md)
+    * [192.Flask和Ajax技术](8flaskqi-ye-ji-lun-tan-shi-zhan-xiang-mu/ajaxji-zhu/192flaskhe-ajax-ji-zhu.md)
 * [9.Python web开发核心技术](9python-webkai-fa-he-xin-ji-zhu.md)
   * [部署](9python-webkai-fa-he-xin-ji-zhu/bu-shu.md)
     * [193.开发机上的准备工作](9python-webkai-fa-he-xin-ji-zhu/193kai-fa-ji-shang-de-zhun-bei-gong-zuo.md)
