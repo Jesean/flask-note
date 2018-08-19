@@ -10,6 +10,7 @@ from flask import Flask
 from flask_mail import Message
 from exts import mail
 import config
+from utils.sms import demo_sms_send
 
 app = Flask(__name__)
 app.config.from_object(config)
@@ -33,6 +34,10 @@ celery = make_celery(app)
 def send_mail(subject,recipients,body):
     message = Message(subject=subject,recipients=recipients,body=body)
     mail.send(message)
+
+@celery.task
+def send_sms_captcha(telephone,captcha):
+    demo_sms_send.send_api(telephone, code=captcha)
 ```
 
 ```
