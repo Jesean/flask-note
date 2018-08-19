@@ -41,7 +41,38 @@ CELERY_BROKER_URL = "redis://118.24.128.18:6379"
 CELERY_RESULT_BACKEND = "redis://118.24.128.18:6379"
 ```
 
-### 3.启动
+### 3.发送邮件
+
+```
+@bp.route('/email_captcha/')
+@login_required
+def email_captcha():
+    # /email_captcha/?email_capthca=xxx@qq.com
+    email = request.args.get('email')
+    if not email:
+        return restful.params_error("请传递邮箱参数")
+    # string.ascii_letters:返回a~z和A~Z的所有字母
+    # 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    source = list(string.ascii_letters)
+    source.extend(map(lambda x:str(x),range(10)))
+    # 随机抽取6为数
+    captcha = random.sample(source,6)
+    captcha = "".join([k for k in captcha])
+
+    # 给邮箱发送邮件
+    # message = Message(subject="python论坛邮箱验证码",recipients=[email],body=captcha)
+    # try:
+    #     mail.send(message)
+    # except:
+    #     return restful.params_error()
+    # key:email
+    # value:captch
+    send_mail.delay(subject="python论坛邮箱验证码",recipients=[email],body=captcha)
+    zlcache.set(email,captcha)
+    return restful.success()
+```
+
+### 4.启动
 
 ```
 celery -A tasks.celery worker --pool=eventlet --loglevel=info
