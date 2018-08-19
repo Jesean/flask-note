@@ -75,8 +75,10 @@ def email_captcha():
 ### 4.启动
 
 ```
+linux:
 celery -A tasks.celery worker --pool=eventlet --loglevel=info
 或者
+windows:
 celery -A tasks.celery worker --pool=solo--loglevel=info
 ```
 
