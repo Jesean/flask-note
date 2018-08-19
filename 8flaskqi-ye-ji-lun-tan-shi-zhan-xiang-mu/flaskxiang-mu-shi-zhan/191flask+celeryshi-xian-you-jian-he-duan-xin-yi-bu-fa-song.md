@@ -76,6 +76,8 @@ def email_captcha():
 
 ```
 celery -A tasks.celery worker --pool=eventlet --loglevel=info
+或者
+celery -A tasks.celery worker --pool=solo--loglevel=info
 ```
 
 
