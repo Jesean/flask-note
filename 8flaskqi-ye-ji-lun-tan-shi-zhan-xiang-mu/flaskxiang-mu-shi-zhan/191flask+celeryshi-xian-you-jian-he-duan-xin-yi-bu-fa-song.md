@@ -72,7 +72,32 @@ def email_captcha():
     return restful.success()
 ```
 
-### 4.启动
+### 4.发送短信验证码
+
+```
+@bp.route('/sms_captcha/',methods=['POST'])
+def sms_captcha():
+    # telephone
+    # timestamp
+    # md5(ts+telephone+salt)
+    form = SMSCaptchaForm(request.form)
+    if form.validate():
+        telephone = form.telephone.data
+        captcha = Captcha.gene_text(4)
+        print("发送的短信验证码是:",captcha)
+        send_sms_captcha(telephone=telephone,captcha=captcha)
+        return restful.success()
+        # if demo_sms_send.send_api(telephone,code=captcha):
+        #     # 利用memcached进行缓存
+        #     zlcache.set(telephone,captcha)
+        #     return restful.success()
+        # else:
+        #     return restful.params_error(message="短信验证码发送失败！")
+    else:
+        return restful.params_error(message="参数错误")
+```
+
+### 5.启动
 
 ```
 linux:
